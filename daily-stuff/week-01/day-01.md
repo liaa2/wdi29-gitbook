@@ -157,7 +157,9 @@ The command-line interface - aka "the CLI" or the shell - is a tool that perform
 
 `cd` - Stands for **change directory** and will change the current working directory in accordance with the options that follow `cd` \(eg: `cd ..` will go up one directory; `cd ~` will return to the home directory\)
 
-`cat filename` - Will show you the contents of the specified file
+`cat filename` - \(short for “**concatenate**“\) will show you the contents of the specified file.
+
+`less filename` - will show you the contents of the specified file and extends the capabilities of more. It is a dedicated file reader that reads a file one screen at a time, and loads more of the file as you scroll through it.
 
 `whoami` - Will show the logged in user
 
