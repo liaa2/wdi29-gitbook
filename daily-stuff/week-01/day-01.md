@@ -7,8 +7,6 @@ What we covered today:
 * Introduction to the Command Line
 * Command Line Murder Mystery
 
-Intro slides​
-
 ### Introduction \| Orientation \| Housekeeping
 
 **Luke Hammer** - Lead Instructor - [luke.hammer@ga.co](mailto:luke.hammer@ga.co) \(Twitter: [@textchimp](https://twitter.com/textchimp)\)
@@ -31,7 +29,15 @@ The GA campus is typically open from 8.45am to 9pm on weekdays and from 9am to 4
 
 You guys came up with these rules for the next 12 weeks:
 
-
+* Help each other 
+* BE ON TIME by 9am 
+* Be positive 
+* Be respectful 
+* Daily showers before class
+* Class treat box
+* Have fun
+* Sharing is {mostly} caring 
+* Everybody love everybody
 
 ### Geek / Hacker Culture
 
@@ -143,7 +149,9 @@ The command-line interface - aka "the CLI" or the shell - is a tool that perform
 
 `rmdir` - Stands for **Remove Directory**
 
-`clear` - Will clear the terminal screen \(ctrl + l and cmd + k will do this as well\)
+`echo` - Displays a line of text
+
+`clear` - Will clear the terminal screen \(ctrl + l and cmd + k will do this as well, however you still have access to the history if using ctrl + l. cmd + k will clear the screen and kill the history\)
 
 `reset` - Will reset your terminal
 
@@ -173,12 +181,15 @@ A good example of this is the following:
 
 ```bash
 # list out contents of current directory (excluding hidden files)
-> ls
-Applications Documents Desktop etc.
-# list out contents of current directory (including hidden files)
-> ls -l
-drwx------   6 jackjeffress  staff   204 16 Mar 15:39 Applications
-etc.
+library$ ls
+bar.txt bookshelf.txt everything.txt
+
+# list out contents of current directory (use a long listing format)
+library$ ls -l
+total 24
+-rw-r--r--  1 yourusername  staff  30 10 Sep 14:43 bar.txt
+-rw-r--r--  1 yourusername  staff  50 10 Sep 14:51 bookshelf.txt
+-rw-r--r--  1 yourusername  staff  80 10 Sep 15:00 everything.txt
 ```
 
 ```bash
@@ -194,6 +205,22 @@ etc.
 ```
 
 ```bash
+# We use echo to display text
+library$ echo Almdudler
+Almdudler
+# To add the display text to a text file
+library$ echo Laphroiagh > bar.txt
+library$ cat bar.txt
+Laphroiagh
+#However, run the command with > again will overwrite the previous text
+#To avoid it, use >> operator
+library$ echo Almdudler >> bar.txt
+library$ cat bar.txt
+Laphroiagh
+Almdudler
+```
+
+```bash
 # We can make folders in the CLI by using mkdir
 > mkdir Projects
 # Then we can move into it
@@ -202,6 +229,8 @@ etc.
 > ls
 # ls -la will show every file (even hidden files)
 > ls -la
+# or 
+> ls -l -a
 # This will change to the current directory
 > cd .
 # This will open the current directory in Finder
@@ -260,7 +289,11 @@ What happens when we run commands?
 > echo $PATH
 ```
 
-​[Here is a basic bash profile.](https://gist.github.com/ga-wolf/8a47c257c08632809788)​
+​[Here is a basic bash profile](https://gist.github.com/ga-wolf/8a47c257c08632809788)
+
+### Useful websites 
+
+* [https://explainshell.com/](https://explainshell.com/)
 
 ### _Command Line Interface \(CLI\) - Recommended Readings_ {#command-line-interface-cli-recommended-readings}
 
