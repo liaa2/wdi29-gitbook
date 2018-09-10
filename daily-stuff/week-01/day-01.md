@@ -223,9 +223,9 @@ Almdudler
 
 ```bash
 # We can make folders in the CLI by using mkdir
-> mkdir Projects
+> mkdir projects
 # Then we can move into it
-> cd Projects
+> cd projects
 # ls will show most of your files (ones that aren't prefixed by a .)
 > ls
 # ls -la will show every file (even hidden files)
@@ -279,6 +279,7 @@ Almdudler
 
 # To remove the contents of an entire directory, the -r flag can be appended. The -r 
 # flag means "recursively" (ie every file/folder within the director).
+> rm -r projects/
 ```
 
 What happens when we run commands?
