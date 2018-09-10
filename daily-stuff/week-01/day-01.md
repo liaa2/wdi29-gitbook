@@ -7,6 +7,8 @@ What we covered today:
 * Introduction to the Command Line
 * Command Line Murder Mystery
 
+[Intro Slides](https://textchimp.github.io/wdi-29/week1/slides/intro/)
+
 ### Introduction \| Orientation \| Housekeeping
 
 **Luke Hammer** - Lead Instructor - [luke.hammer@ga.co](mailto:luke.hammer@ga.co) \(Twitter: [@textchimp](https://twitter.com/textchimp)\)
