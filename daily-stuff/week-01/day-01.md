@@ -23,8 +23,6 @@ What we covered today:
 
 **Lara Blumberg** - Outcomes Producer - [lara.blumberg@ga.co](mailto:lara.blumberg@ga.co)​
 
-**Lucy Barnes** - Outcomes Producer - [lucy.barnes@ga.co](mailto:lucy.barnes@ga.co)​
-
 The GA campus is typically open from 8.45am to 9pm on weekdays and from 9am to 4pm on Saturdays. The campus is closed on Sundays and public holidays.
 
 ### Classroom Culture
@@ -188,7 +186,6 @@ bar.txt bookshelf.txt everything.txt
 
 # list out contents of current directory (use a long listing format)
 library$ ls -l
-total 24
 -rw-r--r--  1 yourusername  staff  30 10 Sep 14:43 bar.txt
 -rw-r--r--  1 yourusername  staff  50 10 Sep 14:51 bookshelf.txt
 -rw-r--r--  1 yourusername  staff  80 10 Sep 15:00 everything.txt
@@ -215,7 +212,7 @@ library$ echo Laphroiagh > bar.txt
 library$ cat bar.txt
 Laphroiagh
 #However, run the command with > again will overwrite the previous text
-#To avoid it, use >> operator
+#To append text instead of overwrite it, use >> operator
 library$ echo Almdudler >> bar.txt
 library$ cat bar.txt
 Laphroiagh
@@ -293,7 +290,7 @@ What happens when we run commands?
 
 ​[Here is a basic bash profile](https://gist.github.com/ga-wolf/8a47c257c08632809788)
 
-### Useful websites 
+### _Useful websites_ 
 
 * [https://explainshell.com/](https://explainshell.com/)
 
