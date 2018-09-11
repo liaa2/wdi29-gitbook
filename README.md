@@ -10,9 +10,9 @@ description: Welcome to WDI29 GitBook
 
 ## Daily Stuff
 
-### [Week 01](daily-stuff/week-01/)
+| [Week 01](daily-stuff/week-01/) | [Day 01](daily-stuff/week-01/day-01.md)[Day 02](daily-stuff/week-01/day-02.md) |
+| :--- | :--- |
 
-* [Day 01](daily-stuff/week-01/day-01.md)
 
 ## Modules
 
