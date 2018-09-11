@@ -16,7 +16,7 @@ What we covered today:
 ### Slides {#slides}
 
 * ​[Variables and functions](http://www.teaching-materials.org/javascript/slides/varsfunctions.html)​
-* ​[Javascript control flow and logical operators](http://www.teaching-materials.org/javascript/slides/controlflow.html)​
+* ​[Javascript control flow and logical operators](http://www.teaching-materials.org/javascript/slides/controlflow.html)​ \(slides 1 - 10\)
 
 ## Javascript - Introduction to Javascript {#javascript-introduction-to-javascript}
 
