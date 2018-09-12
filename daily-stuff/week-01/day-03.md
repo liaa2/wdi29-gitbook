@@ -81,6 +81,25 @@ For notes on submitting your homework, refer to the README file in my repository
 * ​[A tutorial by Roger Dudler](https://rogerdudler.github.io/git-guide/)​
 * ​[A tutorial by Git Tower](https://www.git-tower.com/learn/)​
 
+## Question Time: What is the difference between console.log and return in a function?
+
+If you think of programming as a conversation between you and the machine then:  
+  `console.log`is a way for the machine to tell you, the programmer something and  
+  `return` is a mechanism for the machine to tell another part of its program something.
+
+`console.log()` is used to print information to the console. `return` on the other hand is a call to pass some value back up to where the call was made. For example, we create a function called `addNumbers()` that takes 2 numeric parameters and returns the sum. Your function would look like the following:
+
+```text
+const addNumbers = function(num1, num2) {
+  return num1 + num2;
+};
+```
+
+You would call your function like this:  
+`let sum = addNumners(5, 3);`
+
+This would set `sum` equal to the value returned by `addNumbers()` but will not print it to the console. Hence, the `return` statement is passing the value `num1 + num2` back to the call of `addNumbers`. If you want to view the value of sum, you would write: `console.log(sum);` or to simplify it you could write: `console.log(addNumers(5, 3));`
+
 ## Javascript - Control Flow: Loops {#javascript-control-flow-loops}
 
 ### The 'While' Loop {#the-while-loop}
