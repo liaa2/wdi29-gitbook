@@ -89,7 +89,7 @@ If you think of programming as a conversation between you and the machine then:
 
 `console.log()` is used to print information to the console. `return` on the other hand is a call to pass some value back up to where the call was made. For example, we create a function called `addNumbers()` that takes 2 numeric parameters and returns the sum. Your function would look like the following:
 
-```text
+```javascript
 const addNumbers = function(num1, num2) {
   return num1 + num2;
 };
