@@ -96,7 +96,7 @@ const addNumbers = function(num1, num2) {
 ```
 
 You would call your function like this:  
-`let sum = addNumners(5, 3);`
+`let sum = addNumbers(5, 3);`
 
 This would set `sum` equal to the value returned by `addNumbers()` but will not print it to the console. Hence, the `return` statement is passing the value `num1 + num2` back to the call of `addNumbers`. If you want to view the value of sum, you would write: `console.log(sum);` or to simplify it you could write: `console.log(addNumers(5, 3));`
 
