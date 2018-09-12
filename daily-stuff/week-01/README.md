@@ -15,3 +15,9 @@
 * Javascript - Data Types
 * Javascript - Functions
 
+### ​[Day 03](day-03.md)​
+
+* Github - homework
+* Javascript - Arrays
+* Javascript - Loops
+
