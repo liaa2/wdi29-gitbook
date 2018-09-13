@@ -182,7 +182,7 @@ for (let current = 100; current < 200; current++) {
 ### _Control Flow in Javascript: Loops - Exercises_ {#control-flow-in-javascript-loops-exercises}
 
 * ​[Loops Exercises](https://gist.github.com/textchimp/db943c21196cc295305922a5e7b0a34f)​
-  * ​[Solution](https://github.com/wofockham/wdi-15/tree/master/01-javascript/variables/)​
+  * ​[Solution​](https://github.com/textchimp/wdi-29/tree/master/week1/loops-exercises)
 
 ### Recursion \(Basics\) {#recursion-basics}
 
@@ -249,9 +249,9 @@ for ( let i = 0; i < greatPeople.length; i++ ) {
 // => 2. c
 ```
 
-### _Javascript Collections - Arrays - Exercise_ {#javascript-collections-arrays-exercise}
+### _Javascript - Arrays - Exercise_ {#javascript-collections-arrays-exercise}
 
-* ​[Your Top Choices](https://gist.github.com/ga-wolf/4f200a907382aa53dc9e794d1ee18b3c)​
+* ​[Array Exercises](https://gist.github.com/textchimp/806a4e7b38c6b61c9831023415849b1c)
 
 ### How to set elements in an array {#how-to-set-elements-in-an-array}
 
