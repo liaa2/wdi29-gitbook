@@ -64,7 +64,7 @@ Some basic Git commands:
 **A really basic process:** \(Follow these steps every time!\)
 
 * `git add .`
-* `git commit -m "Commit message`
+* `git commit -m "commit message"`
 * `git pull`
 * `git push`
 
