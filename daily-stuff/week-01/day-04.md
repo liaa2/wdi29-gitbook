@@ -8,7 +8,7 @@ What we covered today:
 
 ### Slides {#slides}
 
-* ​[Javascript Objects​](https://textchimp.github.io/wdi-29/week1/javascript-collections.pdf)
+* ​[Javascript Objects​](https://textchimp.github.io/wdi-29/week1/javascript-collections.pdf) \(slide 19 onwards\)
 
 ### Classwork {#classwork}
 
