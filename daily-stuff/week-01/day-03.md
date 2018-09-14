@@ -10,7 +10,7 @@ What we covered today.
 
 ### Slides {#slides}
 
-* ​[Loops](http://www.teaching-materials.org/javascript/slides/controlflow.html) \(slides 11-14\)
+* ​[Loops](http://www.teaching-materials.org/javascript/slides/controlflow.html) \(slide 11-14\)
 * ​[Arrays](http://www.teaching-materials.org/javascript/slides/controlflow.html) \(slide 15 onwards\)
 
 ## Our very first warmup! {#our-very-first-warmup}
@@ -42,7 +42,7 @@ Some basic Git commands:
 * `git init` - This initializes the git repository \(behind the scenes it creates a .git file in the folder - it has called .git because any file prefixed by a . is hidden in finder and ls\). Make sure you don't do this in another git repository!
 * `git status` - This will tell you what is happening the current project. Commit status, untracked files etc.
 * `git add .` - This will add all files in the current directory into the "staging area". Git is now paying attention to all files. You can alternatively specify a particular file - `git add octocat.txt`. We could also add all files of a particular type - `git add '*.txt'` \(this needs quotes!\) or multiple files at a time - `git add octocat.txt blue_octocat.txt`.
-* `git commit -m "You're commit message` - This is the thing that takes the snapshot. You must give it a message!
+* `git commit -m "You're commit message"` - This is the thing that takes the snapshot. You must give it a message!
 * `git log` - Will show you all of the snapshots in the current project
 * This has all been happening locally! So we need to connect it to Github...
 * `git remote add origin https://github.com/try-git/try_git.git` - It takes a _remote name_, the word origin, and a _remote repository_, the URL.
@@ -121,8 +121,8 @@ You need a condition in the parentheses, and you need something within the body 
 let x = 0; //init​
 
 while (x < 5) { //conditional  
-    console.log(x);  
-    x += 1; // same as: x = x + 1; //update
+  console.log(x);  
+  x += 1; // same as: x = x + 1; //update
 }
 // => 0
 // => 1
@@ -142,20 +142,20 @@ It looks like the following:
 ```javascript
 // 'For loop' syntax:
 for (/*initialize*/; /*condition*/; /*update*/) {  
-    /* code to execute*/
+  /* code to execute*/
 }​
 
 // Example of a 'for loop':
 for (let i = 0; i < 5; i = i + 1) {    
-    console.log( i );
+  console.log( i );
 }
 // => 0 1 2 3 4
 
 ​// The equivalent 'while loop' would be:
 let i = 0; // This is the 'initialize' value
 while (i < 5) { // This is the 'condition' (in the parentheses)    
-    console.log(i);    
-    i = i + 1; // This is the 'update'
+  console.log(i);    
+  i = i + 1; // This is the 'update'
 }
 // => 0 1 2 3 4
 ```
@@ -166,16 +166,16 @@ To prematurely exit any loop \(`for` or `while`\), use can use the **break** sta
 
 ```javascript
 for (let current = 100; current < 200; current++) {    
-    // 'current++'' is the same 'current += 1' and 'current = current + 1'    
-    // 'current--'' also exists ('current = current - 1')    
-    // This is called 'syntactic sugar'​    
+  // 'current++'' is the same 'current += 1' and 'current = current + 1'    
+  // 'current--'' also exists ('current = current - 1')    
+  // This is called 'syntactic sugar'​    
 
-    console.log('Testing ' + current);    
-    if (current % 7 === 0) {        
-        // The % stands for the modulus operator, it finds the remainder        
-        console.log('Found it! ' + current);        
-        break;    
-    }
+  console.log('Testing ' + current);    
+  if (current % 7 === 0) {        
+    // The % stands for the modulus operator, it finds the remainder        
+    console.log('Found it! ' + current);        
+    break;    
+  }
 }
 ```
 
@@ -209,9 +209,9 @@ An array is a type of data that holds an ordered list of values. The values can 
 
 ```javascript
 let amazingFrenchAuthors = [ 
-    "Alexandre Dumas", "Gustave Flaubert", "Voltaire", "Marcel Proust", 
-    "Jean-Paul Sartre", "Stendhal", "Anäis Nin", "Simone de Beauvoir", 
-    "Rene Descartes", "Montesquieu" 
+  "Alexandre Dumas", "Gustave Flaubert", "Voltaire", "Marcel Proust", 
+  "Jean-Paul Sartre", "Stendhal", "Anäis Nin", "Simone de Beauvoir", 
+  "Rene Descartes", "Montesquieu" 
 ];​
 
 console.log( amazingFrenchAuthors[0] ); // => "Alexandre Dumas"
@@ -233,16 +233,16 @@ Stick to the **for loop** in most cases, but there are always thousands ways of 
 
 ```javascript
 let greatPeople = [ 
-    "Louis Pasteur", "Jacques Cousteau", "Imhotep", "Sigmund Freud", 
-    "Wolfgang Amadeus Mozart" 
+  "Louis Pasteur", "Jacques Cousteau", "Imhotep", "Sigmund Freud", 
+  "Wolfgang Amadeus Mozart" 
 ];​
 
 for ( let i = 0; i < greatPeople.length; i++ ) {    
-    console.log( greatPeople[ i ] ); // Logs out the "i-th" element each iteration
+  console.log( greatPeople[ i ] ); // Logs out the "i-th" element each iteration
 }​​
 
 [ 'a', 'b', 'c' ].forEach( function (elem, index) {    
-    console.log(index + '. ' + elem);
+  console.log(index + '. ' + elem);
 });
 // => 0. a
 // => 1. b
@@ -257,8 +257,8 @@ for ( let i = 0; i < greatPeople.length; i++ ) {
 
 ```javascript
 let amazingFrenchAuthors = [ 
-"Alexandre Dumas", "Gustave Flaubert", 
-"Voltaire", "Marcel Proust"
+  "Alexandre Dumas", "Gustave Flaubert", 
+  "Voltaire", "Marcel Proust"
 ];
 
 ​amazingFrenchAuthors[0] = "Stendhal"; // Just access them and reassign!
@@ -271,7 +271,7 @@ let amazingFrenchAuthors = [
 
 ```javascript
 let amazingFrenchAuthors = [ 
-    "Alexandre Dumas", "Gustave Flaubert", "Voltaire", "Marcel Proust"
+  "Alexandre Dumas", "Gustave Flaubert", "Voltaire", "Marcel Proust"
 ];​
 // In the examples below, assume we're starting from the original array each time.​
 
@@ -313,7 +313,7 @@ amazingFrenchAuthors.join(); // Joins all elements of an array into a string.
 // SPLICE //
 amazingFrenchAuthors.splice(); // Adds and/or removes elements from an array.
 amazingFrenchAuthors = [
-    "Alexandre Dumas", "Gustave Flaubert", "Voltaire", "Marcel Proust"
+  "Alexandre Dumas", "Gustave Flaubert", "Voltaire", "Marcel Proust"
 ];
 amazingFrenchAuthors.splice(1,1);
 // => ["Gustave Flaubert"]

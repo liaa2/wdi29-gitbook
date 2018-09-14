@@ -25,5 +25,9 @@
 
 * JavaScript - Objects
 
+### [Day 05](day-05.md)
 
+* The `this` Keyword
+* The `arguments` Object
+* Factories and Constructors
 

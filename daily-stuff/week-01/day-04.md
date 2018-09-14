@@ -38,11 +38,11 @@ const newObject = new Object();
 ```javascript
 // Remember to seperate by commas!
 const newObject = {  
-    objectKey: "Object Value",  
-    anotherObjectKey: "Another Object Value",  
-    objectFunction: function () {​ 
+  objectKey: "Object Value",  
+  anotherObjectKey: "Another Object Value",  
+  objectFunction: function () {​ 
      
-    }
+  }
 };​
 
 const newObject = {};
@@ -64,9 +64,9 @@ Remember: like all JS variables - both the object name and property names are ca
 
 ```javascript
 const favouriteCar = {  
-    manufacturer: "Jaguar",  
-    year: 1963,  
-    model: "E-Type"
+  manufacturer: "Jaguar",  
+  year: 1963,  
+  model: "E-Type"
 }​
 
 // Dot notation access to object properties
@@ -96,14 +96,14 @@ Object.keys(newObject); // Returns an array of all the keys in the specified obj
 Object.getOwnPropertyNames(newObject); // So does this
 
 ​const obj = {  
-    a: 1,  
-    b: 2,  
-    c: 3
+  a: 1,  
+  b: 2,  
+  c: 3
 };​
 
 //we use bracket notation to get value
 for (let key in obj) {  
-    console.log( `key: ${key}, value: ${obj[key]}`);
+  console.log( `key: ${key}, value: ${obj[key]}`);
 }
 // key: a, value: 1
 // key: b, value: 2
@@ -111,7 +111,7 @@ for (let key in obj) {
 
 //however, for dot notation
 for (let key in obj) {  
-    console.log( `key: ${key}, value: ${obj.key}`);
+  console.log( `key: ${key}, value: ${obj.key}`);
 }
 // key: a, value: undefined
 // key: b, value: undefined
@@ -124,9 +124,9 @@ for (let key in obj) {
 
 ```javascript
 const favouriteCar = {  
-    manufacturer: "Jaguar",  
-    year: 1963,  
-    model: "E-Type"
+  manufacturer: "Jaguar",  
+  year: 1963,  
+  model: "E-Type"
 }​
 
 delete favouriteCar.year;

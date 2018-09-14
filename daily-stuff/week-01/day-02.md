@@ -235,8 +235,8 @@ console.log(`Hello, ${name}!`);​
 // Multiple line Strings​
 const firstName = 'Jane';
 console.log(`Hello ${firstName}!
-    How are you
-    today?`);​
+  How are you
+  today?`);​
 
 // Output:
 // Hello Jane!
@@ -262,8 +262,8 @@ In Atom, `<CMD> + /` will toggle the comments. Highlight a block of text and try
 // This is a single line comment in JS​
 
 /*    
-    This is a block level comment    
-    i.e. multiline
+  This is a block level comment    
+  i.e. multiline
 */
 ```
 
@@ -276,14 +276,14 @@ Functions are way to make a collection of statements re-usable. This is the most
 ```javascript
 // For future reference, this is a 'function declaration' (more on this below)
 function sayMyName () {    
-    console.log( "Hello Jane" );
+  console.log( "Hello Jane" );
 }​
 
 // But since functions are also data types, they can be stored in a variable!
 // This is my favourite way of declaring functions - generally stick to this.
 // For future reference, this is known as a 'function expression' (more on this below)
 const sayMyName = function () {    
-    console.log( "Hello Jane" );
+  console.log( "Hello Jane" );
 }
 ```
 
@@ -307,7 +307,7 @@ Functions in Javascript can accept as many named parameters \(or arguments\) as 
 
 ```javascript
 const sayMyName = function ( firstName, lastName ) {    
-    console.log( "Hello, " + firstName + " " + lastName + "!");
+  console.log( "Hello, " + firstName + " " + lastName + "!");
 }​
 
 sayMyName( "Jane", "Birkin" );
@@ -327,8 +327,8 @@ Functions wont automatically return the evaluation of the code within itself. Yo
 
 ```javascript
 const addNumbers = function ( num1, num2 ) {  
-    result = num1 + num2;  
-    return result;
+  result = num1 + num2;  
+  return result;
 }
 const sum = addNumbers(5, 2);
 
@@ -344,8 +344,8 @@ In the example below, the variable `localResult` has "local scope" \(ie, it can 
 
 ```javascript
 var addNumbers = function ( num1, num2 ) {  
-    var localResult = num1 + num2;  
-    console.log( "The local result is: " + localResult );
+  var localResult = num1 + num2;  
+  console.log( "The local result is: " + localResult );
 }
 
 ​addNumbers( 5, 7 );
@@ -365,8 +365,8 @@ In the example below, the variable `globalResult` below has "global scope":
 ```javascript
 var globalResult;
 var addNumbers = function ( num1, num2 ) {  
-    globalResult = num1 + num2;  
-    console.log( "The global result is: " + globalResult );
+  globalResult = num1 + num2;  
+  console.log( "The global result is: " + globalResult );
 }
 
 ​addNumbers( 5, 7 );
@@ -417,7 +417,7 @@ return num1 + num2;
 
 // GOOD
 const addNumbers = function(num1, num2) {  
-    return num1 + num2;
+  return num1 + num2;
 }
 ```
 
@@ -493,44 +493,44 @@ If you don't use a comparison or logical operator, JS tries to figure out if the
 ```javascript
 // all numbers are truthy (including negative numbers) except 0
 if(3){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => "It is truthy."
 
 if(-3){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => "It is truthy."
 
 if(0){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => no output
 
 //all strings are true, except empty string
 if("false"){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => "It is truthy."
 
 if(""){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => no output
 
 //Value false, undefined, null are falsey
 if(false){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => no output
 
 if(undefined){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => no output
 
 if(null){
-    console.log("It is truthy.")
+  console.log("It is truthy.")
 }
 // => no output
 ```
@@ -548,7 +548,7 @@ const x = 5;​
 
 if ( x > 0 ) {  
 // This will run unless the variable x has a value less than or equal to zero.  
-    console.log( "x is a positive number!" );
+  console.log( "x is a positive number!" );
 }
 // => "x is a positive number!"
 ```
@@ -560,9 +560,9 @@ We can give if statements a fallback using **else** - if the condition in the if
 ```javascript
 const age = 28;
 if (age > 16) {  
-    console.log('Yay, you can drive!');
+  console.log('Yay, you can drive!');
 } else {  
-    console.log('Sorry, but you have ' + (16 - age) + ' years til you can drive.');
+  console.log('Sorry, but you have ' + (16 - age) + ' years til you can drive.');
 }
 // => 'Yay, you can drive!'
 ```
@@ -579,13 +579,13 @@ You can also use **else if** if you have multiple, exclusive conditions to check
 ```javascript
 const age = 20;
 if (age >= 35) {  
-    console.log('You can vote AND hold any place in government!');
+  console.log('You can vote AND hold any place in government!');
 } else if (age >= 25) {  
-    console.log('You can vote AND run for the Senate!');
+  console.log('You can vote AND run for the Senate!');
 } else if (age >= 18) {  
-    console.log('You can vote!');
+  console.log('You can vote!');
 } else {  
-    console.log('You have no voice in government!');
+  console.log('You have no voice in government!');
 }
 // => "You can vote!"
 ```
