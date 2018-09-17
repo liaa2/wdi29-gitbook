@@ -13,7 +13,7 @@ What we covered today:
 
 **Luke Hammer** - Lead Instructor - [luke.hammer@ga.co](mailto:luke.hammer@ga.co) \(Twitter: [@textchimp](https://twitter.com/textchimp)\)
 
-**Linna Liu** - Instructional Assistant / Teaching Assistant - [linna.liu@generalassemb.ly](mailto:linna.liu@generalassemb.ly) 
+**Linna Liu** - Instructional Assistant / Teaching Assistant - [linna.liu@ga.co](mailto:linnaliu@ga.co)
 
 **Hayley Petrov** - Education Programs Producer - [hayley.petrov@ga.co](mailto:hayley.petrov@ga.co)​
 
