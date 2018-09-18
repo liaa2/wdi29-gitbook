@@ -127,7 +127,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * Go [here](http://fortawesome.github.io/Font-Awesome/get-started/) and either:
   * download the necessary files;
   * get the CDN link emailed to you; or
-  * use this CDN link: `http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css` \(current as at August 2016\)
+  * use this CDN link: `https://use.fontawesome.com/releases/v5.3.1/css/all.css` \(current as at September 2018\)
 * Put a `<link>` to that the Font Awesome CSS in your document's `<head>`
 * Go through [the list of Font Awesome icons](http://fortawesome.github.io/Font-Awesome/icons/) and click on the one you want
 * Copy and paste the snippet into your HTML.
