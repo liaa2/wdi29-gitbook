@@ -30,11 +30,21 @@ description: Welcome to WDI29 GitBook
     </tr>
   </thead>
   <tbody></tbody>
-</table>| [Week 02](daily-stuff/week-02/) | [Day 01](daily-stuff/week-02/day-01.md) |
-| :--- | :--- |
-
-
-## Modules
+</table><table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><a href="daily-stuff/week-02/">Week 02</a>
+      </th>
+      <th style="text-align:left">
+        <p><a href="daily-stuff/week-02/day-01.md">Day 01</a>
+        </p>
+        <p><a href="daily-stuff/week-02/day-02.md">Day 02</a>
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>## Modules
 
 ## Dictionary
 
@@ -46,6 +56,7 @@ description: Welcome to WDI29 GitBook
 * [Serge - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day04_sergeSays)
 * [Leapyear - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day05_leapyear)
 * [Badgers-revenge - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day01_badgers-revenge)
+* [Scrabble - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day02_scrabble)
 
 
 
