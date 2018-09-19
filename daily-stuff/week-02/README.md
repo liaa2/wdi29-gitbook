@@ -17,3 +17,14 @@
   * Font Awesome
   * Custom Fonts
 
+### [Day 03](day-03.md)
+
+* JavaScript - The Document Object Model \(DOM\)
+  * Accessing Elements \(Selection\)
+  * Manipulating Elements
+  * Creating Elements
+  * Events
+* JavaScript - Animation
+  * Timers
+  * Callbacks
+
