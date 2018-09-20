@@ -18,7 +18,7 @@ What we covered today:
 
 ### Power User Zone {#power-user-zone}
 
-* ​[Notes/shortcut list](https://gist.github.com/textchimp/faa5366b949067699f17734f42e5b5ea)​
+* ​[Notes/shortcut list](https://gist.github.com/textchimp/d5d0e5664ee2ca14b464d85540cea349)​ 
 
 
 
