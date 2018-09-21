@@ -34,5 +34,10 @@
 * JavaScript - Libraries
 * JavaScript - jQuery - Introduction
 
+### [Day 05](day-05.md)
 
+* JavaScript - jQuery - Events
+* JavaScript - jQuery - Animation and Effects
+* JavaScript - jQuery - Patterns and Anti-patterns
+* JavaScript - jQuery - Plugins
 

@@ -44,6 +44,8 @@ description: Welcome to WDI29 GitBook
         </p>
         <p><a href="daily-stuff/week-02/day-04.md">Day 04</a>
         </p>
+        <p><a href="daily-stuff/week-02/day-05.md">Day 05</a>
+        </p>
       </th>
     </tr>
   </thead>
@@ -61,6 +63,7 @@ description: Welcome to WDI29 GitBook
 * [Leapyear - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day05_leapyear)
 * [Badgers-revenge - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day01_badgers-revenge)
 * [Scrabble - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day02_scrabble)
+* [Anagram Detector - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day05_anagram_detector)
 
 
 
