@@ -12,6 +12,10 @@ What we covered today:
 
 * ​[Warmup and solution - Anagram Detector](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day05_anagram_detector)
 
+### Slides
+
+* [Advanced jQuery](https://github.com/textchimp/wdi-29/blob/master/week2/advanced-jquery.pdf)
+
 ### Exercises {#exercises}
 
 1. [​jQuery Events ](https://gist.github.com/textchimp/f28054a1b2977b5cc33f65665cea56b7)
