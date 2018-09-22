@@ -18,7 +18,7 @@ What we covered today:
 
 ### Exercises {#exercises}
 
-1. [​jQuery Events ](https://gist.github.com/textchimp/f28054a1b2977b5cc33f65665cea56b7)
+* [​jQuery Events ](https://gist.github.com/textchimp/f28054a1b2977b5cc33f65665cea56b7)
 
 ## JavaScript - jQuery - Events {#javascript-jquery-events}
 
