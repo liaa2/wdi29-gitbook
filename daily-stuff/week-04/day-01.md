@@ -980,7 +980,6 @@ end
 * Also:
   * Watch [Pry - Introductory Screencast](http://pryrepl.org/)​
   * Browse [Ruby - Documentation](https://www.ruby-lang.org/en/documentation/)​
-  * Work through some of [Ruby Monk](https://rubymonk.com/)​
 
 [  
 ](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-04)

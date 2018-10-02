@@ -50,7 +50,11 @@ description: Welcome to WDI29 GitBook
     </tr>
   </thead>
   <tbody></tbody>
-</table>## Modules
+</table>| [Week 04](daily-stuff/week-04/) | [Day 01](daily-stuff/week-04/day-01.md) |
+| :--- | :--- |
+
+
+## Modules
 
 ## Dictionary
 
