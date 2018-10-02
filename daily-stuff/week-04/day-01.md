@@ -10,7 +10,7 @@ What we covered today:
   * Operators
   * Variables
   * Methods
-  * Ruby - Fundamentals - Pt I
+  * Ruby - Fundamentals - Part I
   * Conditionals
   * Control Structures
 * Ruby - Methods
