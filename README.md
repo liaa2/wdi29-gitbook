@@ -68,6 +68,7 @@ description: Welcome to WDI29 GitBook
 * [Badgers-revenge - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day01_badgers-revenge)
 * [Scrabble - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day02_scrabble)
 * [Anagram Detector - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day05_anagram_detector)
+* [Raindrops - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day01_ruby_raindrops)
 
 
 

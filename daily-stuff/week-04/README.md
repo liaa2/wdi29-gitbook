@@ -15,3 +15,8 @@
   * Control Structures
 * Ruby - Methods
 
+### [Day 02](day-02.md)
+
+* Web Servers
+* Sinatra
+
