@@ -50,11 +50,23 @@ description: Welcome to WDI29 GitBook
     </tr>
   </thead>
   <tbody></tbody>
-</table>| [Week 04](daily-stuff/week-04/) | [Day 01](daily-stuff/week-04/day-01.md) |
-| :--- | :--- |
-
-
-## Modules
+</table><table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><a href="daily-stuff/week-04/">Week 04</a>
+      </th>
+      <th style="text-align:left">
+        <p><a href="daily-stuff/week-04/day-01.md">Day 01</a>
+        </p>
+        <p><a href="daily-stuff/week-04/day-02.md">Day 02</a>
+        </p>
+        <p><a href="daily-stuff/week-04/day-03.md">Day 03</a>
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>## Modules
 
 ## Dictionary
 
