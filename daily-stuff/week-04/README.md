@@ -20,3 +20,8 @@
 * Web Servers
 * Sinatra
 
+### ​[Day 0](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-04/day-04)3
+
+* SQL \(Structured Query Language\)
+* Sinatra - CRUD with SQL
+
