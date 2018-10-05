@@ -62,6 +62,8 @@ description: Welcome to WDI29 GitBook
         </p>
         <p><a href="daily-stuff/week-04/day-03.md">Day 03</a>
         </p>
+        <p><a href="daily-stuff/week-04/day-04.md">Day 04</a>
+        </p>
       </th>
     </tr>
   </thead>
@@ -81,6 +83,8 @@ description: Welcome to WDI29 GitBook
 * [Scrabble - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day02_scrabble)
 * [Anagram Detector - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day05_anagram_detector)
 * [Raindrops - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day01_ruby_raindrops)
+* [Scrabble - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day02_ruby_scrabble)
+* [Nucleotide - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day03_ruby_nucleotide)
 
 
 

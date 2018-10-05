@@ -25,3 +25,12 @@
 * SQL \(Structured Query Language\)
 * Sinatra - CRUD with SQL
 
+### [Day 04](day-04.md)
+
+* Object Oriented Programming
+  * Objects
+  * Classes
+* Ruby - Variable Scope
+* Ruby - Class and Instance Methods
+* Active Record
+
