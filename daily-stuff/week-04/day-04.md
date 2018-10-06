@@ -237,6 +237,8 @@ groucho.class.instance_methods( false )
 
 ```
 
+[Class Demo - Classes​](https://github.com/textchimp/wdi-29/tree/master/week4/classes)
+
 ## Ruby - Variable scope {#ruby-variable-scope}
 
 There are four types of variable in Ruby, categorized by scope - ie, from where the variable is accessible within a program.
