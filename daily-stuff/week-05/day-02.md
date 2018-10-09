@@ -139,36 +139,56 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
       <td style="text-align:left">Add timestamps, more columns, etc if required.</td>
     </tr>
     <tr>
-      <td style="text-align:left">15*</td>
+      <td style="text-align:left">15</td>
+      <td style="text-align:left">Create seed data</td>
+      <td style="text-align:left">Atom</td>
+      <td style="text-align:left">
+        <p>Go to app -> db -> seed.rb and create seed data. An example:</p>
+        <p></p>
+        <p><code>Kitten.create name: &quot;cat1&quot;, image: &quot;https://fillmurray.com/100/100&quot;, roundness: 10</code>
+        </p>
+        <p><code>Kitten.create name: &quot;cat2&quot;, image: &quot;https://fillmurray.com/120/120&quot;, roundness: 1</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">16</td>
+      <td style="text-align:left">Load seed data</td>
+      <td style="text-align:left">Termnial</td>
+      <td style="text-align:left"><code>rails db:seed</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">17*</td>
       <td style="text-align:left">Create first controller</td>
       <td style="text-align:left">Terminal</td>
       <td style="text-align:left"><code>We will do it manually for now<br />(go to the controller folder and create a controller file called &quot;kittens_controller.rb&quot;)</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">16</td>
+      <td style="text-align:left">18</td>
       <td style="text-align:left">Add methods to the controller</td>
       <td style="text-align:left">/app/controllers/kittens_controller.rb</td>
       <td style="text-align:left">Add methods for each action</td>
     </tr>
     <tr>
-      <td style="text-align:left">17</td>
+      <td style="text-align:left">19</td>
       <td style="text-align:left">Add views for your actions</td>
       <td style="text-align:left">/app/views/kittens/</td>
       <td style="text-align:left">Add an [action].html.erb file for each action that has an associated view</td>
     </tr>
     <tr>
-      <td style="text-align:left">18</td>
+      <td style="text-align:left">20</td>
       <td style="text-align:left">Configure routes</td>
       <td style="text-align:left">/config/routes.rb</td>
       <td style="text-align:left"><code>root :to =&gt; &quot;kittens#index&quot;</code>  <code>resources :kittens</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">19</td>
+      <td style="text-align:left">21</td>
       <td style="text-align:left">Repeat for other models</td>
       <td style="text-align:left">-</td>
-      <td style="text-align:left">Repeat steps 7-19 for each model</td>
+      <td style="text-align:left">Repeat steps 7-21 (except step 15 & 16) for each model</td>
     </tr>
   </tbody>
 </table>\* You can specify the actions for which you would like Rails to create views and methods when generating the controller by adding them to the end of the command - eg `rails generate controller Kittens index show edit new`. This will create those views, and the placeholder methods in your controller, but it also generates a bunch of routes that you will probably want to delete.
