@@ -129,7 +129,12 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
       <td style="text-align:left">13</td>
       <td style="text-align:left">Check migration status</td>
       <td style="text-align:left">Terminal</td>
-      <td style="text-align:left"><code>rails db:migrate:status</code>
+      <td style="text-align:left">
+        <p>(This step is optional)
+          <br />
+        </p>
+        <p><code>rails db:migrate:status</code>
+        </p>
       </td>
     </tr>
     <tr>
