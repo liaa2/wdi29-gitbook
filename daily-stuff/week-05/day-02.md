@@ -22,7 +22,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
 | 1 | Planning | - | Pen & paper |
 | 2 | Create a new Rails app | Terminal | `rails new kitten_party` |
 | 3 | Move into the new app's dir | Terminal | `cd kitten_party` |
-| 4 | Add development Gems | /Gemfile | `gem "remove_turbolinks"` `group :development do` `gem "pry-rails"` `gem "pry-stack_explorer"` `gem "annotate"` `gem "quiet_assets"` `gem "better_errors"` `gem "binding_of_caller"` `gem "meta_request"` `end` |
+| 4 | Add development Gems | /Gemfile | `gem "pry-rails"`  |
 | 5 | Bundle Gems | Terminal | `bundle` |
 | 6 | Create database | Terminal | `rake db:create` |
 | 7 | Generate first model | Terminal | `rails generate model Kitten name:string age:integer` |
