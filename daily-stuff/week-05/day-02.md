@@ -6,7 +6,7 @@ What we covered today:
 
 ### Warmup {#warmup}
 
-* Robot factory - Ruby​
+* [Robot factory - Ruby​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day02_robot_factory)
 
 ### Classwork {#classwork}
 
@@ -172,18 +172,31 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
     </tr>
     <tr>
       <td style="text-align:left">18</td>
+      <td style="text-align:left">Add model</td>
+      <td style="text-align:left">Atom</td>
+      <td style="text-align:left">
+        <p>Go to app -> models, create a new ruby file called "<code>kitten.rb</code>".
+          Inside the file, create <code>Kitten</code> class:
+          <br />
+        </p>
+        <p><code>class Kitten &lt; ApplicationRecord <br /><br />end</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">19</td>
       <td style="text-align:left">Add methods to the controller</td>
       <td style="text-align:left">/app/controllers/kittens_controller.rb</td>
       <td style="text-align:left">Add methods for each action</td>
     </tr>
     <tr>
-      <td style="text-align:left">19</td>
+      <td style="text-align:left">20</td>
       <td style="text-align:left">Add views for your actions</td>
       <td style="text-align:left">/app/views/kittens/</td>
       <td style="text-align:left">Add an [action].html.erb file for each action that has an associated view</td>
     </tr>
     <tr>
-      <td style="text-align:left">20</td>
+      <td style="text-align:left">21</td>
       <td style="text-align:left">Configure routes</td>
       <td style="text-align:left">/config/routes.rb</td>
       <td style="text-align:left">
@@ -217,10 +230,10 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">21</td>
+      <td style="text-align:left">22</td>
       <td style="text-align:left">Repeat for other models</td>
       <td style="text-align:left">-</td>
-      <td style="text-align:left">Repeat steps 7-21 (except step 15 & 16) for each model</td>
+      <td style="text-align:left">Repeat steps 7-22 (except step 15 & 16) for each model</td>
     </tr>
   </tbody>
 </table>\* You can specify the actions for which you would like Rails to create views and methods when generating the controller by adding them to the end of the command - eg `rails generate controller Kittens index show edit new`. This will create those views, and the placeholder methods in your controller, but it also generates a bunch of routes that you will probably want to delete.
