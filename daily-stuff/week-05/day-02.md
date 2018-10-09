@@ -27,7 +27,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
 | 6 | Create database | Terminal | `rails db:create` |
 | 7 | Generate first model | Terminal | `rails generate migration create_kittens` |
 | 8 | Edit migration as required | /db/migrate/\[your\_migration\].rb | Add timestamps, more columns, etc if required. |
-| 9\* | Create first controller | Terminal | `We will do it manually for now (go to the controller folder and create a controller called "kittens_controller.rb")` |
+| 9\* | Create first controller | Terminal | `We will do it manually for now (go to the controller folder and create a controller file called "kittens_controller.rb")` |
 | 10 | Add methods to the controller | /app/controllers/kittens\_controller.rb | Add methods for each action |
 | 11 | Add views for your actions | /app/views/kittens/ | Add an \[action\].html.erb file for each action that has an associated view |
 | 12 | Configure routes | /config/routes.rb | `root :to => "kittens#index"` `resources :kittens` |
