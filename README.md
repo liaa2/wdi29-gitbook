@@ -68,6 +68,25 @@ description: Welcome to WDI29 GitBook
     </tr>
   </thead>
   <tbody></tbody>
+</table><table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><a href="daily-stuff/week-05/">Week 05</a>
+      </th>
+      <th style="text-align:left">
+        <p><a href="daily-stuff/week-05/day-01.md">Day 01</a>
+        </p>
+        <p><a href="daily-stuff/week-05/day-02.md">Day 02</a>
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
 </table>## Modules
 
 ## Dictionary
