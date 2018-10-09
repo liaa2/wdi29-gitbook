@@ -186,7 +186,34 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
       <td style="text-align:left">20</td>
       <td style="text-align:left">Configure routes</td>
       <td style="text-align:left">/config/routes.rb</td>
-      <td style="text-align:left"><code>root :to =&gt; &quot;kittens#index&quot;</code>  <code>resources :kittens</code>
+      <td style="text-align:left">
+        <p><code>root :to =&gt; &quot;kittens#index&quot;</code> 
+        </p>
+        <p></p>
+        <p><code>get &quot;/kittens/new&quot; =&gt; &quot;kittens#new&quot; </code>
+        </p>
+        <p><code></code>
+        </p>
+        <p><code>post &quot;/kittens&quot; =&gt; &quot;kittens#create&quot;</code>
+        </p>
+        <p><code></code>
+        </p>
+        <p><code>get &quot;/kittens&quot; =&gt; &quot;kittens#index&quot;</code>
+        </p>
+        <p><code></code>
+        </p>
+        <p><code>get &quot;/kittens/:id&quot; =&gt; &quot;kittens#show&quot;, as: &quot;kittens&quot;</code>
+        </p>
+        <p><code></code>
+        </p>
+        <p><code>get &quot;/kittens/:id/edit&quot; =&gt; &quot;kittens#edit&quot;, as: &quot;kitten_edit&quot; </code>
+        </p>
+        <p><code>post &quot;/kittens/:id&quot; =&gt; &quot;kittens#update&quot;</code>
+        </p>
+        <p><code></code>
+        </p>
+        <p><code>get &quot;/kittens/:id/delete&quot; =&gt; &quot;kittens#delete&quot;, as: &quot;kitten_destroy&quot;</code>
+        </p>
       </td>
     </tr>
     <tr>
