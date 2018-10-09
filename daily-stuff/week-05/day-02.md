@@ -24,7 +24,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
 | 3 | Move into the new app's dir | Terminal | `cd kitten_party` |
 | 4 | Add development Gems | /Gemfile | `gem "pry-rails"`  |
 | 5 | Bundle Gems | Terminal | `bundle` |
-| 6 | Create database | Terminal | `rake db:create` |
+| 6 | Create database | Terminal | `rails db:create` |
 | 7 | Generate first model | Terminal | `rails generate model Kitten name:string age:integer` |
 | 8 | Edit migration as required | /db/migrate/\[your\_migration\].rb | Add timestamps, more columns, etc if required. |
 | 9\* | Generate first controller | Terminal | `rails generate controller Kittens` |
