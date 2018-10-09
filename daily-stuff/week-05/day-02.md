@@ -10,8 +10,8 @@ What we covered today:
 
 ### Classwork {#classwork}
 
-* ​Movie-search
-* ​planets-db
+* ​[movie-search](https://github.com/textchimp/wdi-29/tree/master/week5/movie-search)
+* ​[planets-db](https://github.com/textchimp/wdi-29/tree/master/week5/planets-db)
 
 ## Ruby on Rails - Basic Project Setup \(with database\) {#ruby-on-rails-basic-project-setup-with-database}
 
