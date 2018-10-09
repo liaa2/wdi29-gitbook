@@ -11,7 +11,7 @@ What we covered today:
 ### Classwork {#classwork}
 
 * ​Movie-search
-* ​[p](https://github.com/textchimp/wdi-29/tree/master/week5/rails-stocks)lanets-db
+* ​planets-db
 
 ## Ruby on Rails - Basic Project Setup \(with database\) {#ruby-on-rails-basic-project-setup-with-database}
 
