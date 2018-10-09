@@ -317,8 +317,5 @@ If not, there was a problem with your migration! Read the terminal response and 
 
 ## Homework
 
-* Create your own version of CRUD system
-
-  
-
+* Build a Rails CRUD system with one DB table/model for the topic of your choice
 
