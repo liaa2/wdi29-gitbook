@@ -97,7 +97,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
         <p></p>
         <p><code>def change </code>
         </p>
-        <p><code> create_table :planets do |t|</code>
+        <p><code> create_table :kittens do |t|</code>
         </p>
         <p><code>  t.string :name </code>
         </p>
