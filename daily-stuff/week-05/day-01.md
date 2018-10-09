@@ -185,7 +185,7 @@ This is a summary of the steps detailed above:
 | Step | What | Where | How |
 | :--- | :--- | :--- | :--- |
 | 1 | Planning | ​ | Pen & paper |
-| 2 | New Rails project | Terminal | `rails new my_new_app_name --skip-git --skip-turbolinks` |
+| 2 | New Rails project | Terminal | `rails new my_new_app_name --skip-git` |
 | 3 | Edit Gemfile | /Gemfile | Add development Gems and bundle |
 | 4 | Setup routes | /config/routes.rb | For each path, add a controller\#action |
 | 5 | Create controller | /app/controllers/ | Create a \[controller\]\_controller.rb file |

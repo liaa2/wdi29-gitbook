@@ -81,12 +81,7 @@ description: Welcome to WDI29 GitBook
       </th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-    </tr>
-  </tbody>
+  <tbody></tbody>
 </table>## Modules
 
 ## Dictionary
@@ -104,6 +99,6 @@ description: Welcome to WDI29 GitBook
 * [Raindrops - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day01_ruby_raindrops)
 * [Scrabble - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day02_ruby_scrabble)
 * [Nucleotide - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day03_ruby_nucleotide)
-
-
+* [Point Mutations - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day01_point_mutations)
+* [Robot Factory - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day02_robot_factory)
 
