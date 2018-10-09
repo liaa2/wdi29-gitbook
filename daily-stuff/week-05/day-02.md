@@ -86,7 +86,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
       <td style="text-align:left">9</td>
       <td style="text-align:left">Go to db folder</td>
       <td style="text-align:left">Atom</td>
-      <td style="text-align:left">Go to app -> db -> migrate -> 20181009011230_create_kittens.rb</td>
+      <td style="text-align:left">Go to app -> db -> migrate -> [your_created_time]_create_kittens.rb</td>
     </tr>
     <tr>
       <td style="text-align:left">10</td>
