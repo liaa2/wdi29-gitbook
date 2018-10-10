@@ -9,3 +9,7 @@
 
 * Ruby on Rails - Intro to Project Setup \(with database\)
 
+### ​[Day 03](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-05/day-03)​
+
+* Ruby on Rails - Associations
+
