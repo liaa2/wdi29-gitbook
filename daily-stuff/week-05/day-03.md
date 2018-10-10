@@ -13,7 +13,7 @@ What we covered today:
 
 * ​[MoMA​](https://github.com/textchimp/wdi-29/tree/master/week5/moma-app)
 
-## Ruby on Rails - Basic Project Setup \(with multiple models\) {#ruby-on-rails-basic-project-setup-with-database}
+## Ruby on Rails - Basic Project Setup \(with 2 models\) {#ruby-on-rails-basic-project-setup-with-database}
 
 Treat this as a really rough guide, and definitely don't always follow it - you'll figure out your approach soon. This is a basic approach you might follow when setting up a new Rails project:
 
