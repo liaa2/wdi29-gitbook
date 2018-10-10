@@ -39,12 +39,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
 
 Associations allow you to create relationships between any two models \(that inherit from ActiveRecord::Base\). By declaratively telling Rails that two models have a certain association with each other, we can greatly streamline our code.
 
-Rails supports six types of associations:
-
-* `belongs_to`
-* `has_many`
-
-The two simplest associations are `belongs_to` and `has_many`.
+Rails supports six types of associations, the two simplest associations are `belongs_to` and `has_many`.
 
 ### `belongs_to` {#belongs_to}
 
