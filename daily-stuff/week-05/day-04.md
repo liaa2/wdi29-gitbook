@@ -344,7 +344,6 @@ You'll probably won't to wrap this in some conditional logic once you have your 
 ### _Authentication - Recommended Readings_ {#authentication-recommended-readings}
 
 * ​[The Buckner Life - Simple Authentication with Bcrypt](https://gist.github.com/thebucknerlife/10090014) - this is a great, step-by-step Bcrypt tutorial.
-* ​[The Odin Project - Sessions, Cookies and Authentication](http://www.theodinproject.com/ruby-on-rails/sessions-cookies-and-authentication)​
 * ​[Rails Guides - Security Guide](http://guides.rubyonrails.org/security.html)​
 
 ## Ruby on Rails - Associations II  {#ruby-on-rails-associations}
