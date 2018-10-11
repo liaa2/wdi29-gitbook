@@ -13,7 +13,7 @@
 
 * Ruby on Rails - Associations I 
 
-### ​[Day 04](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-05/day-04)​
+### ​[Day 04​](day-04.md)
 
 * Ruby on Rails - Associations II
 * PostgreSQL - Install
