@@ -11,5 +11,12 @@
 
 ### ​[Day 03​](day-03.md)
 
-* Ruby on Rails - Associations
+* Ruby on Rails - Associations I 
+
+### ​[Day 04](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-05/day-04)​
+
+* Ruby on Rails - Associations II
+* PostgreSQL - Install
+* Ruby on Rails - Authentication
+* Ruby on Rails - Sessions
 

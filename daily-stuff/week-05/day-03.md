@@ -2,7 +2,7 @@
 
 What we covered today:
 
-* Ruby on Rails - Associations
+* Ruby on Rails - Associations I 
 * **Guest speaker**: Daisy Smith - [Creative Coding](https://docs.google.com/presentation/d/1qSPH6f2j1vX7K5HUbQ1id88m5ZQ94PRBFudGXnHrlws/edit#slide=id.g38042e32c5_0_37)
 
 ### Warmup {#warmup}
