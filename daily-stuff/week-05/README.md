@@ -20,3 +20,7 @@
 * Ruby on Rails - Authentication
 * Ruby on Rails - Sessions
 
+### [Day 05](day-05.md)
+
+* Ruby on Rails - Validations
+
