@@ -110,4 +110,7 @@ description: Welcome to WDI29 GitBook
 * [Nucleotide - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day03_ruby_nucleotide)
 * [Point Mutations - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day01_point_mutations)
 * [Robot Factory - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day02_robot_factory)
+* ​[​Atbash Cipher - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day03_atbash_cipher)
+* [Roman Numerals​ - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day04_roman-numerals)
+* ​[Luhn Numbers - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day05_luhn_numbers)
 
