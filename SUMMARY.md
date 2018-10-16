@@ -31,7 +31,7 @@
 ## MODULES
 
 * [Git Repository Setup](modules/git-repository-setup.md)
-* [Untitled](modules/untitled.md)
+* [Cloudinary](modules/cloudinary.md)
 
 ## DICTIONARY
 

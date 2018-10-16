@@ -90,6 +90,9 @@ description: Welcome to WDI29 GitBook
   <tbody></tbody>
 </table>## Modules
 
+* ​[Git Repository Setup​](modules/git-repository-setup.md)
+* ​[Cloudinary​](modules/cloudinary.md)
+
 ## Dictionary
 
 * [Definitions​ you might find useful](dictionary/definitions.md)
