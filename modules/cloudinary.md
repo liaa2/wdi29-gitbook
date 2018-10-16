@@ -278,7 +278,9 @@ def AnimalsController < ApplicationController
       req = Cloudinary::Uploader.upload(params[:file])
       animal.image = req["public_id"]
     end
-    # We're using update_attributes here because we don't want to make a PUT request (.update to update the attributes in animal_params, then .save to update the image)
+    # We're using update_attributes here because we don't want to make a PUT request 
+    # (.update to update the attributes in animal_params, then .save to update the 
+    # image)
     animal.update_attributes(animal_params)
     animal.save
     redirect_to(animal_path(animal))
@@ -287,7 +289,8 @@ def AnimalsController < ApplicationController
   private
 ​
   def animal_params
-    # Note that we don't whitelist the image, because the image is not passed to the controller in the animal object produced by the new/edit form.
+    # Note that we don't whitelist the image, because the image is not passed to the 
+    # controller in the animal object produced by the new/edit form.
     params.require(:animal).permit(:name)
   end
 end
