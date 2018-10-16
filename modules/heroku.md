@@ -31,13 +31,15 @@ Heroku is completely based on Git, meaning that it relies on us pushing code up 
 * At the end of the Gemfile, add this line - `gem 'rails_12factor', group: :production` and then run `bundle` again
 * Make it a git repository
   * Run `git init` in the root folder of the project
-  * `git add .`, `git commit -m "Your commit message."`
+  * `git add .`
+  * `git commit -m "Your commit message."`
   * Run `git status` to make sure everything has worked
 * Run `heroku create your_app_name` if you don't specify the name of your app it will randomly generate one for you.
 * Run `git config --list | grep heroku` to make sure it has worked
-* Run `git push heroku master`
+* Run `git push heroku master` to push the project to heroku
 * Run `heroku run rails db:migrate`
   * Any command prefixed by `heroku run` will obviously run on the heroku terminal
+* Run `heroku run rails db:seed` to load your seed data
 * Ensure that you have a running server, run `heroku ps:scale web=1`
 * Run `heroku ps` to make sure that that has all worked
 * Run `heroku open` to do exactly what you imagine
