@@ -16,7 +16,7 @@ It's important to remember that `git !== GitHub`. Git lives on your computer. Gi
 
 #### _Git and GitHub - Further Reading_ {#git-and-github-further-reading}
 
-* ​[GitBook - Week 1 Day 4​](../daily-stuff/week-02/day-04.md)
+* ​[GitBook - Week 1 Day 4​](../daily-stuff/week-01/day-04.md)
 
 ## Local Repositories {#local-repositories}
 
