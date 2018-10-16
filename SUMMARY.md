@@ -30,6 +30,9 @@
 
 ## MODULES
 
+* [Git Repository Setup](modules/git-repository-setup.md)
+* [Untitled](modules/untitled.md)
+
 ## DICTIONARY
 
 * [Definitions](dictionary/definitions.md)
