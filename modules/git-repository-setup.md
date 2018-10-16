@@ -28,7 +28,7 @@ Before creating a repository, you should always ensure that the directory you ar
 
 ```bash
 $ git status
-  => fatal: Not a git repository (or any of the parent directories): .git
+  #=> fatal: Not a git repository (or any of the parent directories): .git
 $ mkdir green-bastard
 $ cd green-bastard
 $ git init
