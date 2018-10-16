@@ -31,6 +31,7 @@
 ## MODULES
 
 * [Git Repository Setup](modules/git-repository-setup.md)
+* [Heroku](modules/heroku.md)
 * [Cloudinary](modules/cloudinary.md)
 
 ## DICTIONARY
