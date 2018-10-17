@@ -91,6 +91,7 @@ description: Welcome to WDI29 GitBook
 </table>## Modules
 
 * ​[Git Repository Setup​](modules/git-repository-setup.md)
+* [Heroku](modules/heroku.md)
 * ​[Cloudinary​](modules/cloudinary.md)
 
 ## Dictionary
