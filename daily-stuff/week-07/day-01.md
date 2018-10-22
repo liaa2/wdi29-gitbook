@@ -40,7 +40,8 @@ gem ` gem install rspec `.
 #### _Create a new project_ <a id="create-a-new-project"></a>
 
 ```bash
-mkdir tdd-bankcd tdd-bank
+mkdir tdd-bank
+cd tdd-bank
 ```
 
 #### _Create a program to test_ <a id="create-a-program-to-test"></a>
@@ -53,8 +54,9 @@ touch bank.rb
 
 And, in **bank.rb**...
 
-```bash
-class Bank​end
+```ruby
+class Bank
+​end
 ```
 
 #### _Initialize Rspec_ <a id="initialize-rspec"></a>
