@@ -8,12 +8,12 @@ What we covered today:
 
 ### Warmup <a id="warmup"></a>
 
-* ​[T](https://github.com/GrantjHanrahan/wdi27-homework/tree/master/warmups/week07/day01_simple_sums)ext Soup
+* ​[Text Soup](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week07/day01_textsoup)
 
 ### Codealong <a id="codealong"></a>
 
-* ​[TDD Bank](https://github.com/textchimp/wdi-27/tree/master/week7/intro-to-tdd)​
-* ​[AJAX requests](https://github.com/textchimp/wdi-27/tree/master/week7/ajax-intro)​
+* ​[Intro to TDD​](https://github.com/textchimp/wdi-29/tree/master/week7/intro-to-tdd)
+* [​AJAX requests​](https://github.com/textchimp/wdi-29/tree/master/week7/ajax-intro)
 
 ## Test-Driven Development <a id="test-driven-development"></a>
 
@@ -495,5 +495,5 @@ xhr.send();
 
 ### Homework <a id="homework"></a>
 
-* Redo _Google Books_ using AJAX requests to make a single page app.
+* Redo _movieDB_ using AJAX requests to make a single page app.
 
