@@ -8,24 +8,24 @@ What we covered today.
   * Loops
   * Arrays
 
-### Slides {#slides}
+### Slides <a id="slides"></a>
 
 * ​[Loops](http://www.teaching-materials.org/javascript/slides/controlflow.html) \(slide 11-14\)
 * ​[Arrays](http://www.teaching-materials.org/javascript/slides/controlflow.html) \(slide 15 onwards\)
 
-## Our very first warmup! {#our-very-first-warmup}
+## Our very first warmup! <a id="our-very-first-warmup"></a>
 
 ![yes!](../../.gitbook/assets/yes%20%281%29.gif)
 
 * [​Warmup and solution - Raindrops - JS​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day03_raindrops)
 
-## Git and Github {#git-and-github}
+## Git and Github <a id="git-and-github"></a>
 
-### Introduction {#introduction}
+### Introduction <a id="introduction"></a>
 
 A Version Control System designed and developed by a Finnish guy, Linus Torvalds, for the Linux kernel in 2005. Apparently, he named it Git because of the British-English slang meaning "unpleasant person". Torvalds said: "I'm an egotistical bastard, and I name all my projects after myself".
 
-#### _What does it do?_ {#what-does-it-do}
+#### _What does it do?_ <a id="what-does-it-do"></a>
 
 * A way to snapshot - you get a time machine
 * A way to collaborate - working in parallel
@@ -68,13 +68,13 @@ Some basic Git commands:
 * `git pull`
 * `git push`
 
-### Homework repository {#homework-repository}
+### Homework repository <a id="homework-repository"></a>
 
 For notes on submitting your homework, refer to the README file in my repository
 
 * ​[WDI-29 Homework Repository](https://github.com/liaa2/wdi29-homework)​
 
-### _Git and GitHub - Introduction - Tutorials_ {#git-and-github-introduction-tutorials}
+### _Git and GitHub - Introduction - Tutorials_ <a id="git-and-github-introduction-tutorials"></a>
 
 * ​[CodeSchool - TryGit](https://try.github.io/levels/1/challenges/1) - a great interactive, introductory GitHub tutorial.
 * ​[A tutorial by the folks at Atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository/)​
@@ -109,9 +109,9 @@ const addNumbers = function(num1, num2) {
 };
 ```
 
-## Javascript - Control Flow: Loops {#javascript-control-flow-loops}
+## Javascript - Control Flow: Loops <a id="javascript-control-flow-loops"></a>
 
-### The 'While' Loop {#the-while-loop}
+### The 'While' Loop <a id="the-while-loop"></a>
 
 The **while loop** will tell Javascript to repeat the statements within the curly brackets until a condition is true. **WARNING:** it is _ridiculously_ easy to make infinite loops with these - they'll crash your browsers and crush your spirits.
 
@@ -133,7 +133,7 @@ while (x < 5) { //conditional
 
 What would have happened if we didn't increment `x` each iteration? Or if we _decremented_ `x` each iteration? The condition \(`x < 5`\) would never be false - the condition would be true until the heat death of the universe. That is, you'd be stuck in an infinite loop.
 
-### The 'For' Loop {#the-for-loop}
+### The 'For' Loop <a id="the-for-loop"></a>
 
 A **for loop** is another, more specialized way of repeating statements.
 
@@ -160,7 +160,7 @@ while (i < 5) { // This is the 'condition' (in the parentheses)
 // => 0 1 2 3 4
 ```
 
-### The 'Break' Statement {#the-break-statement}
+### The 'Break' Statement <a id="the-break-statement"></a>
 
 To prematurely exit any loop \(`for` or `while`\), use can use the **break** statement:
 
@@ -179,33 +179,33 @@ for (let current = 100; current < 200; current++) {
 }
 ```
 
-### _Control Flow in Javascript: Loops - Exercises_ {#control-flow-in-javascript-loops-exercises}
+### _Control Flow in Javascript: Loops - Exercises_ <a id="control-flow-in-javascript-loops-exercises"></a>
 
 * ​[Loops Exercises](https://gist.github.com/textchimp/db943c21196cc295305922a5e7b0a34f)​
   * ​[Solution​](https://github.com/textchimp/wdi-29/tree/master/week1/loops-exercises)
 
-### Recursion \(Basics\) {#recursion-basics}
+### Recursion \(Basics\) <a id="recursion-basics"></a>
 
 We will get into this a lot more, but basically - we can call functions within functions. This allows us to recreate loops using **if statements**!
 
 See [the Countdown Example](http://repl.it/l50).
 
-## Javascript - Collections {#javascript-collections}
+## Javascript - Collections <a id="javascript-collections"></a>
 
 In addition to the primitive data types \(strings, numbers, booleans, undefined, null\), we have **arrays**, **objects** and **regular expressions**. We're going to leave regular expressions for the time being and take a look at the **collections**: arrays and objects. Collections are types of data that allow us to store and access collections of values.
 
-## Javascript - Collections - Arrays {#javascript-collections-arrays}
+## Javascript - Collections - Arrays <a id="javascript-collections-arrays"></a>
 
 An array is a type of data that holds an ordered list of values. The values can be of any data type, and an array can include multiple data types. Arrays are sequences of elements that can be accessed via integer indices starting at zero. More or less, an array is a special variable that can hold more than one value at a time.
 
 **NOTE:** Don't forget - arrays are zero-indexed!
 
-### How to create an array {#how-to-create-an-array}
+### How to create an array <a id="how-to-create-an-array"></a>
 
 * `let testArray = [ 1, 2, 3 ];` - This is an array literal - definitely the way you should do it.
 * `let testArray = new Array( 1, 2, 3 );` - Uses the Array constructor and the keyword new. Does the same thing, but stick to the other way.
 
-### How to access elements in an array {#how-to-access-elements-in-an-array}
+### How to access elements in an array <a id="how-to-access-elements-in-an-array"></a>
 
 ```javascript
 let amazingFrenchAuthors = [ 
@@ -227,7 +227,7 @@ let bros = "Groucho Harpo Chico Zeppo".split(" ");
 console.log(bros); // => ["Groucho", "Harpo", "Chico", "Zeppo"]
 ```
 
-### How to iterate through elements in an array {#how-to-iterate-through-elements-in-an-array}
+### How to iterate through elements in an array <a id="how-to-iterate-through-elements-in-an-array"></a>
 
 Stick to the **for loop** in most cases, but there are always thousands ways of doing something in Javascript.
 
@@ -249,11 +249,11 @@ for ( let i = 0; i < greatPeople.length; i++ ) {
 // => 2. c
 ```
 
-### _Javascript - Arrays - Exercise_ {#javascript-collections-arrays-exercise}
+### _Javascript - Arrays - Exercise_ <a id="javascript-collections-arrays-exercise"></a>
 
 * ​[Array Exercises](https://gist.github.com/textchimp/806a4e7b38c6b61c9831023415849b1c)
 
-### How to set elements in an array {#how-to-set-elements-in-an-array}
+### How to set elements in an array <a id="how-to-set-elements-in-an-array"></a>
 
 ```javascript
 let amazingFrenchAuthors = [ 
@@ -267,7 +267,7 @@ let amazingFrenchAuthors = [
 // Logs [ "Stendhal", "Gustave Flaubert", "Voltaire", "Marcel Proust"]
 ```
 
-### Common methods and properties for arrays {#common-methods-and-properties-for-arrays}
+### Common methods and properties for arrays <a id="common-methods-and-properties-for-arrays"></a>
 
 ```javascript
 let amazingFrenchAuthors = [ 
@@ -339,11 +339,11 @@ amazingFrenchAuthors.indexOf("Anäis Nin");
 // END INDEX OF //
 ```
 
-### _Javascript - Collections - Arrays - Recommended Readings_ {#javascript-collections-arrays-recommended-readings}
+### _Javascript - Collections - Arrays - Recommended Readings_ <a id="javascript-collections-arrays-recommended-readings"></a>
 
 * ​[SitePoint - Manipulate Arrays in Javascript](http://www.sitepoint.com/quick-tip-create-manipulate-arrays-in-javascript/)​
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[Word Guesser](https://gist.github.com/textchimp/3a8f1e9445f79944f46e9d329b117597)​
 * Bonus - Read:
@@ -354,7 +354,7 @@ amazingFrenchAuthors.indexOf("Anäis Nin");
 * ​[Variables and Assignment](http://speakingjs.com/es5/ch01.html#_variables_and_assignment)​
 * ​[Eloquent Javascript - Values, Types, and Operators](http://eloquentjavascript.net/01_values.html)​
 
-## Miscellaneous Links {#miscellaneous-links}
+## Miscellaneous Links <a id="miscellaneous-links"></a>
 
 * ​[Idiomatic Javascript style rules](https://github.com/rwaldron/idiomatic.js/)​
 * ​[How to add colours and styles to your console.logging](https://developers.google.com/web/tools/chrome-devtools/debug/console/console-write#string-substitution-and-formatting)​

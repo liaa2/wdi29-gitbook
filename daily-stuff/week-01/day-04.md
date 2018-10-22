@@ -6,16 +6,16 @@ What we covered today:
 * Review [Shakespeare insult generator​](https://github.com/textchimp/wdi-29/tree/master/week1/insult-generator)
 * JavaScript - Objects
 
-### Slides {#slides}
+### Slides <a id="slides"></a>
 
 * ​[Javascript Objects​](https://textchimp.github.io/wdi-29/week1/javascript-collections.pdf) \(slide 19 onwards\)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[Shakespeare insult generator​](https://github.com/textchimp/wdi-29/tree/master/week1/insult-generator)
 * ​[Week 1 Exercises​](https://github.com/textchimp/wdi-29/tree/master/week1)
 
-## JavaScript - Collections - Objects {#javascript-collections-objects}
+## JavaScript - Collections - Objects <a id="javascript-collections-objects"></a>
 
 In JavaScript, an object is a standalone entity - filled with properties and types \(or keys and values\). It is very similar in structure to a dictionary.
 
@@ -23,7 +23,7 @@ So, most javascript objects will have keys and values attached to them - this co
 
 They are sometimes called "associative arrays". Remember that they are not stored in any particular order \(they can change order whenever\).
 
-### How to create an object {#how-to-create-an-object}
+### How to create an object <a id="how-to-create-an-object"></a>
 
 ```javascript
 // With object literal
@@ -33,7 +33,7 @@ const newObject = {};
 const newObject = new Object();
 ```
 
-### How to add properties to an object {#how-to-add-properties-to-an-object}
+### How to add properties to an object <a id="how-to-add-properties-to-an-object"></a>
 
 ```javascript
 // Remember to seperate by commas!
@@ -53,7 +53,7 @@ newObject["anotherObjectKey"] = "Another Object Value";​
 // Can also use Constructors and Factories - will see them in Week 1 Day 5 notes.
 ```
 
-### How to access properties of an object {#how-to-access-properties-of-an-object}
+### How to access properties of an object <a id="how-to-access-properties-of-an-object"></a>
 
 There are two ways to access the properties of an object:
 
@@ -89,7 +89,7 @@ favouriteCar[key] //=> 1963
 
 * ​[Objects: Exercises](https://gist.github.com/textchimp/23db045edf474762828a9e912912c873)​
 
-### How to iterate through an object {#how-to-iterate-through-an-object}
+### How to iterate through an object <a id="how-to-iterate-through-an-object"></a>
 
 ```javascript
 Object.keys(newObject); // Returns an array of all the keys in the specified object.
@@ -120,7 +120,7 @@ for (let key in obj) {
 //if using dot notatin, it will literally looking for the key called "key".
 ```
 
-### Deleting properties of an object {#deleting-properties-of-an-object}
+### Deleting properties of an object <a id="deleting-properties-of-an-object"></a>
 
 ```javascript
 const favouriteCar = {  
@@ -134,7 +134,7 @@ favouriteCar
 //=>  { manufacturer: "Jaguar", model: "E-Type"}​    
 ```
 
-### Comparing objects {#comparing-objects}
+### Comparing objects <a id="comparing-objects"></a>
 
 In JavaScript objects are a reference type. Two distinct objects are never equal, even if they have the same properties. Only comparing the same object reference with itself yields true.
 
@@ -163,7 +163,7 @@ There's no simple way to compare objects using 'vanilla' JavaScript, but there a
 
 \_\_
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[Javascript Bank](https://gist.github.com/textchimp/be5cff64c320d0e0aa3008db0f3bfe85)​
 * Bonus - Read:

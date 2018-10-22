@@ -16,13 +16,13 @@ What we covered today:
 
 * [​The DOM, events, selectors, timers and callbacks​](https://github.com/textchimp/wdi-29/blob/master/week2/javascript-and-html.pdf)
 
-### Power User Zone {#power-user-zone}
+### Power User Zone <a id="power-user-zone"></a>
 
 * ​[Notes/shortcut list](https://gist.github.com/textchimp/d5d0e5664ee2ca14b464d85540cea349)​ 
 
 
 
-#### JavaScript - The Document Object Model \(DOM\) {#javascript---the-document-object-model-dom}
+#### JavaScript - The Document Object Model \(DOM\) <a id="javascript---the-document-object-model-dom"></a>
 
 **What is the DOM?**
 
@@ -221,15 +221,15 @@ newParagraph.appendChild(paragraphText);
 pageNode.appendChild(newParagraph);
 ```
 
-#### _Document Object Model - Manipulating elements - Exercises_ {#document-object-model-manipulating-elements-exercises}
+#### _Document Object Model - Manipulating elements - Exercises_ <a id="document-object-model-manipulating-elements-exercises"></a>
 
 * ​[Exercises: DOM Access](https://gist.github.com/textchimp/f395efd8f5a8c3c2750b4af455078ac1)​
 * ​[Exercises: Logo Hijack](https://gist.github.com/textchimp/2609786b842837f5d6f276e0dee6665d)​
 * ​[Exercises: AboutMe & Booklist](https://gist.github.com/wofockham/894b9a5e05a971e0208b)
 
-### Events {#events}
+### Events <a id="events"></a>
 
-#### _Adding event listeners_ {#adding-event-listeners}
+#### _Adding event listeners_ <a id="adding-event-listeners"></a>
 
 In IE 9+ \(and all other browsers\):
 
@@ -248,7 +248,7 @@ button.addEventListener('click', makeMadLib);
 counterButton.addEventListener('click', onButtonClick, false);
 ```
 
-#### _Some event types_ {#some-event-types}
+#### _Some event types_ <a id="some-event-types"></a>
 
 The browser triggers many events. A short list:
 
@@ -258,7 +258,7 @@ The browser triggers many events. A short list:
 * **form events**: focus, blur, change, submit
 * **window events**: scroll, resize, hashchange, load, unload
 
-#### _Getting details from a form_ {#getting-details-from-a-form}
+#### _Getting details from a form_ <a id="getting-details-from-a-form"></a>
 
 ```javascript
 // HTML// <input id="myname" type="text">
@@ -275,7 +275,7 @@ button.addEventListener('click', onClick);
 
 * ​[JSBin - Event Listener - button click](http://jsbin.com/goguxomiwo/edit?js,output)​
 
-## JavaScript - The Window Object {#javascript-the-window-object}
+## JavaScript - The Window Object <a id="javascript-the-window-object"></a>
 
 When you run JS in the browser, it gives you the window object with many useful properties and methods:
 
@@ -295,9 +295,9 @@ window.console.log("Hi"); // Same things
 console.log("Hi");
 ```
 
-## Animation in JavaScript {#animation-in-javascript}
+## Animation in JavaScript <a id="animation-in-javascript"></a>
 
-### Starting an animation {#starting-an-animation}
+### Starting an animation <a id="starting-an-animation"></a>
 
 The standard way to animate in JS is to use these 2 window methods.
 
@@ -319,7 +319,7 @@ const makeImageBigger = function() {
 window.setInterval(makeImageBigger, 1000);
 ```
 
-### Animating styles {#animating-styles}
+### Animating styles <a id="animating-styles"></a>
 
 It's also common to animate CSS styles for size, transparency, position, and color:
 
@@ -345,7 +345,7 @@ const watchKittyFall = function() {
 // Note: you must specify (and strip) units.
 ```
 
-### Stopping an animation {#stopping-an-animation}
+### Stopping an animation <a id="stopping-an-animation"></a>
 
 To stop at an animation at a certain point, store the timer into a variable and clear with one of these methods:
 

@@ -6,16 +6,16 @@ What we covered today:
 * JavaScript - Libraries
 * JavaScript - jQuery - Introduction
 
-### Slides {#slides}
+### Slides <a id="slides"></a>
 
 * ​[jQuery - Introduction​](https://github.com/textchimp/wdi-29/blob/master/week2/intro-to-jquery.pdf)
 
-### Exercises {#exercises}
+### Exercises <a id="exercises"></a>
 
 1. ​[Making a Video Player](https://gist.github.com/textchimp/4871fa2c333cd19151db3ab8e0083513)​
 2. ​[DOM Detective](https://gist.github.com/textchimp/00baa95feb73c773ac62c0547c3b3702)​
 
-### Links {#links}
+### Links <a id="links"></a>
 
 ​[Programmer Ryan Gosling](http://programmerryangosling.tumblr.com/)​
 
@@ -26,15 +26,15 @@ Emmet is an Atom Package for speeding up the process of coding HTML and CSS usin
 * ​[Emmet Cheat Sheet](http://docs.emmet.io/cheat-sheet/)​
 * ​[Emmet Syntax](http://docs.emmet.io/abbreviations/syntax/)​
 
-### Abbreviations {#abbreviations}
+### Abbreviations <a id="abbreviations"></a>
 
 All of Emmet's abbreviations work by writing the abbreviation and pressing tab at the end of the abbreviation.
 
-#### _Tag Name_ {#tag-name}
+#### _Tag Name_ <a id="tag-name"></a>
 
 Whether it is a `p`, a `div`, or anything else. If you type the tag name, and then hit tab, it will create the element.
 
-#### _Classes and IDs \( \# or . \)_ {#classes-and-ids-or}
+#### _Classes and IDs \( \# or . \)_ <a id="classes-and-ids-or"></a>
 
 ```markup
 div.className
@@ -54,7 +54,7 @@ div.firstClassName.secondClassName
 <div class="className" id="secondClassName"></div>
 ```
 
-#### _Children \( &gt; \)_ {#children-greater-than}
+#### _Children \( &gt; \)_ <a id="children-greater-than"></a>
 
 This is for nesting elements!
 
@@ -74,7 +74,7 @@ div>p
 </header>
 ```
 
-#### _Sibling \( + \)_ {#sibling}
+#### _Sibling \( + \)_ <a id="sibling"></a>
 
 This is for creating elements next to each other.
 
@@ -87,7 +87,7 @@ header+div.container
 </div>
 ```
 
-#### _Multiplication \( \* \)_ {#multiplication}
+#### _Multiplication \( \* \)_ <a id="multiplication"></a>
 
 This is for making multiple elements at once.
 
@@ -103,7 +103,7 @@ div>ul>li*3
 </div>
 ```
 
-#### _Climb Up \( ^ \)_ {#climb-up}
+#### _Climb Up \( ^ \)_ <a id="climb-up"></a>
 
 This is to climb out of a nesting.
 
@@ -116,7 +116,7 @@ header>p^div
 <div></div>
 ```
 
-#### _Grouping \( \(\) \)_ {#grouping}
+#### _Grouping \( \(\) \)_ <a id="grouping"></a>
 
 This is to group chunks of elements so you don't need to worry about climbing.
 
@@ -129,7 +129,7 @@ This is to group chunks of elements so you don't need to worry about climbing.
 <nav><a href=""></a></nav>
 ```
 
-#### _Attributes \( \[\] \)_ {#attributes}
+#### _Attributes \( \[\] \)_ <a id="attributes"></a>
 
 This is to give custom attributes.
 
@@ -139,7 +139,7 @@ img[src="" title="" alt=""]
 <img src="" alt="" title="">
 ```
 
-#### _Text \( {} \)_ {#text}
+#### _Text \( {} \)_ <a id="text"></a>
 
 This is to add text to things.
 
@@ -168,7 +168,7 @@ div.container>(header>h1)+(ul>li*5)
 </div>
 ```
 
-### Action Shortcuts {#action-shortcuts}
+### Action Shortcuts <a id="action-shortcuts"></a>
 
 There are a bunch of these, but some particularly handy ones are:
 
@@ -178,9 +178,9 @@ There are a bunch of these, but some particularly handy ones are:
 * `cmd` + `shift` + `y` - evaluate maths expression
 * `ctrl` + `d` - balance tags \(ie, select the tag boundaries from the current caret position\)
 
-## JavaScript - Libraries {#javascript-libraries}
+## JavaScript - Libraries <a id="javascript-libraries"></a>
 
-### What is a library? {#what-is-a-library}
+### What is a library? <a id="what-is-a-library"></a>
 
 A collection of reusable methods designed for a particular purpose. You just reference a javascript file with a particular library in it - and away you go!
 
@@ -190,9 +190,9 @@ jQuery is the most common JavaScript library on the web today. As of 2016, it wa
   * Over 12% of all websites;
   * Over 78% of the top million websites;
 
-## JavaScript - jQuery - Introduction {#javascript-jquery-introduction}
+## JavaScript - jQuery - Introduction <a id="javascript-jquery-introduction"></a>
 
-#### _What is jQuery_ {#what-is-jquery}
+#### _What is jQuery_ <a id="what-is-jquery"></a>
 
 An open source JavaScript library that simplifies the interaction between HTML and JavaScript. A JavaScript library is collection of reusable methods for a particular purpose.
 
@@ -200,7 +200,7 @@ It was created by John Resig in 2005, and released in January of 2006.
 
 Built in an attempt to simplify the existing DOM APIs and abstract away cross-browser issues.
 
-#### _Why jQuery?_ {#why-jquery}
+#### _Why jQuery?_ <a id="why-jquery"></a>
 
 * Well documented
 * Lots of plugins
@@ -208,7 +208,7 @@ Built in an attempt to simplify the existing DOM APIs and abstract away cross-br
 * Everything works in IE 6+, Firefox 2+, Safari 3+, Chrome, and Opera 9+ \(if you are using 1.11.3 or previous, greater than that scraps up until IE8 support\)
 * Millions and millions of sites using it.
 
-#### _What does it do for us?_ {#what-does-it-do-for-us}
+#### _What does it do for us?_ <a id="what-does-it-do-for-us"></a>
 
 * Data Manipulation
 * DOM Manipulation
@@ -220,7 +220,7 @@ Built in an attempt to simplify the existing DOM APIs and abstract away cross-br
 * Graphics / Chart
 * App Architecture
 
-#### _Why use it?_ {#why-use-it}
+#### _Why use it?_ <a id="why-use-it"></a>
 
 ```javascript
 // No library:
@@ -235,7 +235,7 @@ $('img').hide();
 
 > "The code that has the least amount of bugs is the code that doesn't exist." - _Joel Turnbull_
 
-### The basics {#the-basics}
+### The basics <a id="the-basics"></a>
 
 **Select -&gt; Manipulate -&gt; Admire**
 
@@ -247,7 +247,7 @@ $paragraphs.addClass('special');​
 $("p").addClass("special");
 ```
 
-#### _Selecting elements_ {#selecting-elements}
+#### _Selecting elements_ <a id="selecting-elements"></a>
 
 All CSS selectors are valid.
 
@@ -272,7 +272,7 @@ jQuery also offers a bunch of other selectors. Some common ones are:
 
 See [jQuery API - Selectors](http://api.jquery.com/category/selectors/).
 
-#### _Reading elements_ {#reading-elements}
+#### _Reading elements_ <a id="reading-elements"></a>
 
 If we had this element in the HTML...
 
@@ -290,7 +290,7 @@ We can get the HREF attribute using `$("#yahoo").attr("href")`
 
 We can get the CSS attribute using `$("#yahoo").css('font-size')`
 
-#### _Changing elements_ {#changing-elements}
+#### _Changing elements_ <a id="changing-elements"></a>
 
 `$("#yahoo").attr("href", "http://generalassemb.ly")`
 
@@ -300,7 +300,7 @@ We can get the CSS attribute using `$("#yahoo").css('font-size')`
 
 `$("#yahoo").attr("href", "http://generalassemb.ly").css("font-size", "25px").text("General Assembly")`
 
-#### _Create, manipulate and inject_ {#create-manipulate-and-inject}
+#### _Create, manipulate and inject_ <a id="create-manipulate-and-inject"></a>
 
 ```javascript
 // Step 1: Create element and store a reference    
@@ -313,7 +313,7 @@ $para.addClass('special'); // So many functions you could use
 $('body').append($para); // Also could use prepend, prependTo or appendTo as well
 ```
 
-### HTML elements v DOM nodes v jQuery objects {#html-elements-v-dom-nodes-v-jquery-objects}
+### HTML elements v DOM nodes v jQuery objects <a id="html-elements-v-dom-nodes-v-jquery-objects"></a>
 
 A DOM node is not actually an HTML element - it is a representation of an HTML element, which we can use to create, modify, and read properties of HTML elements.
 
@@ -419,7 +419,7 @@ $paragraphs.each(function () {
 
 \_\_
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[The Cat Walk - do it in jQuery](https://gist.github.com/wofockham/b4a62f016bfd241627dd)
 

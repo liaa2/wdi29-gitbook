@@ -20,16 +20,16 @@ What we covered today:
 * Ruby Basics Part II
 * ​[Guest Speaker: Taryn Ewens - slides](https://docs.google.com/presentation/d/1OK_ZfmdIVS-cKkP4cqjCbK7-6vPGtnPgtLY5bbeWfvU/edit?usp=sharing)
 
-### Slides {#slides}
+### Slides <a id="slides"></a>
 
 * ​[Ruby - Introduction​](https://github.com/textchimp/wdi-29/blob/master/week4/introduction-to-ruby.pdf)
 * [Collections​](https://github.com/textchimp/wdi-29/blob/master/week4/collections-in-ruby.pdf)
 
-## Ruby - Installation and RVM {#ruby-installation-and-rvm}
+## Ruby - Installation and RVM <a id="ruby-installation-and-rvm"></a>
 
 * ​[RVM and Ruby Installation Guide](https://gist.github.com/ga-wolf/98718aa5c63d8323ae46)​
 
-### How to get Ruby {#how-to-get-ruby}
+### How to get Ruby <a id="how-to-get-ruby"></a>
 
 Install Developer Tools from Xcode \(this should have happened for most of you\):
 
@@ -86,7 +86,7 @@ If all of this has worked, run...
 
 `gem install pry`
 
-### Common Commands {#common-commands}
+### Common Commands <a id="common-commands"></a>
 
 `ruby -v` - Will return the current version of Ruby
 
@@ -100,7 +100,7 @@ If all of this has worked, run...
 
 `<CTRL> + D` - Ends a file running in irb or ruby
 
-## Ruby - A Brief History of Ruby {#ruby-a-brief-history-of-ruby}
+## Ruby - A Brief History of Ruby <a id="ruby-a-brief-history-of-ruby"></a>
 
 Created in 1993 by Yukihiro Matsumoto \(Matz\). He knew Perl and he also knew Python. He thought that Perl smelt like a toy language apparently, and he disliked Python because it wasn't a true object-oriented programming language. Ruby was primarily influenced by Perl and SmallTalk though.
 
@@ -113,27 +113,27 @@ Matz wanted a language that:
 * Garbage Collection
 * Portable
 
-### Programming Mottos {#programming-mottos}
+### Programming Mottos <a id="programming-mottos"></a>
 
 * Perl - There's More Than One Way To Do It \(T.M.T.O.W.T.D.I\)
 * Python - There Should Be One And Only One Way To Do It
 * Ruby - Designed For Programmer Happiness
 
-### _Further Reading - A Brief History of Ruby_ {#further-reading-a-brief-history-of-ruby}
+### _Further Reading - A Brief History of Ruby_ <a id="further-reading-a-brief-history-of-ruby"></a>
 
 * ​[SitePoint - History of Ruby](http://www.sitepoint.com/history-ruby/)​
 
-## Ruby - Introduction {#ruby-introduction}
+## Ruby - Introduction <a id="ruby-introduction"></a>
 
-### Data Types - Strings and Numbers {#data-types-strings-and-numbers}
+### Data Types - Strings and Numbers <a id="data-types-strings-and-numbers"></a>
 
-#### _Strings_ {#strings}
+#### _Strings_ <a id="strings"></a>
 
 Again, delimited by quotes.
 
 `"string"` `'string'`
 
-#### _Numbers_ {#numbers}
+#### _Numbers_ <a id="numbers"></a>
 
 There are multiple types:
 
@@ -141,9 +141,9 @@ There are multiple types:
 * Float
 * BigNum
 
-### Operators {#operators}
+### Operators <a id="operators"></a>
 
-#### _Arithmetic Operators_ {#arithmetic-operators}
+#### _Arithmetic Operators_ <a id="arithmetic-operators"></a>
 
 Lots of them, but the basic ones are:
 
@@ -156,7 +156,7 @@ Lots of them, but the basic ones are:
 %     # Modulus
 ```
 
-#### _Assignment Operators_ {#assignment-operators}
+#### _Assignment Operators_ <a id="assignment-operators"></a>
 
 ```ruby
 =     # Assignment
@@ -168,7 +168,7 @@ Lots of them, but the basic ones are:
       #operand
 ```
 
-#### _Logical Operators_ {#logical-operators}
+#### _Logical Operators_ <a id="logical-operators"></a>
 
 ```ruby
 &&    # And
@@ -179,7 +179,7 @@ or    # Or (alternative to ||)
 not   # Not (alternative to !)
 ```
 
-#### _Comparison Operators_ {#comparison-operators}
+#### _Comparison Operators_ <a id="comparison-operators"></a>
 
 All the usual suspects, plus a few new ones:
 
@@ -196,11 +196,11 @@ All the usual suspects, plus a few new ones:
 .equal? # True if the receiver and the argument have the same object ID
 ```
 
-### _Ruby - Operators - Recommended Readings_ {#ruby-operators-recommended-readings}
+### _Ruby - Operators - Recommended Readings_ <a id="ruby-operators-recommended-readings"></a>
 
 * ​[Tutorials Point - Ruby Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)​
 
-### Variables {#variables}
+### Variables <a id="variables"></a>
 
 Unlike JavaScript, we don't need to use the `let` or `const` \(or any other\) keyword when declaring a variable in Ruby.
 
@@ -216,7 +216,7 @@ To make a `const` variable you must define the variable name ALL in caps.
 
 Ruby will allow you to change this constant variable but will notify you if you change it.
 
-### Methods \(Functions in JS\) {#methods-functions-in-js}
+### Methods \(Functions in JS\) <a id="methods-functions-in-js"></a>
 
 `puts "this is like console.log` 
 
@@ -233,13 +233,13 @@ puts "is the same as this"
 
 Methods in Ruby have an **implicit return**, meaning that you don't need to use the `return` keyword in your methods - Ruby returns the last statement in a method on its own.
 
-## Ruby Fundamentals - Pt I {#ruby-fundamentals-pt-i}
+## Ruby Fundamentals - Pt I <a id="ruby-fundamentals-pt-i"></a>
 
-#### _Basic naming conventions_ {#basic-naming-conventions}
+#### _Basic naming conventions_ <a id="basic-naming-conventions"></a>
 
 snake\_case\_everywhere - it's very rare to see camelCase!
 
-#### _Variable interpolation in strings_ {#variable-interpolation-in-strings}
+#### _Variable interpolation in strings_ <a id="variable-interpolation-in-strings"></a>
 
 String interpolation is where we put Ruby code to be evaluated inside a string - the code to be evaluated is inserted within `#{}`. This is most often used when interpolating variables, but we can put any expression within the curly brackets \(eg `#{5 + 4}` will interpolate `9` into the string\).
 
@@ -254,7 +254,7 @@ drink = "scotch"
 
 IMPORTANT: Interpolation only works with double quotes!! Single quotes mean 'leave this string alone, this is mine'.
 
-#### _Comments in Ruby_ {#comments-in-ruby}
+#### _Comments in Ruby_ <a id="comments-in-ruby"></a>
 
 ```ruby
 # This is is a single line comment​
@@ -270,7 +270,7 @@ You can't have any an empty line between the =begin and the start of the comment
 =end
 ```
 
-#### _Getting user input_ {#getting-user-input}
+#### _Getting user input_ <a id="getting-user-input"></a>
 
 In JavaScript, we have `alert` and `prompt`, in Ruby we have `puts` and `gets`.
 
@@ -304,9 +304,9 @@ puts "Your name is #{ fullname } and you live at #{ address }"
 ​# INTERPOLATION ONLY WORKS IN DOUBLE QUOTES!
 ```
 
-### Conditionals {#conditionals}
+### Conditionals <a id="conditionals"></a>
 
-#### `If` _statements_ {#if-statements}
+#### `If` _statements_ <a id="if-statements"></a>
 
 ```text
 if 13 > 10    
@@ -330,7 +330,7 @@ p "Yep, it is a bigger number" if 13 > 10 # This only works in single line state
 # It's called a modifier (if modifier)
 ```
 
-#### `Unless` _statements_ {#unless-statements}
+#### `Unless` _statements_ <a id="unless-statements"></a>
 
 ```ruby
 x = 1
@@ -344,7 +344,7 @@ end
 code_to_perform unless conditional
 ```
 
-#### `case` _statements_ {#case-statements}
+#### `case` _statements_ <a id="case-statements"></a>
 
 Think of these as shorter if statements, but don't overuse them \(particularly in JS\)
 
@@ -416,14 +416,14 @@ end
 # => "You got two or more"
 ```
 
-### _Ruby - Conditionals - Exercises_ {#ruby-conditionals-exercises}
+### _Ruby - Conditionals - Exercises_ <a id="ruby-conditionals-exercises"></a>
 
 * ​[Drinking Age, Air Conditioning, Sydney Suburbs​](https://gist.github.com/textchimp/0065f9596b90cd977b003594b9b7834b)
 * ​ [Solution​](https://github.com/textchimp/wdi-29/tree/master/week4/ruby-conditionals-exercises)
 
-### Control Structures {#control-structures}
+### Control Structures <a id="control-structures"></a>
 
-#### _While Loops_ {#while-loops}
+#### _While Loops_ <a id="while-loops"></a>
 
 ```text
 while conditonal    
@@ -441,7 +441,7 @@ while i < 5
 end
 ```
 
-#### _Until Loops_ {#until-loops}
+#### _Until Loops_ <a id="until-loops"></a>
 
 ```text
 until conditional    
@@ -455,7 +455,7 @@ until i == 5
 end
 ```
 
-#### _Iterators_ {#iterators}
+#### _Iterators_ <a id="iterators"></a>
 
 So, so common in Ruby.
 
@@ -490,7 +490,7 @@ end
 # => I: 0
 ```
 
-#### `for` _loops_ {#for-loops}
+#### `for` _loops_ <a id="for-loops"></a>
 
 **For loops** are very rarely used in Ruby.
 
@@ -507,7 +507,7 @@ end
 # => I: 5
 ```
 
-#### _Generating random numbers_ {#generating-random-numbers}
+#### _Generating random numbers_ <a id="generating-random-numbers"></a>
 
 ```ruby
 Random.rand # Generates a number between 0 and 1
@@ -516,16 +516,16 @@ Random.rand(5..10) # Generates a number between 5 and 10 (also includes them)
 Random.rand(5...10) # Does not include 5 and 10
 ```
 
-### _Ruby - Control Structures - Exercise_ {#ruby-control-structures-exercise}
+### _Ruby - Control Structures - Exercise_ <a id="ruby-control-structures-exercise"></a>
 
 * [​Guess The Number​](https://gist.github.com/textchimp/391d14a59080a8b35c4262ec113d2f7e)
 * ​[Solution​](https://github.com/textchimp/wdi-29/tree/master/week4/guessing-game)
 
-## Methods {#methods}
+## Methods <a id="methods"></a>
 
 Methods are declared using the `def` keyword and called using the method's name.
 
-### Methods with no arguments {#methods-with-no-arguments}
+### Methods with no arguments <a id="methods-with-no-arguments"></a>
 
 ```ruby
 # Method definition
@@ -538,7 +538,7 @@ hello
 # => "Hello"
 ```
 
-### Methods with arguments {#methods-with-arguments}
+### Methods with arguments <a id="methods-with-arguments"></a>
 
 For methods with defined parameters, arguments can be passed in with or without parentheses.
 
@@ -556,7 +556,7 @@ hello("Grant")
 
 If a method is defined with one or more parameters but is called without passing in the right number of arguments, an error will be thrown \(`Argument Error: wrong number of arguments`\).
 
-### Methods with default arguments {#methods-with-default-arguments}
+### Methods with default arguments <a id="methods-with-default-arguments"></a>
 
 To avoid `Argument Error`s thrown by calling an argument without the requisite number of arguments, we can set default parameters in the method definition.
 
@@ -588,11 +588,11 @@ new_total
 # => 15
 ```
 
-## Ruby - Collections {#ruby-collections}
+## Ruby - Collections <a id="ruby-collections"></a>
 
-### Arrays {#arrays}
+### Arrays <a id="arrays"></a>
 
-#### _Creating an array_ {#creating-an-array}
+#### _Creating an array_ <a id="creating-an-array"></a>
 
 ```ruby
 # LITERAL CONSTRUCTOR
@@ -625,7 +625,7 @@ bros = %w(groucho harpo chico) # => ['groucho', 'harpo', 'chico']
 %w/ Hello World /
 ```
 
-#### _Accessing elements of an array_ {#accessing-elements-of-an-array}
+#### _Accessing elements of an array_ <a id="accessing-elements-of-an-array"></a>
 
 ```ruby
 arr = [1, 2, 3, 4, 5, 6]
@@ -658,7 +658,7 @@ arr.fetch(100) # => IndexError: index 100 outside of array bounds: -6...6
 arr.fetch(100, "ERROR") # => "ERROR"
 ```
 
-#### _Adding items to an array_ {#adding-items-to-an-array}
+#### _Adding items to an array_ <a id="adding-items-to-an-array"></a>
 
 ```text
 arr = [1, 2, 3, 4]
@@ -672,7 +672,7 @@ arr.insert( 4, 'didnt marry', 'Jane')
 # =>  [0, 1, 2, 'Serge', 'didnt marry', 'Jane', 3, 4, 5, 6]
 ```
 
-#### _Removing items from an array_ {#removing-items-from-an-array}
+#### _Removing items from an array_ <a id="removing-items-from-an-array"></a>
 
 ```ruby
 # Pop removes the last element and returns it (it is destructive)
@@ -705,7 +705,7 @@ arr = [2, 5, 6, 556, 6, 6, 8, 9, 0, 123, 556]
 arr.uniq    # => [2, 5, 6, 556, 8, 9, 0, 123]
 ```
 
-#### _Iterating over arrays_ {#iterating-over-arrays}
+#### _Iterating over arrays_ <a id="iterating-over-arrays"></a>
 
 ```ruby
 arr = [1, 2, 3, 4, 5]
@@ -748,7 +748,7 @@ for el in arr
 end
 ```
 
-#### _Selecting items from an array_ {#selecting-items-from-an-array}
+#### _Selecting items from an array_ <a id="selecting-items-from-an-array"></a>
 
 Elements can be selected from an array according to criteria defined in a block. The selection can happen in a destructive or a non-destructive manner. While the destructive operations will modify the array they were called on, the non-destructive methods usually return a new array with the selected elements, but leave the original array unchanged.
 
@@ -765,7 +765,7 @@ arr.reject { |a| a < 4 }        # => [4, 5, 6]​
 arr.keep_if { |a| a < 4 }       # => [1, 2, 3]
 ```
 
-#### _Ruby array comparison tricks_ {#ruby-array-comparison-tricks}
+#### _Ruby array comparison tricks_ <a id="ruby-array-comparison-tricks"></a>
 
 ```ruby
 array1 = ["x", "y", "z"]
@@ -786,21 +786,21 @@ array1 - array2
 
 Check out [this site](https://sites.google.com/site/dhtopics/Home/ruby-essentials/advanced-ruby-arrays)​
 
-### _Ruby - Collections - Arrays - Exercises_ {#ruby-collections-arrays-exercises}
+### _Ruby - Collections - Arrays - Exercises_ <a id="ruby-collections-arrays-exercises"></a>
 
 * ​[Arrays Exercises​](https://gist.github.com/textchimp/042eabd499e6b73de064d3a557942ba7)
 
-## Ruby Fundamentals - Part II {#ruby-fundamentals-part-ii}
+## Ruby Fundamentals - Part II <a id="ruby-fundamentals-part-ii"></a>
 
-### Destructive methods vs non-destructive methods {#destructive-methods-vs-non-destructive-methods}
+### Destructive methods vs non-destructive methods <a id="destructive-methods-vs-non-destructive-methods"></a>
 
 There are destructive methods and non-destructive methods in Ruby. Destructive methods will affect the original, whereas non-destructive will leave it alone and just return an altered copy. Destructive methods normally end with an !.
 
-### Predicate methods {#predicate-methods}
+### Predicate methods <a id="predicate-methods"></a>
 
 More or less, predicate methods are those that return a boolean value. They always end with a ?.
 
-### Blocks {#blocks}
+### Blocks <a id="blocks"></a>
 
 The content in iterators are called blocks, they are quite similar to anonymous functions in javascript.
 
@@ -816,7 +816,7 @@ end
 arr.each { |el| puts el }
 ```
 
-### Object IDs, strings vs. symbols, `false` interlude {#object-ids-strings-vs-symbols-false-interlude}
+### Object IDs, strings vs. symbols, `false` interlude <a id="object-ids-strings-vs-symbols-false-interlude"></a>
 
 In Ruby, every single thing is an object. Absolutely everything. Doesn't matter if it is a string, boolean or anything - they are all objects and all get assigned an object\_id. Every time a new one is created, even if it looks identical, a new object\_id \(a new place in memory\) will be created.
 
@@ -850,15 +850,15 @@ Symbols aren't like that, they are assigned a static place in memory \(meaning t
 # => :name
 ```
 
-#### _False interlude_ {#false-interlude}
+#### _False interlude_ <a id="false-interlude"></a>
 
 The only things that are considered false in Ruby are the boolean `false`, and the `nil` value.
 
-## Collections {#collections}
+## Collections <a id="collections"></a>
 
-### Hashes {#hashes}
+### Hashes <a id="hashes"></a>
 
-#### _Creation of a hash_ {#creation-of-a-hash}
+#### _Creation of a hash_ <a id="creation-of-a-hash"></a>
 
 ```ruby
 # Literal Constructor
@@ -896,7 +896,7 @@ hash.default = false
 hash["MILO"] #=> Will return false
 ```
 
-#### _Accessing elements_ {#accessing-elements}
+#### _Accessing elements_ <a id="accessing-elements"></a>
 
 ```text
 serge = { # Keys stored as symbols!
@@ -915,7 +915,7 @@ serge = {
 serge["name"]
 ```
 
-#### _Adding items to a hash_ {#adding-items-to-a-hash}
+#### _Adding items to a hash_ <a id="adding-items-to-a-hash"></a>
 
 ```ruby
 # Notice no hash rocket!
@@ -927,13 +927,13 @@ serge[:counterpart] = "Jane (temporarily)"
 p serge[:counterpart] # => "Jane (temporarily)"
 ```
 
-#### _Removing items from a hash_ {#removing-items-from-a-hash}
+#### _Removing items from a hash_ <a id="removing-items-from-a-hash"></a>
 
 ```ruby
 serge.delete(:counterpart)
 ```
 
-#### _Iterating over hashes_ {#iterating-over-hashes}
+#### _Iterating over hashes_ <a id="iterating-over-hashes"></a>
 
 ```ruby
 serge = { # Keys stored as symbols!
@@ -964,16 +964,16 @@ end
 # Thousands of other ways to do this though
 ```
 
-### _Ruby - Collections - Exercises_ {#ruby-collections-exercises}
+### _Ruby - Collections - Exercises_ <a id="ruby-collections-exercises"></a>
 
 * ​[Array and hash access​](https://gist.github.com/textchimp/480acdff23932574048601847ed3687e)
 
-### _Ruby \(General\) - Recommended Readings_ {#ruby-general-recommended-readings}
+### _Ruby \(General\) - Recommended Readings_ <a id="ruby-general-recommended-readings"></a>
 
 * ​[Why's \(Poignant\) Guide To Ruby](http://poignant.guide/)​
 * ​[The Bastard's Book of Ruby](http://ruby.bastardsbook.com/)​
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[MTA II - Ruby](https://gist.github.com/textchimp/86ad1ddd36cdc64a1f209d57488215cd)​
 * [​Calculator​](https://gist.github.com/textchimp/c2736668175eba4cfe8802e2402cc74d)

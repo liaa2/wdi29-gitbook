@@ -5,33 +5,33 @@ What we covered today:
 * Ruby on Rails - User login:
   * Ruby on Rails - Validations
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * [​Luhn Numbers](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day05_luhn_numbers)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[Tunr​ \(continued\)](https://github.com/textchimp/wdi-29/tree/master/week5/tunr-db-wdi29)
 
-## Validations {#validations}
+## Validations <a id="validations"></a>
 
-### Interlude - front-end v back-end validations {#interlude-front-end-v-back-end-validations}
+### Interlude - front-end v back-end validations <a id="interlude-front-end-v-back-end-validations"></a>
 
 Validations in a full-stack web app basically fall into two categories - front-end validations and back-end validations. This part of the GitBook only deals with the latter. Front-end validations are client-side validations which prevent users from performing certain actions in a form _before_ anything is posted back to the application - they submit a user from entering certain information in a form, or submitting a form with/out certain attributes, like putting alphabetic characters in a number field, or exceeding a character limit for a text field, or leaving a required field blank.
 
 Front-end validations are great for user experience and performance, but they're vulnerable to circumvention - we usually also want back-end validations.
 
-### Active Record validations {#active-record-validations}
+### Active Record validations <a id="active-record-validations"></a>
 
 As with virtually every problem in the universe, Active Record has a solution. Instead of trying to create our own validations for data that is getting submitted to a database, lets see what solutions Active Record has.
 
 These validations go within the model against which the validation needs to be performed \(for example, validations relating to the User model should go in app/models/user.rb\).
 
-#### _Why should we use validations?_ {#why-should-we-use-validations}
+#### _Why should we use validations?_ <a id="why-should-we-use-validations"></a>
 
 Because the internet is a scary, scary world and there are scary, scary things that people will try and put in your database.
 
-#### _When do validations take place?_ {#when-do-validations-take-place}
+#### _When do validations take place?_ <a id="when-do-validations-take-place"></a>
 
 Active Record Validations occur when any of the following methods take place:
 
@@ -58,7 +58,7 @@ If you want to skip validations, they won't take place when using the following 
 
 You can also pass `:validate => false` to the save method.
 
-#### _How to test validity?_ {#how-to-test-validity}
+#### _How to test validity?_ <a id="how-to-test-validity"></a>
 
 There are methods!
 
@@ -67,7 +67,7 @@ There are methods!
 
 If a model is invalid, you can access the errors easily as well. These will be in the `.errors.messages`.
 
-#### _Alright, enough of this. Now for some Validation Helpers_ {#alright-enough-of-this-now-for-some-validation-helpers}
+#### _Alright, enough of this. Now for some Validation Helpers_ <a id="alright-enough-of-this-now-for-some-validation-helpers"></a>
 
 ```ruby
 class User < ApplicationRecord
@@ -189,7 +189,7 @@ Makes sure there is only one of these columns with this particular value.
 validates :email, uniqueness: true
 ```
 
-#### _Working with Validation Errors_ {#working-with-validation-errors}
+#### _Working with Validation Errors_ <a id="working-with-validation-errors"></a>
 
 Taking an invalid person as example...
 
@@ -205,9 +205,9 @@ person.errors.messages
 # Returns all of the messages associated
 ```
 
-### _Ruby on Rails - Validations - Further Readings_ {#ruby-on-rails-validations-further-readings}
+### _Ruby on Rails - Validations - Further Readings_ <a id="ruby-on-rails-validations-further-readings"></a>
 
 * ​[Rails Guides - Active Record Validations](http://guides.rubyonrails.org/v4.2/active_record_validations.html)​
 
-###   {#ruby-on-rails-validations-further-readings}
+###   <a id="ruby-on-rails-validations-further-readings"></a>
 

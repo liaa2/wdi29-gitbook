@@ -5,19 +5,19 @@ What we covered today:
 * SQL \(Structured Query Language\)
 * Sinatra - CRUD with SQL
 
-## Slides {#slides}
+## Slides <a id="slides"></a>
 
 ​[File I/O and Databases​](https://github.com/textchimp/wdi-29/raw/master/week4/files-and-databases.pdf) \(from slide 9\)
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * ​[Scrabble - Ruby​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day02_ruby_scrabble)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[Codealong​](https://github.com/textchimp/wdi-29/tree/master/week4/databases)
 
-## SQL {#sql}
+## SQL <a id="sql"></a>
 
 This is a really difficult topic and not one that we expect you to be able to write out - as long as you can get it in terms of principles - it is all good.
 
@@ -64,7 +64,7 @@ This line will create the database.db file if necessary, and if not - it will ju
 
 To make sure this has worked, type in `sqlite3 database.db` and hit enter in the terminal. This will open up a direct line to the database in the current folder. If you type `.schema` it will show the current tables.
 
-### Create {#create}
+### Create <a id="create"></a>
 
 Once we have the table defined, we need to figure out how to actually put records into it.
 
@@ -80,7 +80,7 @@ INSERT INTO people VALUES ( 1, "Bob", "Dobbs", 73 );
 
 This is the creation step. If you wrote this in a file, you can import that SQL into the database - `sqlite3 database_name.db < insert_stuff.sql`
 
-### Read {#read}
+### Read <a id="read"></a>
 
 This is pretty annoying to write.
 
@@ -95,7 +95,7 @@ SELECT name FROM people; -- only select the name attributes of all the records i
 ​SELECT * FROM people WHERE first_name == "Bob"; -- select all attributes from all records in the person database where the first_name in the record  is "Bob"
 ```
 
-### Update {#update}
+### Update <a id="update"></a>
 
 And this is pretty annoying to write.
 
@@ -105,7 +105,7 @@ UPDATE table SET attribute_name = attribute_value WHERE attribute_name = attribu
 UPDATE people SET first_name = "Joel" WHERE first_name = "Bob";
 ```
 
-### Delete {#delete}
+### Delete <a id="delete"></a>
 
 And _this_ is pretty annoying to write too.
 
@@ -117,7 +117,7 @@ DELETE FROM people WHERE first_name = "Bob"; -- Delete all records in the person
 
 That is the basics of SQL, for more - see the further readings below. It's all about the principles though; as long as you understand the fact that you need a database to have tables, and tables to have records - that is all good.
 
-### CRUD application overview {#crud-application-overview}
+### CRUD application overview <a id="crud-application-overview"></a>
 
 In terms of actual structure of an application, this is the structure of a CRUD application. 7 views for all of this! The \#new and the \#edit are just ways to show the actual form.
 
@@ -133,19 +133,19 @@ In terms of actual structure of an application, this is the structure of a CRUD 
 
 CRUD is the foundation of most applications on the web, it is the thing that powers it! Important to get the principles of it.
 
-### _SQL - Further Readings_ {#sql-further-readings}
+### _SQL - Further Readings_ <a id="sql-further-readings"></a>
 
 * ​[Learn Code The Hard Way - SQL](http://sql.learncodethehardway.org/book/)​
 
-## Sinatra - CRUD with SQL {#sinatra-crud-with-sql}
+## Sinatra - CRUD with SQL <a id="sinatra-crud-with-sql"></a>
 
 Now that we've got a basic understanding of Sinatra, SQL and CRUD, we can combine the three to create a basic CRUD app.
 
-### Database connections {#database-connections}
+### Database connections <a id="database-connections"></a>
 
 Whenever a request is sent to our web server that requires data to be retrieved from or posted to our database, the server needs to open a connection to the database. When using the **SQLite3 gem**, and assuming our database is stored in a file called **database.db**, such requests will follow this basic pattern:
 
-#### _Open a new database connection_ {#open-a-new-database-connection}
+#### _Open a new database connection_ <a id="open-a-new-database-connection"></a>
 
 Create a new connection to the database stored in 'database.db' using SQLite3 as our database adaptor. This connection is really a Ruby object that is an instance of the SQLite3 gem's `Database` class. Store this connection in a variable called `db`. We will then be calling various methods on this object.
 
@@ -153,7 +153,7 @@ Create a new connection to the database stored in 'database.db' using SQLite3 as
 db = SQLite3::Database.new("database.db")
 ```
 
-### _Return results as hashes_ {#return-results-as-hashes}
+### _Return results as hashes_ <a id="return-results-as-hashes"></a>
 
 By default, SQL will retrieve arrays of results from the database, but we want the results to be returned as hashes.
 
@@ -161,7 +161,7 @@ By default, SQL will retrieve arrays of results from the database, but we want t
 db.results_as_hash = true
 ```
 
-### _Write an SQL query_ {#write-an-sql-query}
+### _Write an SQL query_ <a id="write-an-sql-query"></a>
 
 Write an SQL query and store it in a variable called 'sql'. This step isn't completely necessary - we can pass an SQL query as a string directly into the `execute` method below, but storing the query in a variable keeps things tidy.
 
@@ -169,7 +169,7 @@ Write an SQL query and store it in a variable called 'sql'. This step isn't comp
 sql = "SELECT * FROM animals;"
 ```
 
-### _Execute the SQL query_ {#execute-the-sql-query}
+### _Execute the SQL query_ <a id="execute-the-sql-query"></a>
 
 Call the 'execute' method on our database connection object, passing in the SQL query we want to execute. If we're passing the records retrieved to our view, we need to store the response in an instance variable \(using an `@` symbol\).
 
@@ -177,7 +177,7 @@ Call the 'execute' method on our database connection object, passing in the SQL 
 @all_animals = db.execute(sql)
 ```
 
-### _Close the database connection_ {#close-the-database-connection}
+### _Close the database connection_ <a id="close-the-database-connection"></a>
 
 Once a response has been received, close the connection to the database, since we can only have a limited number of concurrent database connections.
 
@@ -185,11 +185,11 @@ Once a response has been received, close the connection to the database, since w
 db.close
 ```
 
-#### _Further Reading - Database Connections_ {#further-reading-database-connections}
+#### _Further Reading - Database Connections_ <a id="further-reading-database-connections"></a>
 
 * ​[RubyGems - SQLite3::Database](http://www.rubydoc.info/gems/sqlite3/1.3.11/SQLite3/Database)​
 
-### Routes {#routes}
+### Routes <a id="routes"></a>
 
 We're going to have a very simple database which just has a single table. We need to create all the routes for CRUD'ing records to that table.
 
@@ -313,7 +313,7 @@ get '/animals/:id' do
 end
 ```
 
-### Homework {#homework}
+### Homework <a id="homework"></a>
 
 * ​[Build your own CRUD app](https://gist.github.com/textchimp/59a61f74679547c873d95f39e4972c24)​
 

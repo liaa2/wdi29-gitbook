@@ -1,6 +1,6 @@
 # Heroku
 
-## _What is it?_ {#what-is-it}
+## _What is it?_ <a id="what-is-it"></a>
 
 Github only supports static front-end sites, so we need something more robust and scalable for our Rails apps. Heroku has everything that we need for this:
 
@@ -14,7 +14,7 @@ See [here](https://www.heroku.com/home) for more.
 
 Heroku is completely based on Git, meaning that it relies on us pushing code up etc. It can be difficult, though it is ten times easier than making our own server.
 
-## _Steps for Deploying a Rails app to Heroku_ {#steps-for-deploying-a-rails-app-to-heroku}
+## _Steps for Deploying a Rails app to Heroku_ <a id="steps-for-deploying-a-rails-app-to-heroku"></a>
 
 * Make an account - [here.](https://signup.heroku.com/www-header)​
 * Install the heroku toolbelt - see [here](https://toolbelt.heroku.com/) or use `brew install heroku`
@@ -61,7 +61,7 @@ $ git remote add origin https://github.com/cjbarnaby/green-bastard.git
 $ git push origin master
 ```
 
-## _Common Heroku Commands_ {#common-heroku-commands}
+## _Common Heroku Commands_ <a id="common-heroku-commands"></a>
 
 * `heroku run rails db:etc.` \(create, seed, migrate etc.\)
 * `heroku run rails console`

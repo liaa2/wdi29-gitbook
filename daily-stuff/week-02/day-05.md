@@ -8,7 +8,7 @@ What we covered today:
 * JavaScript - jQuery - Patterns and Anti-patterns
 * JavaScript - jQuery - Plugins
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * ​[Warmup and solution - Anagram Detector](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day05_anagram_detector)
 
@@ -16,13 +16,13 @@ What we covered today:
 
 * [Advanced jQuery](https://github.com/textchimp/wdi-29/blob/master/week2/advanced-jquery.pdf)
 
-### Exercises {#exercises}
+### Exercises <a id="exercises"></a>
 
 * [​jQuery Events ](https://gist.github.com/textchimp/f28054a1b2977b5cc33f65665cea56b7)
 
-## JavaScript - jQuery - Events {#javascript-jquery-events}
+## JavaScript - jQuery - Events <a id="javascript-jquery-events"></a>
 
-### Listeners and handlers {#listeners-and-handlers}
+### Listeners and handlers <a id="listeners-and-handlers"></a>
 
 We can use the `.on()` method to add an event listener to the selected jQuery objects.
 
@@ -46,7 +46,7 @@ $('button').on('click', onButtonClick); // Attaching an event handler with a def
 $('button').click(onButtonClick);
 ```
 
-#### _Other event types_ {#other-event-types}
+#### _Other event types_ <a id="other-event-types"></a>
 
 * Keyboard Events - '`keydown`', '`keypress`', '`keyup`'
 * Mouse Events - '`click`', '`mousedown`', '`mouseup`', '`mousemove`'
@@ -64,7 +64,7 @@ const myCallback = function (event) {
 $('p').on('mouseenter', myCallback);
 ```
 
-#### _Preventing default events_ {#preventing-default-events}
+#### _Preventing default events_ <a id="preventing-default-events"></a>
 
 ```javascript
 $('a').on('click', function (event) {    
@@ -78,7 +78,7 @@ $('form').on('submit', function (event) {
 });
 ```
 
-## JavaScript - jQuery - Animation and Effects {#javascript-jquery-animation-and-effects}
+## JavaScript - jQuery - Animation and Effects <a id="javascript-jquery-animation-and-effects"></a>
 
 jQuery give us access to a whole bunch of really useful methods for creating and controlling animations and effects. These include simple methods for frequently used effects like .fadeIn and .fadeOut, as well as more complex and customizable methods like .animate. For a full list, check out [jQuery.com - Effects](http://api.jquery.com/category/effects/).
 
@@ -140,9 +140,9 @@ $("#cat").animate({
 }, 200)
 ```
 
-## JavaScript - jQuery - Patterns and anti-patterns {#javascript-jquery-patterns-and-anti-patterns}
+## JavaScript - jQuery - Patterns and anti-patterns <a id="javascript-jquery-patterns-and-anti-patterns"></a>
 
-#### _The_ `ready` _event_ {#the-ready-event}
+#### _The_ `ready` _event_ <a id="the-ready-event"></a>
 
 In order to do cool jQuery stuff, we need to make sure that all of the content in the HTML document has been parsed by the browser before our script is run, so put all your DOM-related jQuery code in a function that is called when the `document` is `ready`.
 
@@ -160,7 +160,7 @@ $(document).load(function(){​
 });
 ```
 
-#### _Variable names_ {#variable-names}
+#### _Variable names_ <a id="variable-names"></a>
 
 Pattern: Prefix variable names that represent jQuery objects with `$`. That will remind us that this object has all of jQuery's fancy methods available to it.
 
@@ -170,7 +170,7 @@ Remember: in variable names, $ is just another character we can use. It's not ma
 const $myVar = $('#myNode');
 ```
 
-#### _Event delegation_ {#event-delegation}
+#### _Event delegation_ <a id="event-delegation"></a>
 
 When elements are being created after the document is loaded, bind the event to an element that will _definitely_ exist on document.ready \(a failsafe element would be `$(document)`\).
 
@@ -178,7 +178,7 @@ When elements are being created after the document is loaded, bind the event to 
 $("body").on('click', 'a', myCallback);
 ```
 
-#### _Named functions for event handlers_ {#named-functions-for-event-handlers}
+#### _Named functions for event handlers_ <a id="named-functions-for-event-handlers"></a>
 
 Event handlers can either call anonymous functions or named functions. Anonymous functions are useful, but named functions are re-usable.
 
@@ -196,7 +196,7 @@ $p.on("click", function() {
 $("p").on('click', myCallback);
 ```
 
-#### _Chaining methods_ {#chaining-methods}
+#### _Chaining methods_ <a id="chaining-methods"></a>
 
 jQuery lets us chain methods together, allowing for pretty succinct code.
 
@@ -214,16 +214,16 @@ banner.css('color', 'red')
       .show();
 ```
 
-## JavaScript - jQuery - Plugins {#javascript-jquery-plugins}
+## JavaScript - jQuery - Plugins <a id="javascript-jquery-plugins"></a>
 
-### Finding plugins {#finding-plugins}
+### Finding plugins <a id="finding-plugins"></a>
 
 Go through
 
 * ​[jQuery plugin](http://plugins.jquery.com/)​
 * ​[here](https://www.javascripting.com/)​
 
-### Selecting a good plugin {#selecting-a-good-plugin}
+### Selecting a good plugin <a id="selecting-a-good-plugin"></a>
 
 Look for plugins that:
 
@@ -239,14 +239,14 @@ Look for plugins that:
 
 For more details, go [here.](http://blog.pamelafox.org/2013/07/which-javascript-library-should-i-pick.html)​
 
-### Using a plugin {#using-a-plugin}
+### Using a plugin <a id="using-a-plugin"></a>
 
 * Download the plugin and associated files from the site or Github repository
 * Copy the files into your project's folder
 * In the HTML, reference any associated CSS
 * In your HTML, after you've referenced jQuery, and before you reference your own code, add the script tag\(s\) that reference the plugins JS file\(s\).
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[GA Bank](https://gist.github.com/textchimp/c71a71a95ab2ff17539f48decf42c367)​
 * ​[Try jQuery](http://try.jquery.com/)​

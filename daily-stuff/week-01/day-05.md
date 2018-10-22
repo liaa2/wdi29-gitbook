@@ -12,9 +12,9 @@ What we covered today:
   * The `this` Keyword
   * The `arguments` Object
 
-## JavaScript - Advanced Objects {#javascript-advanced-objects}
+## JavaScript - Advanced Objects <a id="javascript-advanced-objects"></a>
 
-### Methods {#methods}
+### Methods <a id="methods"></a>
 
 In JavaScript, functions are first-class. This means that the language supports:
 
@@ -26,11 +26,11 @@ Since we can store functions in data structures, we can store a function as the 
 
 We've already seen a bunch of methods - for example, when we call `.toString()` on a number, we are actually calling the `.toString()` method of the global Number object \(which is a property of that object\).
 
-### Factories and Constructors {#factories-and-constructors}
+### Factories and Constructors <a id="factories-and-constructors"></a>
 
 First off, both **constructors** and **factories** are "blue prints". They bootstrap development. Often they are more hassle than they are worth though, so be wary. Think about whether all the code necessary to get a factory or constructor efficiently is actually worth it. Object literals can get you through 95% of the time.
 
-### Factories {#factories}
+### Factories <a id="factories"></a>
 
 We can use 'factory' functions to create objects.
 
@@ -65,7 +65,7 @@ const cats = [
 ]
 ```
 
-### Constructors {#constructors}
+### Constructors <a id="constructors"></a>
 
 Constructors are essentially factories for objects that are invoked via the `new` operator. When a constructor is invoked using the `new` operator, a constructor will:
 
@@ -75,7 +75,7 @@ Constructors are essentially factories for objects that are invoked via the `new
 
 Normally, JS objects are only maps from strings to values, but JS also supports prototypal inheritance - something that is truly object-oriented. They are quite similar to classes in other languages.
 
-#### _What does it entail?_ {#what-does-it-entail}
+#### _What does it entail?_ <a id="what-does-it-entail"></a>
 
 The initial set up - this is where you set up the instance data...
 
@@ -111,13 +111,13 @@ typeof p
 // true
 ```
 
-### _JavaScript - Advanced Objects - Factories and Constructors - Further Reading_ {#javascript-advanced-objects-factories-and-constructors-further-reading}
+### _JavaScript - Advanced Objects - Factories and Constructors - Further Reading_ <a id="javascript-advanced-objects-factories-and-constructors-further-reading"></a>
 
 * ​[Phrogz - OOP in JS - Inheritence](http://phrogz.net/JS/classes/OOPinJS2.html)​
 
-## Javascript - Advanced Functions {#javascript-advanced-functions}
+## Javascript - Advanced Functions <a id="javascript-advanced-functions"></a>
 
-### The `this` keyword \(AKA self\) {#the-this-keyword-aka-self}
+### The `this` keyword \(AKA self\) <a id="the-this-keyword-aka-self"></a>
 
 The `this` keyword is one of the most powerful things in JavaScript, but also one of the hardest to understand. It gets insanely complicated, and there are a lot of exceptions to the simplistic generalizations below.
 
@@ -148,7 +148,7 @@ button.addEventListener( "click", function() {
 });
 ```
 
-### A simplistic generalization of `this` {#a-simplistic-generalization-of-this}
+### A simplistic generalization of `this` <a id="a-simplistic-generalization-of-this"></a>
 
 * In a simple function \(one that isn't in another function or object\) - `this` stays as the default - window.
 * In a function that is within an object, `this` is defined as the object - it's immediate parent.
@@ -156,13 +156,13 @@ button.addEventListener( "click", function() {
 
 The `this` keyword is really useful when we have a function that accepts an object as an argument - we can use `this` to access properties of the object.
 
-### Global / default binding {#global-default-binding}
+### Global / default binding <a id="global-default-binding"></a>
 
 ```javascript
 sayHello();
 ```
 
-### Implicit binding {#implicit-binding}
+### Implicit binding <a id="implicit-binding"></a>
 
 When we call a function through an object, `this` becomes the object.
 
@@ -170,7 +170,7 @@ When we call a function through an object, `this` becomes the object.
 dog.sayHello();
 ```
 
-### Explicit binding {#explicit-binding}
+### Explicit binding <a id="explicit-binding"></a>
 
 ```javascript
 const sayHello = function() {    
@@ -196,7 +196,7 @@ hi();
 //and can be called using hi();
 ```
 
-### `new` binding {#new-binding}
+### `new` binding <a id="new-binding"></a>
 
 ```javascript
 const Person = function(name) {    
@@ -214,7 +214,7 @@ lewis.sayHello();
 // => "Hello, Lewis"
 ```
 
-### _JavaScript -_ `this` _- Recommended Reading_ {#javascript-this-recommended-reading}
+### _JavaScript -_ `this` _- Recommended Reading_ <a id="javascript-this-recommended-reading"></a>
 
 * ​[REPL - Lizzie the Cat](https://repl.it/lwW/1)​
 * ​[Kyle Simpson - You Don't Know JS - `this` and Object Prototypes](https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes)​
@@ -223,11 +223,11 @@ lewis.sayHello();
 * ​[JavaScript is Sexy - Understand JavaScript's 'This' With Clarity](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/) ​
 * ​[Quirks Mode - This](http://www.quirksmode.org/js/this.html)​
 
-### JavaScript - The `arguments` object {#javascript-the-arguments-object}
+### JavaScript - The `arguments` object <a id="javascript-the-arguments-object"></a>
 
 The `arguments` object is an array-like object that can be used to access the arguments passed into a function, regardless of whether they match named parameters.
 
-#### _Using 'arguments' to create default arguments_ {#using-arguments-to-create-default-arguments}
+#### _Using 'arguments' to create default arguments_ <a id="using-arguments-to-create-default-arguments"></a>
 
 If we call a function without passing in arguments to match the number of named parameters, we run into `undefined` problems.
 
@@ -254,7 +254,7 @@ nameImprover("Badger");
 // => "Col Badger McFancy pants"
 ```
 
-#### _Using_ `arguments` _to create variadic functions_ {#using-arguments-to-create-variadic-functions}
+#### _Using_ `arguments` _to create variadic functions_ <a id="using-arguments-to-create-variadic-functions"></a>
 
 A **variadic function** is a function where the total number of parameters is unknown when the function is declared, and can vary when the function is called. We can use the arguments object to create variadic functions in JavaScript.
 
@@ -276,7 +276,7 @@ addNumbers(3,5,7,9);
 // => 24
 ```
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[MTA​](https://gist.github.com/textchimp/7c83f4458f6b45ba5d31b0d21607c87a)
 * ​[JavaScript Readings](https://gist.github.com/wofockham/8a702a9bf0a1456df7d4)​

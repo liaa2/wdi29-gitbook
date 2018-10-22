@@ -5,21 +5,21 @@ What we covered today:
 * Web Servers
 * Sinatra
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * ​[Raindrops - Ruby​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day01_ruby_raindrops)
 
-## Slides {#slides}
+## Slides <a id="slides"></a>
 
 ​[Sinatra​](https://github.com/textchimp/wdi-29/blob/master/week4/introduction-to-sinatra.pdf)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[Calculator​](https://github.com/textchimp/wdi-29/tree/master/week4/sinatra)
 * ​[Stock Quote](https://github.com/textchimp/wdi-29/tree/master/week4/sinatra-stock-lookup)​
 * ​[Movie DB​](https://github.com/textchimp/wdi-29/tree/master/week4/sinatra-movie-search)
 
-## Web servers {#web-servers}
+## Web servers <a id="web-servers"></a>
 
 **TL;DR**: A web server is a program that uses HTTP to serve files in response to requests sent to a URL from a user's HTTP client.
 
@@ -57,7 +57,7 @@ When it receives an HTTP request, the web server maps the path component of a UR
 * A local file system resource \(for static requests\);
 * An internal or external program \(for dynamic requests\).
 
-### Starting a local web server using Python {#starting-a-local-web-server-using-python}
+### Starting a local web server using Python <a id="starting-a-local-web-server-using-python"></a>
 
 You can use Python's 'SimpleHTTPServer' module to create a web server on your machine - you could, potentially, then host your application on the world wide web using your machine.
 
@@ -75,13 +75,13 @@ python -m http.server
 
 Then navigate to **localhost:8000** in your browser.
 
-## Sinatra {#sinatra}
+## Sinatra <a id="sinatra"></a>
 
-#### _What is it?_ {#what-is-it}
+#### _What is it?_ <a id="what-is-it"></a>
 
 Sinatra is a **Domain Specific Language** \(DSL\). A DSL is a language designed to solve problems in a particular 'domain' \(domain as in 'field of stuff'\). In this case, Sinatra is a is a DSL for creating web servers; it is a web application framework. Sinatra is a 'gem' \(a Ruby library\) that we include to give us methods we can use to construct simple web applications \(with minimal effort\).
 
-#### _How do we use it?_ {#how-do-we-use-it}
+#### _How do we use it?_ <a id="how-do-we-use-it"></a>
 
 It is a gem like anything else!! We need two gems for this though - we have **sinatra** itself \(which gives us all of those necessary methods\), and we have **sinatra-contrib** - which is anything worthy that has been contributed to the Sinatra gem. This is what includes the live reloader etc.
 
@@ -105,7 +105,7 @@ To run the server, we just use Ruby to run the file from our terminal - `ruby ma
 
 **NOTE**: If you run `ruby main.rb` but already have an open server, you'll run into a problem, since the default port \(4567\) is already in use.
 
-### Routes {#routes}
+### Routes <a id="routes"></a>
 
 In Sinatra, a route is an HTTP method paired with a URL path pattern. Each route has a block.
 
@@ -135,11 +135,11 @@ In the third example above:
 
 You can go to `http://localhost:4567/hello` once you have started the server and you will see the text `Hello World` on the screen.
 
-#### _Literal paths_ {#literal-paths}
+#### _Literal paths_ <a id="literal-paths"></a>
 
 Paths like `/anything` are literal paths. They require the request to be a literal match with a path specified in a route - we actually have to visit `/cats` in order for our web server to respond to the request - this is annoying because we don't always know what we are going to receive from the client, and requires us to create routes for _every single_ resource.
 
-#### _Dynamic paths_ {#dynamic-paths}
+#### _Dynamic paths_ <a id="dynamic-paths"></a>
 
 The way we solve this is by using named parameters rather than literal paths wherever possible. Whatever is matched by the thing prefixed with the colon is stored in the a hash called `params` \(which is automatically generated for us\).
 
@@ -161,7 +161,7 @@ end
 # => 'The result is 6'
 ```
 
-### Views {#views}
+### Views <a id="views"></a>
 
 At this point, the blocks in our routes simply has a string response - we are just rendering text to the page. That isn't ideal. We want it to be well presented!! In its most basic form, we use ERB \(Embedded Ruby\) - Ruby code embedded in HTML.
 
@@ -218,7 +218,7 @@ If you just did this though, it would get the file but wouldn't know where to pu
 </html>
 ```
 
-### Creating forms {#creating-forms}
+### Creating forms <a id="creating-forms"></a>
 
 Forms are used to retrieve information from the user.
 
@@ -244,11 +244,11 @@ get '/calc' do
 end
 ```
 
-### Static assets {#static-assets}
+### Static assets <a id="static-assets"></a>
 
 In a basic Sinatra application, we would store static assets like stylesheets, images, etc, in a folder called **public**, but in this case, we don't need to specify the public folder in our path - if we have a stylesheet saved at public/style.css, the link in our layout.html to that file would simply be `<link rel="stylesheet" href="/style.css">`.
 
-### Basic Sinatra file structure {#basic-sinatra-file-structure}
+### Basic Sinatra file structure <a id="basic-sinatra-file-structure"></a>
 
 So, the file structure of a basic Sinatra web app should be something like this:
 
@@ -268,7 +268,7 @@ So, the file structure of a basic Sinatra web app should be something like this:
 
 NOTE: This structure is important - Sinatra expects your view templates to be in a folder called 'views', and it expects public files to be in a folder called 'public'. The filename 'layout' is also important - if Sinatra sees a file in your views folder called **layout.erb**, it will automatically use this as the master template wrapping all your other templates.
 
-### ERB syntax {#erb-syntax}
+### ERB syntax <a id="erb-syntax"></a>
 
 Embedded Ruby \(aka 'eRuby' or 'erb'\) is a templating system. It allows us to embed Ruby code in our HTML\* to handle dynamic content \(ie, content that we can't just hard code in our HTML, but which will vary depending on the request received by the web server\).
 
@@ -286,7 +286,7 @@ There are a few different erb tags, but these are the three we'll use the most:
 <%# comment %>            <!-- ignored, and not sent to client -->
 ```
 
-### Accessing Ruby variables in view templates {#accessing-ruby-variables-in-view-templates}
+### Accessing Ruby variables in view templates <a id="accessing-ruby-variables-in-view-templates"></a>
 
 We'll often create and manipulate data in our main.rb file - for example, taking data from a form in one view, manipulating that data, and passing that data to another view. In order to make Ruby variables declared in a **main.rb** method accessible in the method's corresponding view, we need to create an instance variable. Creating an instance variable is simple - just prefix your variable name with a `@` symbol \(note - there is no direct relationship between `@variable` and `variable` - these can represent completely different objects\).
 
@@ -320,15 +320,15 @@ In our view, we can then access the instance variable `@animals` like so:
 </div>
 ```
 
-### _Embedded Ruby - Further Reading_ {#embedded-ruby-further-reading}
+### _Embedded Ruby - Further Reading_ <a id="embedded-ruby-further-reading"></a>
 
 * ​[API Dock - Embedded Ruby](http://apidock.com/ruby/ERB)​
 
-### _Sinatra - Further Reading_ {#sinatra-further-reading}
+### _Sinatra - Further Reading_ <a id="sinatra-further-reading"></a>
 
 * ​[Sinatra Introduction](http://www.sinatrarb.com/intro.html)​
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[MoviesDB](https://github.com/textchimp/wdi-29/tree/master/week4/sinatra-movie-search)
 

@@ -58,7 +58,7 @@ Share and enjoy:
 * [​**Homework Repo**](https://github.com/liaa2/wdi29-homework) - Before class every morning, you should submit your homework for the last day using Github. The repository \("repo"\) has instructions for submitting your homework.
 * ​[**Classwork Repo**](https://github.com/textchimp/wdi-29) - Missed something during a code-along? You can check this repository for the 'official' code.
 
-### Important Links, Meetups and Newsletters {#important-links-meetups-and-newsletters}
+### Important Links, Meetups and Newsletters <a id="important-links-meetups-and-newsletters"></a>
 
 **Links**
 
@@ -98,7 +98,7 @@ What will go wrong? Everything. This won't be easy for anyone.
 
 The most important thing you can learn as a beginner is **how to debug.**
 
-## Structure of the Course {#structure-of-the-course}
+## Structure of the Course <a id="structure-of-the-course"></a>
 
 * Week 01 - Front End \(Javascript\)
 * Week 02 - Front End \(HTML, CSS + the DOM\)
@@ -113,7 +113,7 @@ The most important thing you can learn as a beginner is **how to debug.**
 * Week 11 - Advanced Back End / Advanced Everything \(compsci stuffs: efficiency, algorithms, data structures; 3D graphics\)
 * **Week 12 - Project 03**
 
-### A typical day here at GA... {#a-typical-day-here-at-ga}
+### A typical day here at GA... <a id="a-typical-day-here-at-ga"></a>
 
 | Time | What? |
 | :--- | :--- |
@@ -131,7 +131,7 @@ In terms of homework, we like to keep you busy until 9pm or 10pm every night.
 
 We have office hours on Saturday \(except in Week 6, when we have the Spit-to-Manly\).
 
-## The Command Line {#the-command-line}
+## The Command Line <a id="the-command-line"></a>
 
 ​[You should have iTerm2](http://iterm2.com/)​
 
@@ -297,7 +297,7 @@ What happens when we run commands?
 
 * [https://explainshell.com/](https://explainshell.com/)
 
-### _Command Line Interface \(CLI\) - Recommended Readings_ {#command-line-interface-cli-recommended-readings}
+### _Command Line Interface \(CLI\) - Recommended Readings_ <a id="command-line-interface-cli-recommended-readings"></a>
 
 * ​[The Linux Command Line](http://linuxcommand.org/tlcl.php)​
 * ​[Terminal Cheatsheet for Mac](https://github.com/0nn0/terminal-mac-cheatsheet)​
@@ -307,12 +307,12 @@ What happens when we run commands?
   * ​[It even has its own Wikipedia entry!](https://en.wikipedia.org/wiki/In_the_Beginning..._Was_the_Command_Line)​
 * ​[The Unix Programming Environment](http://en.wikipedia.org/wiki/The_Unix_Programming_Environment)​
 
-### _Command Line Interface \(CLI\) - Additional Links_ {#command-line-interface-cli-additional-links}
+### _Command Line Interface \(CLI\) - Additional Links_ <a id="command-line-interface-cli-additional-links"></a>
 
 * ​[15 Use Cases of Grep](http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/)​
 * ​[40 Terminal Tips and Tricks](http://computers.tutsplus.com/tutorials/40-terminal-tips-and-tricks-you-never-thought-you-needed--mac-51192)​
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * Track down the [Command Line Murderer](https://github.com/veltman/clmystery).
 * Read/work through one or more of the **CLI - Recommended Readings**, above..

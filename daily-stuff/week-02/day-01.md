@@ -6,19 +6,19 @@ What we covered today:
 * HTML
 * CSS
 
-### Slides {#slides}
+### Slides <a id="slides"></a>
 
 * ​[HTML and CSS](https://textchimp.github.io/wdi-29/week2/html_and_css.pdf)​
 
-## HTML {#html}
+## HTML <a id="html"></a>
 
-### A brief history of HTML {#a-brief-history-of-html}
+### A brief history of HTML <a id="a-brief-history-of-html"></a>
 
 * ​[The first website ever](http://info.cern.ch/hypertext/WWW/)​
 * ​[The History of Web Design](http://www.americommerce.com/blog/The-History-of-Web-Design-Infographic)​
 * ​[The Evolution of the Web](http://www.evolutionoftheweb.com/) - a prettier, interactive visualisation of the evolution of the web.
 
-### What is HTML? {#what-is-html}
+### What is HTML? <a id="what-is-html"></a>
 
 * **HTML** = Hyper Text Markup Language
 * Currently at Version 5 \(HTML5\)
@@ -33,7 +33,7 @@ What we covered today:
 <p class="default-paragraph another-class">Some content in here</p>
 ```
 
-### What does an HTML document need? {#what-does-an-html-document-need}
+### What does an HTML document need? <a id="what-does-an-html-document-need"></a>
 
 ```markup
 <!DOCTYPE html> <!-- Always have this - it describes which version of HTML you are 
@@ -59,9 +59,9 @@ using -->
 </html>
 ```
 
-### Common HTML elements {#common-html-elements}
+### Common HTML elements <a id="common-html-elements"></a>
 
-#### _Actual content_ {#actual-content}
+#### _Actual content_ <a id="actual-content"></a>
 
 ```markup
 <!-- Heading Tags - the lower the number, the more important -->
@@ -113,7 +113,7 @@ by the own to something a little more unsavoury -->
 </ol>
 ```
 
-#### _Sectioning content_ {#sectioning-content}
+#### _Sectioning content_ <a id="sectioning-content"></a>
 
 ```markup
 <div></div> <!-- A division, this is just a way to group content -->
@@ -124,11 +124,11 @@ by the own to something a little more unsavoury -->
 <!-- etc. -->
 ```
 
-### Placeholders {#placeholders}
+### Placeholders <a id="placeholders"></a>
 
 You'll be surprised how much time you spend generating placeholder text and images when designing a layout. Here are some tools to make that process a little less painful \(and, often, a little more fun\):
 
-#### _Text_ {#text}
+#### _Text_ <a id="text"></a>
 
 * ​[Meet the Ipsums](http://meettheipsums.com/)​
 * ​[Monocle Ipsum](http://www.monocleipsum.com/?paras=5&type=business-class&start-with-lorem=1)​
@@ -138,7 +138,7 @@ You'll be surprised how much time you spend generating placeholder text and imag
 * ​[Social Ipsum](http://socialgoodipsum.com/#!/#top)​
 * ​[56 Other ones](http://mashable.com/2013/07/11/lorem-ipsum/)​
 
-#### _Images_ {#images}
+#### _Images_ <a id="images"></a>
 
 * ​[Fill Murray](http://www.fillmurray.com/)​
 * ​[Placeholdit](http://placehold.it/)​
@@ -148,16 +148,16 @@ You'll be surprised how much time you spend generating placeholder text and imag
 * ​[Place Kitten](https://placekitten.com/)​
 * ​[Place Cage](http://www.placecage.com/)​
 
-### _HTML - Recommended Readings_ {#html-recommended-readings}
+### _HTML - Recommended Readings_ <a id="html-recommended-readings"></a>
 
 * ​[MDN - HTML Element Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element)​
 * ​[MDN - HTML5 - Semantics](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5#SemantIcs)​
 * ​[Let's Talk About Semantics](http://html5doctor.com/lets-talk-about-semantics)​
 * ​[Jon Duckett - HTML and CSS](http://www.htmlandcssbook.com/)​
 
-## CSS {#css}
+## CSS <a id="css"></a>
 
-### What is CSS? {#what-is-css}
+### What is CSS? <a id="what-is-css"></a>
 
 * **CSS** = Cascading Style Sheets
 * It defines how HTML elements are to be represented
@@ -190,7 +190,7 @@ body {
 }
 ```
 
-### CSS selectors {#css-selectors}
+### CSS selectors <a id="css-selectors"></a>
 
 There are a lot of different selectors, but here are the basic CSS Selectors.
 
@@ -228,7 +228,7 @@ Check out the further readings below*/
 p::after {} /* Creates a pseudo-element after every paragraph tag */
 ```
 
-#### _CSS - CSS Selectors - Recommended Readings_ {#css-css-selectors-recommended-readings}
+#### _CSS - CSS Selectors - Recommended Readings_ <a id="css-css-selectors-recommended-readings"></a>
 
 * ​[MDN - CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)​
 * ​[CSS Diner](http://flukeout.github.io/) - a great way to get learn about selectors.
@@ -236,7 +236,7 @@ p::after {} /* Creates a pseudo-element after every paragraph tag */
 * ​[MDN - CSS Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/pseudo-classes)​
 * ​[MDN - CSS Pseudo-elements](https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-elements)​
 
-### CSS specificity {#css-specificity}
+### CSS specificity <a id="css-specificity"></a>
 
 Due to CSS's cascading nature, a CSS rule can be overwritten by subsequent, conflicting rules. This is subject to the rules of CSS specificity.
 
@@ -250,12 +250,12 @@ This high-level summary will get you through 9-10 of specificity issues:
 * Selectors using element names come last
 * Where the specificity of two selectors are identical, the last rule specified prevails
 
-#### _CSS - CSS Specificity - Recommended Readings_ {#css-css-specificity-recommended-readings}
+#### _CSS - CSS Specificity - Recommended Readings_ <a id="css-css-specificity-recommended-readings"></a>
 
 * ​[Smashing Magazine - CSS Specificity](http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/)​
 * ​[CSS-Tricks - Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)​
 
-### Variadic attributes {#variadic-attributes}
+### Variadic attributes <a id="variadic-attributes"></a>
 
 Variadic attributes are shorthands that apply values to a number of properties - the properties modified will depend on the number of values specified in the declaration. Take `margin`, for example:
 
@@ -277,7 +277,7 @@ h1 {
 
 You can't just make up your own variadic attributes - not all properties accept variadic attributes, and those which do expect values to be set in a particular order \(eg, if three values are set for `margin`, they will be interpreted as the values for the `top`, `horizontal` \(ie, `left` and `right`\) and `bottom` margins\).
 
-### Floats and clears {#floats-and-clears}
+### Floats and clears <a id="floats-and-clears"></a>
 
 I'm not going to go into this that much, but these three articles will help explain floats \(and when they should/n't be used\). For the most part, avoid floats and clears; stick to `display: inline-block` or `display: inline` instead. Floats were designed to allow text to be wrapped around an image, and should only really be used in that context.
 
@@ -285,7 +285,7 @@ I'm not going to go into this that much, but these three articles will help expl
 * ​[Smashing Magazine's The Mystery of Floats](http://www.smashingmagazine.com/2009/10/19/the-mystery-of-css-float-property/)​
 * ​[Farewell Floats: The Future of CSS Layout](http://designshack.net/articles/css/farewell-floats-the-future-of-css-layout/)​
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 _"Hell is other people's HTML"_
 

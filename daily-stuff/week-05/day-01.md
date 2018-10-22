@@ -5,30 +5,30 @@ What we covered today:
 * Ruby on Rails - Introduction
 * Ruby on Rails - Basic Project Setup \(no database\)
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * ​[Point Mutations - Ruby​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day01_point_mutations)
 
-## Slides {#slides}
+## Slides <a id="slides"></a>
 
 ​[Introduction to Rails​](https://github.com/textchimp/wdi-29/blob/master/week5/introduction-to-rails.pdf)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[Rails-intro​](https://github.com/textchimp/wdi-29/tree/master/week5/rails-intro)
 * ​[Rails-stocks](https://github.com/textchimp/wdi-29/tree/master/week5/rails-stocks)
 
-## Ruby on Rails - Introduction {#ruby-on-rails-introduction}
+## Ruby on Rails - Introduction <a id="ruby-on-rails-introduction"></a>
 
-### A Brief History of Rails {#a-brief-history-of-rails}
+### A Brief History of Rails <a id="a-brief-history-of-rails"></a>
 
 David Heinemeier Hansson \('DHH'\) extracted Ruby on Rails from his work on the project management tool Basecamp, at the web application company also called Basecamp \(formerly 37Signals\). It was a web application framework he developed while creating Basecamp. He released it as open source in July 2004 \(but didn't give out commit rights until February 2005\).
 
-### _Ruby on Rails - A Brief History of Rails - Further Reading_ {#ruby-on-rails-a-brief-history-of-rails-further-reading}
+### _Ruby on Rails - A Brief History of Rails - Further Reading_ <a id="ruby-on-rails-a-brief-history-of-rails-further-reading"></a>
 
 * ​[Wikipedia - Ruby on Rails](http://en.wikipedia.org/wiki/Ruby_on_Rails)​
 
-### What is Rails? {#what-is-rails}
+### What is Rails? <a id="what-is-rails"></a>
 
 Rails is a web application framework, built with Ruby. It is designed to make programming all web applications much, much easier by making lots of assumptions about what you are going to need to get started. It means you have to write a lot less code, while building a lot more. Similar to Ruby, it makes development fun.
 
@@ -48,17 +48,17 @@ The Rails philosophy includes three major guiding principles, which really just 
 
   It is all about the interactions. A controller can send commands to the model to update the model's state \(e.g., editing a document\). It can also send commands to the associated view to change the presentation \(and content\). A model stores data that is retrieved by the controller and displayed in the view. Whenever there is a change to the data it is updated by the controller. A view requests information from the model that it uses to generate an output representation to the user.
 
-### How to install Rails {#how-to-install-rails}
+### How to install Rails <a id="how-to-install-rails"></a>
 
 Simple! Rails is a gem. Just run `gem install rails`, make sure you don't add sudo at the start, even if prompted to do so! Ruby is, obviously, a dependency, so if you don't have Ruby, get that first - see the Ruby installation guide in [Week 4, Day 1](../week-04/day-01.md).
 
-### Basic Rails Project {#basic-rails-project}
+### Basic Rails Project <a id="basic-rails-project"></a>
 
-#### _Step 1: Planning_ {#step-1-planning}
+#### _Step 1: Planning_ <a id="step-1-planning"></a>
 
 The first step for any Rails project is planning - it is very important to map out what your site will do, and how a user will use your site. Once you have figured that out, you can begin creating the project.
 
-#### _Step 2. New Rails Project_ {#step-2-new-rails-project}
+#### _Step 2. New Rails Project_ <a id="step-2-new-rails-project"></a>
 
 To create the Rails project, we use the `rails new project_name --skip-git` command in terminal. This takes a lot of options, but for now we will just stick with the basic command without any options.
 
@@ -82,7 +82,7 @@ From here, we can open all the files Rails generated for us in Atom.
   atom .
 ```
 
-#### _Step 3. Customize Gemfile_ {#step-3-customize-gemfile}
+#### _Step 3. Customize Gemfile_ <a id="step-3-customize-gemfile"></a>
 
 The Gemfile is where we specify what Ruby Gems we want to include in our application. Remember how with Sinatra we would first install a Gem from the command line and then `require` all the Gems our application depended on in the main.rb file? In a Rails app, we do this in our Gemfile.
 
@@ -111,7 +111,7 @@ The terminal output should be about a few dozen lines that look like `Using web-
 
 If you see something else, there was probably an error bundling the Gems which you'll need to address before going any further.
 
-#### _Step 4. Setup Routes_ {#step-4-setup-routes}
+#### _Step 4. Setup Routes_ <a id="step-4-setup-routes"></a>
 
 Now we get into the Routes \(found in config/routes.rb\). This is like the 'gets' methods in our Sinatra app's main.rb file.
 
@@ -140,7 +140,7 @@ Lets load up the server by running `rails server` or `rails s` from our Rails pr
 
 We are up to an Error Driven Development point now - we let the errors guide where we go next.
 
-#### _Step 5. Create a Controller_ {#step-5-create-a-controller}
+#### _Step 5. Create a Controller_ <a id="step-5-create-a-controller"></a>
 
 The first error we encounter will be an `uninitialized Constant` error. This means that we haven't created the controller associated with this URL - in our routes \(config/routes.rb\), we have directed requests to the root path \(ie "/", or "localhost:3000/" in development\) to the **Pages controller**'s **Home action** \(`root :to => "pages#home"`\).
 
@@ -161,7 +161,7 @@ class PagesController < ApplicationController
 end
 ```
 
-#### _Step 6. Create a View_ {#step-6-create-a-view}
+#### _Step 6. Create a View_ <a id="step-6-create-a-view"></a>
 
 Once we have this setup, if we refresh the page we'll see the **Missing template** - this is telling us that, even though our routes.rb has a route matching the path requested, and even though we have a controller and action matching those specified in the router, we don't have a view for that action.
 
@@ -178,7 +178,7 @@ This is the sort of setup you need to go through for each particular page in you
 
 To summarize...
 
-## Ruby on Rails - Basic Project Setup \(no database\) {#ruby-on-rails-basic-project-setup-no-database}
+## Ruby on Rails - Basic Project Setup \(no database\) <a id="ruby-on-rails-basic-project-setup-no-database"></a>
 
 This is a summary of the steps detailed above:
 
@@ -195,7 +195,7 @@ This is a summary of the steps detailed above:
 
 \* Remember - not all actions have a corresponding view!
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * Read: [Rails Guides - Getting Started](http://guides.rubyonrails.org/v4.2/getting_started.html)​
 * Read: [SitePoint - A Quick Study of the Rails Directory Structure](https://www.sitepoint.com/a-quick-study-of-the-rails-directory-structure/)​

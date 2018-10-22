@@ -13,12 +13,12 @@ What we covered today:
 * Git - Intro to Git
   * **Guest speaker**: Meggan Turner 🐕 - [Slides](http://slides.com/megganturner/what-the-heck-is-git-anyway#/).
 
-### Slides {#slides}
+### Slides <a id="slides"></a>
 
 * ​[Variables and functions](http://www.teaching-materials.org/javascript/slides/varsfunctions.html)​
 * ​[Javascript control flow and logical operators](http://www.teaching-materials.org/javascript/slides/controlflow.html)​ \(slides 1 - 10\)
 
-## Javascript - Introduction to Javascript {#javascript-introduction-to-javascript}
+## Javascript - Introduction to Javascript <a id="javascript-introduction-to-javascript"></a>
 
 > "Java is to Javascript, as ham is to hamster" - _Joel Turnbull_
 >
@@ -44,14 +44,14 @@ There are two audiences that see any program that you will write. There is the c
 >
 > _Joel Turnbull ...probably._
 
-### _Javascript \(General\) - Recommended Readings_ {#javascript-general-recommended-readings}
+### _Javascript \(General\) - Recommended Readings_ <a id="javascript-general-recommended-readings"></a>
 
 * ​[Eloquent Javascript](http://eloquentjavascript.net/)​
 * ​[Speaking Javascript](http://speakingjs.com/)​
 * ​[Javascript: The Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)​
 * ​[W3: A Short History of Javascript](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript)​
 
-### History {#history}
+### History <a id="history"></a>
 
 * 1995 - At Netscape, Brendan Eich created "JavaScript".
 * 1996 - Microsoft releases "JScript", a port for IE3.
@@ -61,9 +61,9 @@ There are two audiences that see any program that you will write. There is the c
 * 2010 - Node.JS was released.
 * 2015 - ECMAScript 6 was released.
 
-## Javascript {#javascript}
+## Javascript <a id="javascript"></a>
 
-## Declaring variables {#declaring-variables}
+## Declaring variables <a id="declaring-variables"></a>
 
 Pre-ES6 \(ECMA2015\), variables were declared using `var`. However, ES6 introduced two new ways of declaring variables: `const` and `let`, which forces us to think about the variable before we declare it and makes debugging easier.
 
@@ -73,9 +73,9 @@ Pre-ES6 \(ECMA2015\), variables were declared using `var`. However, ES6 introduc
 
 In this course, we recommend you use `const` at first instance, and if you need to change the value of a variable, to instead declare your variable with `let`.
 
-## Data Types {#data-types}
+## Data Types <a id="data-types"></a>
 
-### Primitive Value Types {#primitive-value-types}
+### Primitive Value Types <a id="primitive-value-types"></a>
 
 **Strings** - An immutable string of characters denoted by \(back ticks\), " " \(double quotation marks\) or ' ' \(single quotation marks\),
 
@@ -127,7 +127,7 @@ goodPickUpLines;
 // => null
 ```
 
-### Variable Names {#variable-names}
+### Variable Names <a id="variable-names"></a>
 
 * Must begin with letters, $ or \_
 * Can only contain letters, numbers, $ and \_
@@ -248,11 +248,11 @@ console.log(`Hello ${firstName}!
 
 You know how they say you need to write 10 000 words before you write a novel? All of the stuff you are learning right now is a part of that 10 000 words... if learning to code were writing a novel...
 
-### _Javascript Variables - Exercises_ {#javascript-variables-exercises}
+### _Javascript Variables - Exercises_ <a id="javascript-variables-exercises"></a>
 
 * ​[Variables: Exercises](https://gist.github.com/textchimp/a9b29d99e8b78a5b4ef80d6d6bbe6413)​
 
-### Comments {#comments}
+### Comments <a id="comments"></a>
 
 Comments are human-readable lines of text that the computer will ignore. Comments are _incredibly_ useful for leaving notes to yourself \(and other developers\) in your code - these comments might explain the purpose of a section of code or how a particularly complex function works, note any bugs in the code, or leave 'TODO' notes for yourself.
 
@@ -267,7 +267,7 @@ In Atom, `<CMD> + /` will toggle the comments. Highlight a block of text and try
 */
 ```
 
-## Javascript - Functions {#javascript-functions}
+## Javascript - Functions <a id="javascript-functions"></a>
 
 Functions are way to make a collection of statements re-usable. This is the most powerful thing in Javascript.
 
@@ -296,7 +296,7 @@ sayMyName();
 
 If you want to see the difference between function declarations and function expressions, see [this blog post](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/) and [this StackOverflow post](http://stackoverflow.com/questions/1013385/what-is-the-difference-between-a-function-expression-vs-declaration-in-javascrip) .
 
-### Parameters and Arguments {#parameters-and-arguments}
+### Parameters and Arguments <a id="parameters-and-arguments"></a>
 
 The terms 'parameter' and 'argument' are often used interchangeably - the context usually makes the meaning clear, and only a real jerk would pull you up on it - but basically:
 
@@ -321,7 +321,7 @@ sayMyName( s, g );
 // => "Hello Serge Gainsbourg!"
 ```
 
-### Return values {#return-values}
+### Return values <a id="return-values"></a>
 
 Functions wont automatically return the evaluation of the code within itself. You will need to add a return statement at the end of the function.
 
@@ -336,7 +336,7 @@ const sum = addNumbers(5, 2);
 // => 7
 ```
 
-### Scope {#scope}
+### Scope <a id="scope"></a>
 
 Javascript Variables have "function scope". They are visible only within the function in which they were declared.
 
@@ -385,7 +385,7 @@ If we assign a value to a variable inside a function without declaring the varia
 * You can return things from a function \(to allow for chaining or usage in expressions\)
 * Variables declared in a function \(or passed in as parameters to a function\) have local scope \(or function scope\) - i.e. they are only accessible within that function. Variable scope is something important to get your head around.
 
-### _Javascript Variable Scope - Recommended Readings_ {#javascript-variable-scope-recommended-readings}
+### _Javascript Variable Scope - Recommended Readings_ <a id="javascript-variable-scope-recommended-readings"></a>
 
 For a more in-depth dive into Javascript variable scope, see:
 
@@ -393,13 +393,13 @@ For a more in-depth dive into Javascript variable scope, see:
 * ​[Blog Post: Everything You Wanted To Know About Javascript](http://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/)​
 * ​[Sitepoint - Demystifying Javascript Variable Scope and Hoisting](http://www.sitepoint.com/demystifying-javascript-variable-scope-hoisting/?utm_source=SitePoint&utm_medium=email&utm_campaign=Versioning)​
 
-### _Javascript Functions - Exercises_ {#javascript-functions-exercises}
+### _Javascript Functions - Exercises_ <a id="javascript-functions-exercises"></a>
 
 Now that we know a bit more about functions, have a crack at the following exercises:
 
 * ​[Functions: Exercises](https://gist.github.com/textchimp/205b8493e9a894ae8d7d2bb3095af7d2)​
 
-## Javascript - Coding Conventions {#javascript-coding-conventions}
+## Javascript - Coding Conventions <a id="javascript-coding-conventions"></a>
 
 Javascript is pretty flexible. We can use whatever terrible formatting we like and a computer will \(generally\) be able to understand it. But for maximum readability, it's important to follow conventions. There a whole bunch of these, and there are disagreements about some, but some generally accepted conventions are:
 
@@ -421,7 +421,7 @@ const addNumbers = function(num1, num2) {
 }
 ```
 
-### _Javascript Coding Conventions - Recommended Readings_ {#javascript-coding-conventions-recommended-readings}
+### _Javascript Coding Conventions - Recommended Readings_ <a id="javascript-coding-conventions-recommended-readings"></a>
 
 For information relating to javascript style, see:
 
@@ -429,9 +429,9 @@ For information relating to javascript style, see:
 * ​[Javascript Style Guides and Beautifiers](http://addyosmani.com/blog/javascript-style-guides-and-beautifiers/)​
 * ​[AirBnB Style Guide](https://github.com/airbnb/javascript?utm_source=javascriptweekly&utm_medium=email) - this is also quite good.
 
-## Javascript - Operators {#javascript-operators}
+## Javascript - Operators <a id="javascript-operators"></a>
 
-### Comparison Operators {#comparison-operators}
+### Comparison Operators <a id="comparison-operators"></a>
 
 Use these operators to compare two values for equality, inequality or difference.
 
@@ -470,7 +470,7 @@ We would generally want to use the **strict** equality/inequality operators - th
 // => true
 ```
 
-### Logical Operators {#logical-operators}
+### Logical Operators <a id="logical-operators"></a>
 
 These are typically used in conjunction with the comparison operators and are commonly used to group multiple conditions, or for special types of variable declarations.
 
@@ -535,13 +535,13 @@ if(null){
 // => no output
 ```
 
-## Javascript Control Flow: Conditionals {#javascript-control-flow-conditionals}
+## Javascript Control Flow: Conditionals <a id="javascript-control-flow-conditionals"></a>
 
 We can use an **if statement** to tell Javascript which statements to execute, based on a condition.
 
 If the condition \(the things within the parentheses\) evaluates to true, it will run whatever is within the curly brackets. Otherwise, it will skip over the code in the curly brackets:
 
-### if {#if}
+### if <a id="if"></a>
 
 ```javascript
 const x = 5;​
@@ -553,7 +553,7 @@ if ( x > 0 ) {
 // => "x is a positive number!"
 ```
 
-### if / else {#if-else}
+### if / else <a id="if-else"></a>
 
 We can give if statements a fallback using **else** - if the condition in the if statement is not met, the code within the else block will be executed:
 
@@ -572,7 +572,7 @@ With an `if` / `else` pattern, Javascript will:
 * Always run one of the statements; and
 * Never run both of the statements.
 
-### if / else if / else {#if-else-if-else}
+### if / else if / else <a id="if-else-if-else"></a>
 
 You can also use **else if** if you have multiple, exclusive conditions to check - this is similar to chaining multiple if statements:
 
@@ -590,11 +590,11 @@ if (age >= 35) {
 // => "You can vote!"
 ```
 
-## Homework {#homework}
+## Homework <a id="homework"></a>
 
 * ​[Calculator and Strings](https://gist.github.com/textchimp/798d0760354f9eb7d4906e284dad9f95)​
 
-## Exercises {#homework}
+## Exercises <a id="homework"></a>
 
 * ​[if/ else exercises​](https://gist.github.com/textchimp/cf6a0f5babb2e86c21204b08d27b347b)
 * Bonus:

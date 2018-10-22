@@ -9,17 +9,17 @@ What we covered today:
   * Ruby on Rails - Authorisation
   * Ruby on Rails - Sessions
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * ​[Roman Numerals​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day04_roman-numerals)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * [​Tunr​](https://github.com/textchimp/wdi-29/tree/master/week5/tunr-db-wdi29)
 
-## PostgreSQL - Install {#postgresql-install}
+## PostgreSQL - Install <a id="postgresql-install"></a>
 
-### Installing PostgreSQL {#installing-postgresql}
+### Installing PostgreSQL <a id="installing-postgresql"></a>
 
 1. ​[Download Postgres](http://www.postgresapp.com/).
 2. Drag **Postgres** from your Downloads folder to your Applications folder.
@@ -67,16 +67,16 @@ What we covered today:
    rails new app_name -d postgresql
    ```
 
-## Authentication {#authentication}
+## Authentication <a id="authentication"></a>
 
-### Authentication v Authorization {#authentication-v-authorization}
+### Authentication v Authorization <a id="authentication-v-authorization"></a>
 
 * **Authentication** is the process of determining who a user is - it is about identity.
 * **Authorization** is the process of declaring what a user is allowed to do - it is about permissions.
 
 The term 'authentication' is often loosely applied to the end-to-end process of signing-up, logging-in and signing-out a user.
 
-### Authentication in Rails {#authentication-in-rails}
+### Authentication in Rails <a id="authentication-in-rails"></a>
 
 Authentication is rough, and rarely \(if ever\) will you be asked to build your own authentication system. There are plenty of gems that will do that sort of thing, but if you want to do it for yourself - there are a bunch of things you need to do.
 
@@ -84,7 +84,7 @@ First things first - we don't store passwords in plain text, we store it in some
 
 Let's create our User model!!
 
-### User model and users database table {#user-model-and-users-database-table}
+### User model and users database table <a id="user-model-and-users-database-table"></a>
 
 ```bash
 # Create our User model and the migration for creating the users table in the database.
@@ -94,7 +94,7 @@ rails generate model User name:string password_digest:string age:integer email:s
 rails db:migrate
 ```
 
-### Password encryption {#password-encryption}
+### Password encryption <a id="password-encryption"></a>
 
 Now, we need to use our Gemfile to get something that does the password encryption. We normally use [bcrypt](https://github.com/codahale/bcrypt-ruby) for this. Let's add it!
 
@@ -118,11 +118,11 @@ Including this method in our user model adds methods to set and authenticate enc
 
 \* The `password == password_confirmation` validation check will only be triggered if a password\_confirmation field is present. For forms that do not require this validation \(eg, sign-in\), just leave the password\_confirmation field out altogether.
 
-### Forms {#forms}
+### Forms <a id="forms"></a>
 
 Even though the users table in our database has a `password_digest` column, any forms relating to sign-up or sign-in _still_ need to use `password` and `password_confirmation` parameters. A user doesn't enter their `password_digest` directly - Rails knows that the model "has secure password", and when bcrypt sees a `password` and `password_confirmation`, it knows what to do with it.
 
-### Interlude - HTTP 'state' {#interlude-http-state}
+### Interlude - HTTP 'state' <a id="interlude-http-state"></a>
 
 Now we can authenticate a user based on their credentials, including an encrypted password, but before we get into authorization \(what a user can _do_, having been _authenticated_\), we need a way to be able to remember who an authenticated user is.
 
@@ -130,7 +130,7 @@ HTTP is stateless, so either the browser or the application \(or both\) need to 
 
 \*The session hash is not actually a hash, it just behaves like one.
 
-## Authorisation {#authorisation}
+## Authorisation <a id="authorisation"></a>
 
 Now that we have set up the authentication system, let's work on authorisation - specifying what actions we will allow users to perform.
 
@@ -196,13 +196,13 @@ class AdminController < ApplicationController
 end
 ```
 
-### Sessions {#sessions}
+### Sessions <a id="sessions"></a>
 
 When a user visits a Rails site \(or rather, when a client sends a request to a Rails server\), the application checks whether the client includes a cookie containing a valid session ID for the application. If none exists \(ie, if this is a new user, or they are not logged in\), the app will create a new session on the application side, and store that in an encrypted cookie on the client-side.
 
 Two parts of the session that are pivotal to authentication and authorization are the **session hash** and **flash hash**:
 
-#### _Session hash_ {#session-hash}
+#### _Session hash_ <a id="session-hash"></a>
 
 The session hash:
 
@@ -216,7 +216,7 @@ The session hash:
 
 We can store a \(small\) bunch of information in the session hash, including an authenticated user's `user_id` - this is the key to effective authorization in Rails.
 
-#### _Flash hash_ {#flash-hash}
+#### _Flash hash_ <a id="flash-hash"></a>
 
 The flash hash is a special part of the session that is cleared after each HTTP request - this means that values stored there will only be available in the next request, which is useful for passing error messages etc \(eg, if a user is not authorized to access a particular action\).
 
@@ -252,7 +252,7 @@ end
 
 Below is a pattern for storing a user's `user_id` to their session hash when they sign-in, and to track this for authorization within the application.
 
-#### _Create a session controller_ {#create-a-session-controller}
+#### _Create a session controller_ <a id="create-a-session-controller"></a>
 
 Our session controller has no associated model and only requires three actions - new, create and destroy.
 
@@ -275,7 +275,7 @@ get 'session/create'
 get 'session/destroy'.
 ```
 
-#### _Setup login routes_ {#setup-login-routes}
+#### _Setup login routes_ <a id="setup-login-routes"></a>
 
 Add the following routes to your config/routes.rb file:
 
@@ -287,7 +287,7 @@ post '/login' => 'session#create'     # This will be the path to which the sign-
 delete '/login' => 'session#destroy'  # This will be the path users use to log-out.
 ```
 
-#### _Setup session controller actions_ {#setup-session-controller-actions}
+#### _Setup session controller actions_ <a id="setup-session-controller-actions"></a>
 
 We want to use our session controller to handle login and logout. If a user logs in with a valid username & password combination, their user\_id will be stored in the session hash. If a user logs out, the user\_id will be removed from the session hash.
 
@@ -329,7 +329,7 @@ class SessionController < ApplicationController
 end
 ```
 
-#### _Add sign-up / log-in / sign-out links to our layout_ {#add-sign-up-log-in-sign-out-links-to-our-layout}
+#### _Add sign-up / log-in / sign-out links to our layout_ <a id="add-sign-up-log-in-sign-out-links-to-our-layout"></a>
 
 You'll probably won't to wrap this in some conditional logic once you have your `fetch_user` method set up \(see Authorization, below\), but these links in your app/views/layouts/application.html.erb layout will allow users to sign-up, log in and sign-out:
 
@@ -341,12 +341,12 @@ You'll probably won't to wrap this in some conditional logic once you have your 
 </ul>
 ```
 
-### _Authentication - Recommended Readings_ {#authentication-recommended-readings}
+### _Authentication - Recommended Readings_ <a id="authentication-recommended-readings"></a>
 
 * ​[The Buckner Life - Simple Authentication with Bcrypt](https://gist.github.com/thebucknerlife/10090014) - this is a great, step-by-step Bcrypt tutorial.
 * ​[Rails Guides - Security Guide](http://guides.rubyonrails.org/security.html)​
 
-## Ruby on Rails - Associations II  {#ruby-on-rails-associations}
+## Ruby on Rails - Associations II  <a id="ruby-on-rails-associations"></a>
 
 Associations allow you to create relationships between any two models \(that inherit from ActiveRecord::Base\). By declaratively telling Rails that two models have a certain association with each other, we can greatly streamline our code.
 
@@ -361,7 +361,7 @@ Rails supports six types of associations:
 
 The two simplest associations are `belongs_to` and `has_many`.
 
-### `belongs_to` {#belongs_to}
+### `belongs_to` <a id="belongs_to"></a>
 
 A belongs\_to association sets up a one-to-one connection with another model, such that each instance of the declaring model "belongs to" one instance of the other model. For example, if your application includes customers and orders, and each order can be assigned to exactly one customer, you'd declare the order model this way:
 
@@ -377,7 +377,7 @@ A few things to note about `belongs_to` associations:
 * The `order` table must also include the `customer_id` for the customer records to which it belongs.
 * A `belongs_to` association often has a reciprocal `has_one` or `has_many` association on the other model.
 
-### `has_many` {#has_many}
+### `has_many` <a id="has_many"></a>
 
 A has\_many association indicates a one-to-many connection with another model. You'll often find this association on the "other side" of a belongs\_to association. This association indicates that each instance of the model has zero or more instances of another model. For example, in an application containing customers and orders, the customer model could be declared like this:
 
@@ -393,7 +393,7 @@ A few things to note about `has_many` associations:
 * A `has_many` association often has a reciprocal `belongs_to` association on the other model.
 * The model with the `has_many` association doesn't store the 'foreign key' of the related model. That goes on the model with the `belongs_to` association.
 
-### `has_one` {#has_one}
+### `has_one` <a id="has_one"></a>
 
 A `has_one` association also sets up a one-to-one connection with another model, but with somewhat different semantics \(and consequences\). This association indicates that each instance of a model contains or possesses one instance of another model.
 
@@ -403,7 +403,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-### `has_many :through` {#has_many-through}
+### `has_many :through` <a id="has_many-through"></a>
 
 A `has_many :through` association is often used to set up a many-to-many connection with another model. This association indicates that the declaring model can be matched with zero or more instances of another model by proceeding through a third model.
 
@@ -424,7 +424,7 @@ class Patient < ActiveRecord::Base
 end
 ```
 
-### `has_one :through` {#has_one-through}
+### `has_one :through` <a id="has_one-through"></a>
 
 A `has_one :through` association sets up a one-to-one connection with another model. This association indicates that the declaring model can be matched with one instance of another model by proceeding through a third model.
 
@@ -444,7 +444,7 @@ class AccountHistory < ActiveRecord::Base
 end
 ```
 
-### `has_and_belongs_to_many` {#has_and_belongs_to_many}
+### `has_and_belongs_to_many` <a id="has_and_belongs_to_many"></a>
 
 A has\_and\_belongs\_to\_many association creates a direct many-to-many connection with another model, with no intervening model. This association is often abbreviated to 'HABTM'.
 
@@ -458,7 +458,7 @@ class Part < ActiveRecord::Base
 end
 ```
 
-### _Ruby on Rails - Associations_ {#ruby-on-rails-associations-1}
+### _Ruby on Rails - Associations_ <a id="ruby-on-rails-associations-1"></a>
 
 * ​[Rails Guides - Association Basics](http://guides.rubyonrails.org/v4.2/association_basics.html)​
 

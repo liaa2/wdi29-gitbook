@@ -9,17 +9,17 @@ What we covered today:
 * Ruby - Class and Instance Methods
 * Active Record
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * ​[Nucleotides - Ruby](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day03_ruby_nucleotide)​
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[Codealong​](https://github.com/textchimp/wdi-29/tree/master/week4/databases)
 
-## Object Oriented Programming {#object-oriented-programming}
+## Object Oriented Programming <a id="object-oriented-programming"></a>
 
-### Brief Intro to OOP {#brief-intro-to-oop}
+### Brief Intro to OOP <a id="brief-intro-to-oop"></a>
 
 Basically, OOP is an approach to development that tries to replicate real life. It is pretty much always done using objects or classes as namespaces\* and treats them as a way to make your code "modular".
 
@@ -27,7 +27,7 @@ Basically, OOP is an approach to development that tries to replicate real life. 
 
 The focus of object-oriented is on data and structure rather than logic. Small, clean methods are also a major part of it.
 
-### Basic OOP in Ruby {#basic-oop-in-ruby}
+### Basic OOP in Ruby <a id="basic-oop-in-ruby"></a>
 
 Up until now, we have only been modifying objects. We can create an empty object and then add methods and features to construct a particular object.
 
@@ -42,7 +42,7 @@ This is not ideal. It means that every time we create an object, we have to add 
 
 To get around this we use classes!
 
-### Classes {#classes}
+### Classes <a id="classes"></a>
 
 Everything in Ruby is an object, and every object is an "instance" of a class - it inherits from a class, and in some capacity will ultimately inherit from the Ruby `Object`. This doesn't pop up that regularly, but to see what I mean:
 
@@ -70,14 +70,14 @@ If you want to see every class an object inherits from, we can call the `ancesto
 
 Treat classes as a factory or a blueprint, something that gives another thing all the details that it needs to be created and used. We use them to stop duplicate code and to make manageable, easy-to-debug code.
 
-#### _What do classes look like?_ {#what-do-classes-look-like}
+#### _What do classes look like?_ <a id="what-do-classes-look-like"></a>
 
 ```ruby
 class MarxBrother
 end
 ```
 
-#### _The real power of classes_ {#the-real-power-of-classes}
+#### _The real power of classes_ <a id="the-real-power-of-classes"></a>
 
 The real power of classes comes from being able to add methods to _all_ objects of a given class, rather than to individual objects! We can encapsulate functionality with classes, which will be inherited by all objects that are an 'instance' of that class \(ie, an object created from that class blueprint\).
 
@@ -239,7 +239,7 @@ groucho.class.instance_methods( false )
 
 [Class Demo - Classes​](https://github.com/textchimp/wdi-29/tree/master/week4/classes)
 
-## Ruby - Variable scope {#ruby-variable-scope}
+## Ruby - Variable scope <a id="ruby-variable-scope"></a>
 
 There are four types of variable in Ruby, categorized by scope - ie, from where the variable is accessible within a program.
 
@@ -251,37 +251,37 @@ There are four types of variable in Ruby, categorized by scope - ie, from where 
 | `[a-z]` or `_` | Local | `joel` |
 | `[A-Z]` | Constant | `Pi` |
 
-### Local variables {#local-variables}
+### Local variables <a id="local-variables"></a>
 
 `animal = "badger"`
 
 The scope of a local variable depends on where it was defined. The scope ranges from the class, module, method, or do block in which it is defined to the corresponding `end` \(from a block's opening brace to its closing curly bracket\).
 
-### Instance variables {#instance-variables}
+### Instance variables <a id="instance-variables"></a>
 
 `@animal = "badger"`
 
 Instance variables are available throughout the instance of the class in which it was defined, and are limited to that specific instance object. If an instance variable is modified in one instance, it will not affect other objects of the same class - each instance has its own 'local' copy of the variable.
 
-### Class variables {#class-variables}
+### Class variables <a id="class-variables"></a>
 
 `@@habitat = "forest"`
 
 Class variables are available throughout all instances of the class in which it was defined. These are often used to define characteristics that are common to all instances of a particular class, but should generally be avoided.
 
-### Global variables {#global-variables}
+### Global variables <a id="global-variables"></a>
 
 `$planet = "earth"`
 
 Global variables are available throughout a program. Again, these should generally be avoided - not only are they visible throughout the program, they can also be _changed_ from anywhere in the program.
 
-### Constants {#constants}
+### Constants <a id="constants"></a>
 
 `Pi = 3.1415926535`
 
 The scope of a constant depends on where it was defined. Constants defined within a class or module can be accessed from within that class or module, and those defined outside a class or module can be accessed globally. Constants are useful for creating variables that you want to be available everywhere but don't don't _intend_ to be changed \(they _can_ be changed, they just aren't _intended_ to be changed\).
 
-### Determining variable scope {#determining-variable-scope}
+### Determining variable scope <a id="determining-variable-scope"></a>
 
 While the scope of a variable can be deduced from the variable name, we can use the `defined?` method to programmatically determine the scope of a variable. The `defined?` method returns the scope of the variable passed into the method.
 
@@ -295,11 +295,11 @@ defined?($instructor)
 # => 'global-variable'
 ```
 
-## Ruby - Class and Instance Methods {#ruby-class-and-instance-methods}
+## Ruby - Class and Instance Methods <a id="ruby-class-and-instance-methods"></a>
 
 Methods in Ruby can broadly be categorised as `instance methods` and `class methods`
 
-### Instance methods {#instance-methods}
+### Instance methods <a id="instance-methods"></a>
 
 Instance methods are pieces of functionality that belong to a particular instance of a class. They cannot be called on the class itself, or on anything other than an instance of the class.
 
@@ -316,7 +316,7 @@ a.searching
 # => "Searching for weasel"
 ```
 
-### Class methods {#class-methods}
+### Class methods <a id="class-methods"></a>
 
 Class methods are methods are pieces of functionality that belong to a class, but aren't tied to any particular instance of that class. There are a few ways to declare class methods, but the most common way is to prefix the method name with the word `self`.
 
@@ -331,7 +331,7 @@ Animal.searching
 # => "searching for animals"
 ```
 
-### Predicate methods {#predicate-methods}
+### Predicate methods <a id="predicate-methods"></a>
 
 This isn't so much a different category of method as a type of method. A predicate method is any method that will only ever return `true` or `false`. The convention in Ruby is to end predicate methods in a `?` - the `?` isn't a magic symbol, here. It just reminds you and other developers that this method will return a boolean value, and makes your code read more like plain English.
 
@@ -346,13 +346,13 @@ puts "That's a big number" if is_big?
 # => true
 ```
 
-## Active Record {#active-record}
+## Active Record <a id="active-record"></a>
 
-### Preface - Object Relational Mapping {#preface-object-relational-mapping}
+### Preface - Object Relational Mapping <a id="preface-object-relational-mapping"></a>
 
 One of the most significant principles in Object-Oriented Programming is the idea of rich objects - things that store data, and allow it to be retrieved in logical and concise ways. This pattern is what Active Record strives for. It's called Object Relational Mapping, or ORM. The basic principle of ORM is that rich objects in your application should be connected with database tables. Using ORM, the properties and relationships of the objects in an application can be easily stored and retrieved from a database without writing SQL statements directly and with less overall database access code, but instead by creating and manipulating Ruby objects. It is also far more secure as it reduces an application's susceptibility to SQL Injections.
 
-### What does Active Record do? {#what-does-active-record-do}
+### What does Active Record do? <a id="what-does-active-record-do"></a>
 
 Active Record, as an ORM, gives us several mechanisms, with the most important being the ability to:
 
@@ -362,14 +362,14 @@ Active Record, as an ORM, gives us several mechanisms, with the most important b
 * Validate models before they are persisted to the database.
 * Perform database operations in an object-oriented fashion.
 
-### Convention over configuration {#convention-over-configuration}
+### Convention over configuration <a id="convention-over-configuration"></a>
 
 The concept of convention over configuration is big in development generally, but it is particularly full on when it comes to Active Record. That is because it uses the names to sort out associations etc. Make sure you follow these rules!
 
 * **Database Tables** - Plural with underscores separating words \(articles, line\_items etc.\)
 * **Model / Class Names** - Singular with the first letter of each word capitalized \(Article, LineItem etc.\)
 
-### How do you work with Active Record? {#how-do-you-work-with-active-record}
+### How do you work with Active Record? <a id="how-do-you-work-with-active-record"></a>
 
 Well, at the end of the day, Active Record is a Ruby gem like any other. So we need to require it!!
 
@@ -392,7 +392,7 @@ ActiveRecord::Base.logger = Logger.new(STDERR)
 
 ```
 
-### CRUD, SQL, HTTP & Active Record - One Table to Rule Them All {#crud-sql-http-and-active-record-one-table-to-rule-them-all}
+### CRUD, SQL, HTTP & Active Record - One Table to Rule Them All <a id="crud-sql-http-and-active-record-one-table-to-rule-them-all"></a>
 
 | CRUD | HTTP Verb | SQL | Action | Active Record | URL | View |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -410,11 +410,11 @@ ActiveRecord::Base.logger = Logger.new(STDERR)
 
 \*\*\* Delete requests are often sent using the POST or GET HTTP verbs, since the `delete` method is not yet supported by all browsers.
 
-### CRUD with Active Record {#crud-with-active-record}
+### CRUD with Active Record <a id="crud-with-active-record"></a>
 
 Once we have our models defined \(i.e. our classes\), we can get into the CRUD stuff. There are always a lot of options of how to do this!
 
-#### _Create_ {#create}
+#### _Create_ <a id="create"></a>
 
 ```ruby
 plant = Plant.new
@@ -436,7 +436,7 @@ end
 
 ```
 
-#### _Read_ {#read}
+#### _Read_ <a id="read"></a>
 
 ```ruby
 Plant.all
@@ -447,7 +447,7 @@ Plant.find_by( :name => "Hibiscus" ) # Returns the first plant that matches
 Plant.where( :name => "Hibiscus" ) # Returns all instances where the plant matches
 ```
 
-#### _Update_ {#update}
+#### _Update_ <a id="update"></a>
 
 ```ruby
 plant = Plant.find_by( :name => "Hibiscus" )
@@ -458,7 +458,7 @@ plant = Plant.find_by( :name => 'Hibiscus 2' )
 plant.update( :name => 'Hibiscus' ) # This will save automatically
 ```
 
-#### _Delete_ {#delete}
+#### _Delete_ <a id="delete"></a>
 
 ```ruby
 plant = Plant.find_by( :name => 'Hibiscus' )
@@ -467,12 +467,12 @@ plant.destroy
 Plant.destroy_all
 ```
 
-### _Active Record - Recommended Readings_ {#active-record-recommended-readings}
+### _Active Record - Recommended Readings_ <a id="active-record-recommended-readings"></a>
 
 * ​[Rails Guides - Active Record Basics](http://guides.rubyonrails.org/v4.2/active_record_basics.html)​
 * ​[Rails Guides - Active Record Query Interface](http://guides.rubyonrails.org/v4.2/active_record_querying.html)​
 
-### Homework {#homework}
+### Homework <a id="homework"></a>
 
 * To create a CRUD app using ActiveRecord, with the same functionality as the animals & admirers app but with a different theme, such as "bands and their albums", i.e. two database tables and a one-to-many association between the tables
 * Read:

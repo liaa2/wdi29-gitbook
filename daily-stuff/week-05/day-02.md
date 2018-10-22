@@ -4,16 +4,16 @@ What we covered today:
 
 * Ruby on Rails - Basic Project Setup \(with database\)
 
-### Warmup {#warmup}
+### Warmup <a id="warmup"></a>
 
 * [Robot factory - Ruby​](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day02_robot_factory)
 
-### Classwork {#classwork}
+### Classwork <a id="classwork"></a>
 
 * ​[movie-search](https://github.com/textchimp/wdi-29/tree/master/week5/movie-search)
 * ​[planets-db](https://github.com/textchimp/wdi-29/tree/master/week5/planets-db)
 
-## Ruby on Rails - Basic Project Setup \(with database\) {#ruby-on-rails-basic-project-setup-with-database}
+## Ruby on Rails - Basic Project Setup \(with database\) <a id="ruby-on-rails-basic-project-setup-with-database"></a>
 
 Treat this as a really rough guide, and definitely don't always follow it - you'll figure out your approach soon. This is a basic approach you might follow when setting up a new Rails project:
 
@@ -238,7 +238,7 @@ Treat this as a really rough guide, and definitely don't always follow it - you'
   </tbody>
 </table>\* You can specify the actions for which you would like Rails to create views and methods when generating the controller by adding them to the end of the command - eg `rails generate controller Kittens index show edit new`. This will create those views, and the placeholder methods in your controller, but it also generates a bunch of routes that you will probably want to delete.
 
-## Ruby on Rails - Migrations {#ruby-on-rails-migrations}
+## Ruby on Rails - Migrations <a id="ruby-on-rails-migrations"></a>
 
 Migrations are a way to modify your database schema using Ruby code. Using migrations, we can:
 
@@ -263,7 +263,7 @@ We most commonly use migrations to:
 1. Create a table in our schema;
 2. Modify a table in our schema.
 
-### Migrations to create a table {#migrations-to-create-a-table}
+### Migrations to create a table <a id="migrations-to-create-a-table"></a>
 
 Creating a model using `rails generate model` will create a migration for creating the table for that model:
 

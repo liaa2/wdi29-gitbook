@@ -13,7 +13,7 @@ What we covered today:
   * Font Awesome
   * Custom Fonts
 
-## CSS - visual formatting model {#css-visual-formatting-model}
+## CSS - visual formatting model <a id="css-visual-formatting-model"></a>
 
 The CSS visual formatting model is the set of rules used to process and render documents to visual media. Each element of a document is converted to one or more boxes, and the layout of each box is determined by its:
 
@@ -22,7 +22,7 @@ The CSS visual formatting model is the set of rules used to process and render d
 * The positioning scheme \(ie, `position`; eg, static, relative, absolute, etc\)
 * Relationship to other elements in the document object model.
 
-### The box model {#the-box-model}
+### The box model <a id="the-box-model"></a>
 
 ![](https://i.imgur.com/DSi2s3A.png)
 
@@ -30,7 +30,7 @@ Every HTML element generates a rectangular box. The 'box model' defines these bo
 
 The core box-model CSS properties are: size \(`height` `width`\), `margin`, `padding`, `border` and `box-sizing`.
 
-#### _Size_ {#size}
+#### _Size_ <a id="size"></a>
 
 The size of the element's content box - the size and width of the element itself. The following properties can be used to control the size of the box:
 
@@ -38,21 +38,21 @@ The size of the element's content box - the size and width of the element itself
 * `max-height` and `max-width`
 * `min-height` and `min-width`
 
-#### _Padding_ {#padding}
+#### _Padding_ <a id="padding"></a>
 
 Specifies the space between the content box and the box's border. The following properties can be used to control the box's padding:
 
 * `padding` - a 'variadic' property that can be used to set some or all padding attributes of an element \(all sides, all sides in pairs, all sides individually\)
 * `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
 
-#### _Margins_ {#margins}
+#### _Margins_ <a id="margins"></a>
 
 Specifies the space between the element and adjacent elements. The following properties can be used to control the box's margins:
 
 * `margin` - a 'variadic' property that can be used to set some or all padding attributes \(all sides, all sides in pairs, all sides individually\)
 * `margin-top`, `margin-right`, `margin-bottom`, `margin-left`
 
-#### _Border_ {#border}
+#### _Border_ <a id="border"></a>
 
 Specifies the style of the box's border. There are a _lot_ of border properties \(eg `border-bottom-righ-radius`, etc\), but the following properties can be used to control the box's border:
 
@@ -61,13 +61,13 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * `border-width`
 * `border-color`
 
-### Display {#display}
+### Display <a id="display"></a>
 
 * ​[Class demo](https://github.com/textchimp/wdi-29/tree/master/week2/css-layout)​
 
 `display` one of the most important properties of CSS to control the layout. The default display value for each element is dependant on what type of element it is. The default is `inline`.
 
-#### _display: block_ {#display-block}
+#### _display: block_ <a id="display-block"></a>
 
 * `display: inline;` - The default value
 * `display: block;` - Takes up the full width of the parent element
@@ -75,7 +75,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * `display: none;` - will hide the element so it's not visible on the page
 * `display: initial;` - converts the display back to what it was when the page was initially loaded.
 
-### Position {#position}
+### Position <a id="position"></a>
 
 * ​[Class demo​](https://github.com/textchimp/wdi-29/tree/master/week2/css-layout)
 * `position: static;` - static is the default. It lets the browser figure out where it wants to put the element.
@@ -84,7 +84,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * `position: fixed;` - Positioned relative to the `window`. This will stay on screen even if you scroll through the page.
 * `z-index` - You can use the z-index to change the stacking hierarchy. A higher z-index will bring the element to the top of the stack.
 
-#### _Placeholder Images_ {#placeholder-images}
+#### _Placeholder Images_ <a id="placeholder-images"></a>
 
 * ​[Fill Murray](http://www.fillmurray.com/)​
 * ​[Placeholdit](http://placehold.it/)​
@@ -93,7 +93,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * ​[Dummy Image](http://dummyimage.com/)​
 * ​[Place Cage](http://www.placecage.com/)​
 
-### _CSS - The Visual Formatting Model - Recommended Readings_ {#css-the-visual-formatting-model-recommended-readings}
+### _CSS - The Visual Formatting Model - Recommended Readings_ <a id="css-the-visual-formatting-model-recommended-readings"></a>
 
 * ​[MDN - CSS Reference - Position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)​
 * ​[MDN - CSS Reference - Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)​
@@ -102,9 +102,9 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * ​[Learn CSS Layout](http://learnlayout.com/) - this is a really handy guide for getting your head around display and positioning, etc.
 * ​[Jon Duckett - HTML and CSS](http://www.htmlandcssbook.com/)​
 
-## CSS - Fonts {#css-fonts}
+## CSS - Fonts <a id="css-fonts"></a>
 
-### Google Fonts {#google-fonts}
+### Google Fonts <a id="google-fonts"></a>
 
 * Go to [Google Fonts](https://www.google.com/fonts) and add the fonts that you want to your Collection
 * Once you have selected all your fonts, click Use \(bottom right\)
@@ -112,7 +112,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * Choose the "@import" option and copy and paste the code into the top of your CSS file
 * Reference the font with the code provided
 
-### Using the fonts {#using-the-fonts}
+### Using the fonts <a id="using-the-fonts"></a>
 
 ```css
 @import url('https://fonts.googleapis.com/css?family=Rubik');
@@ -122,7 +122,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 }
 ```
 
-### Font Awesome {#font-awesome}
+### Font Awesome <a id="font-awesome"></a>
 
 * Go [here](http://fortawesome.github.io/Font-Awesome/get-started/) and either:
   * download the necessary files;
@@ -132,7 +132,7 @@ Specifies the style of the box's border. There are a _lot_ of border properties 
 * Go through [the list of Font Awesome icons](http://fortawesome.github.io/Font-Awesome/icons/) and click on the one you want
 * Copy and paste the snippet into your HTML.
 
-### Custom Fonts {#custom-fonts}
+### Custom Fonts <a id="custom-fonts"></a>
 
 To reference custom fonts, you need to have the fonts saved in your project. Reference them in this way - make sure this is at the top of the CSS file! Reference this particular font by using the font-family name you referred to.
 
@@ -152,11 +152,11 @@ To reference custom fonts, you need to have the fonts saved in your project. Ref
 
 To convert fonts, use [this tool.](http://onlinefontconverter.com/)​
 
-### Additional resources {#additional-resources}
+### Additional resources <a id="additional-resources"></a>
 
 * ​[Wireframing](https://wireframe.cc/)​
 
-### Homework {#homework}
+### Homework <a id="homework"></a>
 
 * ​[Famous Scientist's Website](https://gist.github.com/textchimp/ae04dc55da685d6039241912017bb327)​
 

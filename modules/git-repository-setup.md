@@ -8,21 +8,21 @@
 * ​[Markdown](https://granthanrahan.gitbook.io/wdi27/modules/git-repository-setup#markdown)​
 * ​[Project READMEs](https://granthanrahan.gitbook.io/wdi27/modules/git-repository-setup#READMEs)​
 
-## Introduction {#introduction}
+## Introduction <a id="introduction"></a>
 
 Git is a distributed version control system designed to help developers manage their code and collaborate with other developers.
 
 It's important to remember that `git !== GitHub`. Git lives on your computer. GitHub is one of several web-based Git repository hosting services, which allows you to store your code in the cloud, share your code with others and collaborate with other developers.
 
-#### _Git and GitHub - Further Reading_ {#git-and-github-further-reading}
+#### _Git and GitHub - Further Reading_ <a id="git-and-github-further-reading"></a>
 
 * ​[GitBook - Week 1 Day 4​](../daily-stuff/week-01/day-04.md)
 
-## Local Repositories {#local-repositories}
+## Local Repositories <a id="local-repositories"></a>
 
 These live on your computer. They can \(but don't need to\) be linked to **remote** repositories on GitHub, Heroku, etc.
 
-### Creating a local repository from scratch {#creating-a-local-repository-from-scratch}
+### Creating a local repository from scratch <a id="creating-a-local-repository-from-scratch"></a>
 
 Before creating a repository, you should always ensure that the directory you are in is not part of another Git repository by running `git status` - if this returns anything other than `fatal: Not a git repository (or any of the parent directories): .git`, you are inside an existing Git repository!
 
@@ -44,7 +44,7 @@ $ ls -a
 $ rm -r .git
 ```
 
-### Cloning a remote repository into a local repository {#cloning-a-remote-repository-into-a-local-repository}
+### Cloning a remote repository into a local repository <a id="cloning-a-remote-repository-into-a-local-repository"></a>
 
 If you want to create a local copy of a repository on GitHub, follow the steps below.
 
@@ -62,7 +62,7 @@ $ git clone https://github.com/cjbarnaby/green-bastard.git
   => Checking connectivity... done.
 ```
 
-## GitHub Remotes {#github-remotes}
+## GitHub Remotes <a id="github-remotes"></a>
 
 You may want to add remote GitHub repositories for a local Git repository to:
 
@@ -87,7 +87,7 @@ $ git remote add origin https://github.com/cjbarnaby/green-bastard.git
 $ git push origin master
 ```
 
-## Heroku Remotes {#heroku-remotes}
+## Heroku Remotes <a id="heroku-remotes"></a>
 
 Heroku is a platform for hosting and deploying full-stack web applications. It supports a number of different back-end languages and frameworks, including Ruby on Rails, and allows the straightforward deployment of applications using Git - by creating a Heroku app and adding a Heroku remote, you can deploy by simply pushing your code to the Heroku remote.
 
@@ -95,7 +95,7 @@ After you have [signed up for Heroku](https://signup.heroku.com/) and [installed
 
 The guide below covers the steps for adding a Heroku remote to a Git repo. For an end-to-end guide to creating a Rails app with a Postgresql database to be deployed on Heroku, see [Basic Rails and Heroku Project Setup](https://gist.github.com/cjbarnaby/52640b149f19cf1eb052f2c0fdb2db36).
 
-### Adding a Heroku Remote for a new Heroku app {#adding-a-heroku-remote-for-a-new-heroku-app}
+### Adding a Heroku Remote for a new Heroku app <a id="adding-a-heroku-remote-for-a-new-heroku-app"></a>
 
 Where you have an initialized Git repository, the following Terminal commands will create a Heroku application and add the Heroku remote to your Git repository \(note that your Heroku application name does not need to match your GitHub repository name, or the folder in which your local Git repository is stored - it does, however, need to follow url character rules and be unique to Heroku\).
 
@@ -106,7 +106,7 @@ $ heroku create green-bastard
      https://green-bastard.herokuapp.com/ | https://git.heroku.com/green-bastard.git
 ```
 
-### Adding a Heroku Remote for an existing Heroku app {#adding-a-heroku-remote-for-an-existing-heroku-app}
+### Adding a Heroku Remote for an existing Heroku app <a id="adding-a-heroku-remote-for-an-existing-heroku-app"></a>
 
 1. Click on the Heroku application on the [Heroku Dashboard](https://dashboard.heroku.com/).
 2. Click the 'Settings' tab.
@@ -119,11 +119,11 @@ $ heroku create green-bastard
 $ git remote add heroku https://git.heroku.com/green-bastard.git
 ```
 
-## GitHub Pages Remotes {#github-pages-remotes}
+## GitHub Pages Remotes <a id="github-pages-remotes"></a>
 
 GitHub Pages allows you to host \(front-end\) sites directly from your GitHub repository. There are two types of GitHub Pages sites - Project Sites and Portfolio Sites.
 
-### Project Site {#project-site}
+### Project Site <a id="project-site"></a>
 
 Each GitHub repository can have an associated GitHub Pages site. GitHub Pages project sites are automatically generated when you push valid HTML to a branch called `gh-pages` in your GitHub repository.
 
@@ -131,7 +131,7 @@ Each GitHub repository can have an associated GitHub Pages site. GitHub Pages pr
 * The URL of the GitHub Pages site will be [https://{USERNAME}.github.io/{REPOSITORY}](https://%7Busername%7D.github.io/%7BREPOSITORY%7D). For example, the GitHub repository [https://www.github.com/cjbarnaby/green-bastard](https://www.github.com/cjbarnaby/green-bastard) will have the GitHub Pages URL [https://cjbarnaby.github.io/green-bastard](https://cjbarnaby.github.io/green-bastard).
 * The guides below assume that your GitHub remote for your project is called `origin`.
 
-#### _Creating a GitHub Pages Project Site_ {#creating-a-github-pages-project-site}
+#### _Creating a GitHub Pages Project Site_ <a id="creating-a-github-pages-project-site"></a>
 
 ```bash
 $ cd green-bastard
@@ -142,7 +142,7 @@ $ git checkout gh-pages
 $ git push origin gh-pages
 ```
 
-#### _Updating a GitHub Pages Project Site_ {#updating-a-github-pages-project-site}
+#### _Updating a GitHub Pages Project Site_ <a id="updating-a-github-pages-project-site"></a>
 
 You shouldn't do your work in the gh-pages branch. Whenever you commit changes to your master branch that you want to be reflect on your GitHub Pages site, you need to checkout the gh-pages branch, merge in the master branch, push to your gh-pages branch on GitHub, then checkout your master branch to continue working.
 
@@ -164,15 +164,15 @@ $ git checkout master
   => Switched to branch 'master'
 ```
 
-### Portfolio Site {#portfolio-site}
+### Portfolio Site <a id="portfolio-site"></a>
 
 Each GitHub account is given a single 'Portfolio' GitHub Pages site. The process for creating and updating a Portfolio GitHub Pages site is identical to that of an ordinary 'Project' GitHub Pages site, with one important difference - the repository name must **exactly** be `{USERNAME}.github.io`. The URL of the GitHub Pages site will be [https://{USERNAME}.github.io](https://%7Busername%7D.github.io/).
 
-## Example Rails Project with GitHub and Heroku Remotes {#example-rails-project-with-github-and-heroku-remotes}
+## Example Rails Project with GitHub and Heroku Remotes <a id="example-rails-project-with-github-and-heroku-remotes"></a>
 
 * ​[Basic Rails & Heroku Project Setup](https://gist.github.com/cjbarnaby/52640b149f19cf1eb052f2c0fdb2db36)​
 
-## Markdown {#markdown}
+## Markdown <a id="markdown"></a>
 
 Markdown \(`.md`\) is a text-to-HTML conversion tool. It is both:
 
@@ -188,11 +188,11 @@ It's important to get comfortable with Markdown, since that will generally be th
 
 The Markdown Cheat Sheet below is the best quick-reference resource for Markdown syntax.
 
-#### _Markdown - Further Reading_ {#markdown-further-reading}
+#### _Markdown - Further Reading_ <a id="markdown-further-reading"></a>
 
 * ​[Adam Pritchard's Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)​
 
-## Project READMEs {#project-readmes}
+## Project READMEs <a id="project-readmes"></a>
 
 Your Git repo's README is incredibly important. This could be the only thing a prospective employer/developer looks at when checking out your GitHub profile. You should include things like a link to the live application, what technology you used, an overview of the app and its features, etc. Here is a [README template](https://gist.github.com/cjbarnaby/e0eab63987806d59712ea1923abce652), if you're struggling to know where to start.
 
