@@ -5,7 +5,6 @@ What we covered today:
 * JavaScript - AJAX with jQuery
 * JavaScript - Same Origin Policy
 * AJAX on Rails
-* Node Installfest
 
 ### Warmup <a id="warmup"></a>
 
@@ -13,8 +12,8 @@ What we covered today:
 
 ### Codealongs <a id="codealongs"></a>
 
-* ​[M](https://github.com/textchimp/wdi-27/tree/master/week7/ajax-jquery)ovieDB
-* ​[AJAX on Rails](https://github.com/textchimp/wdi-27/tree/master/week7/ajax-dashboard)​
+* [​AJAX jQuery](https://github.com/textchimp/wdi-29/tree/master/week7/ajax-jquery)
+* ​[AJAX on Rails​](https://github.com/textchimp/wdi-29/tree/master/week7/ajax-on-rails)
 
 ## JavaScript - AJAX with jQuery <a id="javascript-ajax-with-jquery"></a>
 
@@ -397,8 +396,10 @@ Let's use the app created above as a starting point.
 
 In terminal:
 
-```text
-  rails generate scaffold Habitat name:string  rails generate scaffold Species name:string status:string habitat:references  rails generate scaffold Animal name:string color:string species:references
+```bash
+  rails generate scaffold Habitat name:string
+  rails generate scaffold Species name:string status:string habitat:references
+  rails generate scaffold Animal name:string color:string species:references
 ```
 
 #### _Update our models' associations_ <a id="update-our-models-associations"></a>
@@ -409,8 +410,32 @@ We're also going to add another method to the Animal class that we can call on a
 
 Update your models so they look like this:
 
-```text
-# in app/models/animal.rbclass Animal < ActiveRecord::Base  belongs_to :species​  def climate    if self.species.habitat.name == "Alpine"      "Cold"    else      "Maybe not too cold"    end  endend​end​# in app/models/species.rbclass Species < ActiveRecord::Base  has_many :animals  belongs_to :habitatend​# in app/models/habitat.rbclass Habitat < ActiveRecord::Base  has_many :speciesend
+```ruby
+# in app/models/animal.rb
+class Animal < ActiveRecord::Base
+  belongs_to :species
+​
+  def climate
+    if self.species.habitat.name == "Alpine"
+      "Cold"
+    else
+      "Maybe not too cold"
+    end
+  end
+end
+​
+end
+​
+# in app/models/species.rb
+class Species < ActiveRecord::Base
+  has_many :animals
+  belongs_to :habitat
+end
+​
+# in app/models/habitat.rb
+class Habitat < ActiveRecord::Base
+  has_many :species
+end
 ```
 
 Now we'll have the following models and associations:
@@ -423,14 +448,32 @@ Now we'll have the following models and associations:
 
 In **db/seeds.rb**:
 
-```text
-h1 = Habitat.create({:name => "Woodland"})h2 = Habitat.create({:name => "Alpine"})​s1 = Species.create({:name => "Meles meles", :status => "Not endangered"})s2 = Species.create({:name => "Martes americana", :status => "Endangered"})s3 = Species.create({:name => "Mustela putorius", :status => "Endangered"})​a1 = Animal.create({:name => "Badger", :color => "Black and white"})a2 = Animal.create({:name => "Pine marten", :color => "Brown and white"})a3 = Animal.create({:name => "Polecat", :color => "White"})​s1.animals << a1s2.animals << a2s3.animals << a3​h1.species << s1h2.species << s2 << s3
+```ruby
+h1 = Habitat.create({:name => "Woodland"})
+h2 = Habitat.create({:name => "Alpine"})
+​
+s1 = Species.create({:name => "Meles meles", :status => "Not endangered"})
+s2 = Species.create({:name => "Martes americana", :status => "Endangered"})
+s3 = Species.create({:name => "Mustela putorius", :status => "Endangered"})
+​
+a1 = Animal.create({:name => "Badger", :color => "Black and white"})
+a2 = Animal.create({:name => "Pine marten", :color => "Brown and white"})
+a3 = Animal.create({:name => "Polecat", :color => "White"})
+​
+s1.animals << a1
+s2.animals << a2
+s3.animals << a3
+​
+h1.species << s1
+h2.species << s2 << s3
 ```
 
 Then, in terminal:
 
-```text
-rake db:createrake db:migraterake db:seed
+```ruby
+rails db:create
+rails db:migrate
+rails db:seed
 ```
 
 #### _Set up a route_ <a id="set-up-a-route"></a>
@@ -439,7 +482,7 @@ We're going to put an additional route to handle AJAX requests to get more detai
 
 Add the following to your **config/routes.rb** file
 
-```text
+```ruby
   get 'details/:id' => "animals#details", :as => 'details'
 ```
 
@@ -447,8 +490,37 @@ Add the following to your **config/routes.rb** file
 
 We need to create a `details` action in **app/controllers/animals\_controller.rb**. In there, we'll be retrieving the records we want from the database and sending certain details of those records \(and those records' associated records\) back to the browser as JSON objects.
 
-```text
-# ...def details​  # Get an animal record from the database using the ID in params.  @animal = Animal.find(params[:id])​  # If we just want to return details of the record represented by the @animal object, we could now simply do:​  # render :json => @animal​  # But if we want to get details of OTHER records associated with the @animal object, we need to call .to_json on the @animal object, and specify what associated records we want to include, and what attributes of those associated records we want to include/exclude.  @response = @animal.to_json(  :methods => :climate,  :include => {    :species => {      :except =>        [:created_at, :updated_at],      :include => {        :habitat => {          :only => :name        }      }    }  })​  # Then we render the response as :json. This lets Rails know to render a JSON object back to the browser, rather than an HTML view.​  render :json => @response  # ...end
+```ruby
+# ...
+def details
+​
+  # Get an animal record from the database using the ID in params.
+  @animal = Animal.find(params[:id])
+​
+  # If we just want to return details of the record represented by the @animal object, we could now simply do:
+​
+  # render :json => @animal
+​
+  # But if we want to get details of OTHER records associated with the @animal object, we need to call .to_json on the @animal object, and specify what associated records we want to include, and what attributes of those associated records we want to include/exclude.
+  @response = @animal.to_json(
+  :methods => :climate,
+  :include => {
+    :species => {
+      :except =>
+        [:created_at, :updated_at],
+      :include => {
+        :habitat => {
+          :only => :name
+        }
+      }
+    }
+  })
+​
+  # Then we render the response as :json. This lets Rails know to render a JSON object back to the browser, rather than an HTML view.
+​
+  render :json => @response
+  # ...
+end
 ```
 
 If you open up the URL **localhost:3000/details/1** in the browser, you should see a representation of a JSON object relating to the first record in our database's animals table.
@@ -457,8 +529,13 @@ If you open up the URL **localhost:3000/details/1** in the browser, you should s
 
 First, delete all the content in the template **app/assets/views/animals/index.html.erb**, and replace it with the following:
 
-```text
-<% @animals.each do |animal| %>  <div id="#{animal.id}">  <%= link_to(animal.name, details_path(animal.id), remote: true, :class => "get-animal") %>  </div><% end %><div class="response-text"></div>
+```markup
+<% @animals.each do |animal| %>
+  <div id="#{animal.id}">
+  <%= link_to(animal.name, details_path(animal.id), remote: true, :class => "get-animal") %>
+  </div>
+<% end %>
+<div class="response-text"></div>
 ```
 
 This is going to create a link to the `details_path`, which will be routed to the `details` action in our `animals controller`. Notice the `remote: true` - this will add the HTML attribute `data-remote=true` to the `a` element generated by the `link_to` helper, and tells the browser to send the request to the server using AJAX. We're also giving the `div` the class of the animal's ID to make it easier to remove the element from the DOM \(in response to a successful delete request, which we'll do a bit later\).
@@ -475,8 +552,19 @@ To start with, I'd put a `debugger` in the jQuery AJAX response handler, so I ca
 
 We can pass up to four arguments into the AJAX response handlers - the `event` \(particularly useful if we want to manipulate the element that was clicked on\), the `data` \(the JSON object returned by the controller\), the `status` \(eg 'success', 'error'\) and the full `xhr` response. We'll only be using the `data` here.
 
-```text
-$(document).ready(function() {  $(".get-animal").on("ajax:success", function(event, data, status, xhr) {    // debugger    $animal = $("<p>").text("Animal: " + data.name);    $species = $("<p>").text("Species: " + data.species.name);    $status = $("<p>").text("Habitat: " + data.species.habitat.name);    $(".response-text").empty().append($animal).append($species).append($status);  }).on("ajax:error", function() {    $error = $("<p>").text("An error occurred. That's all we know.");    $(".response-text").empty().append($error);  });});
+```javascript
+$(document).ready(function() {
+  $(".get-animal").on("ajax:success", function(event, data, status, xhr) {
+    // debugger
+    $animal = $("<p>").text("Animal: " + data.name);
+    $species = $("<p>").text("Species: " + data.species.name);
+    $status = $("<p>").text("Habitat: " + data.species.habitat.name);
+    $(".response-text").empty().append($animal).append($species).append($status);
+  }).on("ajax:error", function() {
+    $error = $("<p>").text("An error occurred. That's all we know.");
+    $(".response-text").empty().append($error);
+  });
+});
 ```
 
 Browse to **localhost:3000/animals** and you should be able to click on an animal's name and see the page update with data from the database without the browser reloading the whole page.
@@ -495,24 +583,48 @@ We need to add another link to our view, and set the HTTP method to `DELETE`.
 
 In **app/assets/views/animals/index.html**, add the lines between the comments:
 
-```text
-<% @animals.each do |animal| %>  <div id=<%= animal.id %>>    <%= link_to(animal.name, details_path(animal.id), remote: true, :class => "get-animal") %>    <!-- AJAX DELETE -->    <%= link_to("Delete Animal", animal_path(animal.id), remote: true, method: :delete, :class => "delete-animal", "data-type" => :json) %>    <!-- end AJAX DELETE -->  </div><% end %><div class="response-text"></div>
+```markup
+<% @animals.each do |animal| %>
+  <div id=<%= animal.id %>>
+    <%= link_to(animal.name, details_path(animal.id), remote: true, :class => "get-animal") %>
+    <!-- AJAX DELETE -->
+    <%= link_to("Delete Animal", animal_path(animal.id), remote: true, method: :delete, :class => "delete-animal", "data-type" => :json) %>
+    <!-- end AJAX DELETE -->
+  </div>
+<% end %>
+<div class="response-text"></div>
 ```
 
 #### _Reconfigure the controller_ <a id="reconfigure-the-controller"></a>
 
 In **app/controllers/animals\_controller.rb**, change the `destroy` action send back the deleted animal record as JSON \(so we can delete the DOM elements relating to that record\).
 
-```text
-class AnimalsController < ApplicationController  # ...  def destroy    @animal.destroy    respond_to do |format|      format.html { redirect_to animals_url, notice: 'Animal was successfully destroyed.' }      format.json { render :json => @animal }    end  end  # ...end
+```ruby
+class AnimalsController < ApplicationController
+  # ...
+  def destroy
+    @animal.destroy
+    respond_to do |format|
+      format.html { redirect_to animals_url, notice: 'Animal was successfully destroyed.' }
+      format.json { render :json => @animal }
+    end
+  end
+  # ...
+end
 ```
 
 #### _Set up the AJAX response handler_ <a id="set-up-the-ajax-response-handler-1"></a>
 
 In **app/assets/javascript/animals.js**, add the following:
 
-```text
-$(".delete-animal").on("ajax:success", function(event, data, status, xhr) {  $("#" + data.id).remove();  $(".response-text").empty().append("Animal deleted");}).on("ajax:error", function() {  $error = $("<p>").text("An error occurred. That's all we know.");  $(".response-text").empty().append($error);});
+```javascript
+$(".delete-animal").on("ajax:success", function(event, data, status, xhr) {
+  $("#" + data.id).remove();
+  $(".response-text").empty().append("Animal deleted");
+}).on("ajax:error", function() {
+  $error = $("<p>").text("An error occurred. That's all we know.");
+  $(".response-text").empty().append($error);
+});
 ```
 
 This will find the element with the ID returned in the ID property of the `data` response and remove it from the DOM, as well as displaying a notice to the user that an Animal was successfully deleted.
@@ -525,8 +637,21 @@ Let's start by changing the **app/views/animals/index.html.erb** to include form
 
 Submitting one of these forms will send a `PUT/PATCH` request to the controller to update a particular animal record \(since it already exists\).
 
-```text
-<% @animals.each do |animal| %>  <div id= <%= animal.id %> >    <%= link_to(animal.name, details_path(animal.id), remote: true, :class => "get-animal") %>    <%= link_to("Delete Animal", animal_path(animal.id), remote: true, method: :delete, :class => "delete-animal", "data-type" => :json) %>    <!-- AJAX PUT/PATCH  -->    <%= form_for(animal, remote: true, format: :json) do |f| %>      <%= f.label :color %>      <%= f.text_field :color, :value => animal.color %>      <%= f.submit "update" %>    <% end %>    <!-- end AJAX PUT/PATCH -->  </div><% end %><div class="response-text"></div>
+```markup
+<% @animals.each do |animal| %>
+  <div id= <%= animal.id %> >
+    <%= link_to(animal.name, details_path(animal.id), remote: true, :class => "get-animal") %>
+    <%= link_to("Delete Animal", animal_path(animal.id), remote: true, method: :delete, :class => "delete-animal", "data-type" => :json) %>
+    <!-- AJAX PUT/PATCH  -->
+    <%= form_for(animal, remote: true, format: :json) do |f| %>
+      <%= f.label :color %>
+      <%= f.text_field :color, :value => animal.color %>
+      <%= f.submit "update" %>
+    <% end %>
+    <!-- end AJAX PUT/PATCH -->
+  </div>
+<% end %>
+<div class="response-text"></div>
 ```
 
 #### _Reconfigure the controller_ <a id="reconfigure-the-controller-1"></a>
@@ -537,8 +662,18 @@ Our AJAX response handler is expecting JSON to be returned by the controller, so
 
 This isn't really necessary, but it's worth checking out the different kinds of responses your controllers can send.
 
-```text
-def update  respond_to do |format|    if @animal.update(animal_params)      format.html { redirect_to @animal, notice: 'Animal was successfully updated.' }      format.json { render :json => {status: :ok} }    else      format.html { render :edit }      format.json { render :json => {status: :unprocessable_entity} }    end  endend
+```ruby
+def update
+  respond_to do |format|
+    if @animal.update(animal_params)
+      format.html { redirect_to @animal, notice: 'Animal was successfully updated.' }
+      format.json { render :json => {status: :ok} }
+    else
+      format.html { render :edit }
+      format.json { render :json => {status: :unprocessable_entity} }
+    end
+  end
+end
 ```
 
 #### _Set up the AJAX response handler_ <a id="set-up-the-ajax-response-handler-2"></a>
@@ -547,8 +682,13 @@ This is going to look pretty similar to our AJAX handler for the `DELETE` reques
 
 Rails is going to generate our forms with the class of "edit\_animal". We're going to add the AJAX event listener to the form itself - this says "listen for any forms with this class being submitted", which is pretty handy \(our listener is bound to the form, and is listening for the submit event, rather than being bound to an click even on an arbitrary button\).
 
-```text
-$(".edit_animal").on("ajax:success", function(event, data, status, xhr) {  $(".response-text").empty().append("Animal updated");}).on("ajax:error", function() {  $error = $("<p>").text("An error occurred. That's all we know.");  $(".response-text").empty().append($error);});
+```javascript
+$(".edit_animal").on("ajax:success", function(event, data, status, xhr) {
+  $(".response-text").empty().append("Animal updated");
+}).on("ajax:error", function() {
+  $error = $("<p>").text("An error occurred. That's all we know.");
+  $(".response-text").empty().append($error);
+});
 ```
 
 ### _JavaScript - Same Origin Policy - Further Reading_ <a id="javascript-same-origin-policy-further-reading"></a>
