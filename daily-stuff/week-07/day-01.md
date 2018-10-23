@@ -7,8 +7,6 @@ What we covered today:
 * JavaScript - AJAX and XHR
 * Node Installfest
 
-
-
 ### Warmup <a id="warmup"></a>
 
 * ​[Text Soup](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week07/day01_textsoup)

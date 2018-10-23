@@ -12,5 +12,6 @@
 * JavaScript - AJAX with jQuery
 * JavaScript - Same Origin Policy
 * AJAX on Rails
-* Node Installfest
+
+
 
