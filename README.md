@@ -88,6 +88,22 @@ description: Welcome to WDI29 GitBook
     </tr>
   </thead>
   <tbody></tbody>
+</table><table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><a href="daily-stuff/week-07/">Week 07</a>
+      </th>
+      <th style="text-align:left">
+        <p><a href="daily-stuff/week-07/day-01.md">Day 01</a>
+        </p>
+        <p><a href="daily-stuff/week-07/day-02.md">Day 02</a>
+        </p>
+        <p><a href="daily-stuff/week-07/day-03.md">Day 03</a>
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
 </table>## Modules
 
 * ​[Git Repository Setup​](modules/git-repository-setup.md)
@@ -97,21 +113,8 @@ description: Welcome to WDI29 GitBook
 ## Dictionary
 
 * [Definitions​ you might find useful](dictionary/definitions.md)
+* [Heroku](modules/heroku.md)
+* [Cloudinary](modules/cloudinary.md)
 
-## Warmups
 
-* [Raindrops - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day03_raindrops)
-* [Serge - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day04_sergeSays)
-* [Leapyear - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week01/day05_leapyear)
-* [Badgers-revenge - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day01_badgers-revenge)
-* [Scrabble - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day02_scrabble)
-* [Anagram Detector - JS](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week02/day05_anagram_detector)
-* [Raindrops - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day01_ruby_raindrops)
-* [Scrabble - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day02_ruby_scrabble)
-* [Nucleotide - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week04/day03_ruby_nucleotide)
-* [Point Mutations - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day01_point_mutations)
-* [Robot Factory - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day02_robot_factory)
-* ​[​Atbash Cipher - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day03_atbash_cipher)
-* [Roman Numerals​ - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day04_roman-numerals)
-* ​[Luhn Numbers - RB](https://github.com/liaa2/wdi29-homework/tree/master/warmups/week05/day05_luhn_numbers)
 
