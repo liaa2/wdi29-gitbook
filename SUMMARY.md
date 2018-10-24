@@ -30,6 +30,7 @@
 * [Week 07](daily-stuff/week-07/README.md)
   * [Day 01](daily-stuff/week-07/day-01.md)
   * [Day 02](daily-stuff/week-07/day-02.md)
+  * [Day 03](daily-stuff/week-07/day-03.md)
 
 ## MODULES
 

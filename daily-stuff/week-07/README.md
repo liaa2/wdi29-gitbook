@@ -13,5 +13,10 @@
 * JavaScript - Same Origin Policy
 * AJAX on Rails
 
+### ​[Day 03​](day-03.md)
+
+* JavaScript - underscore
+* JavaScript - ajax
+
 
 
