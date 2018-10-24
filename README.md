@@ -112,9 +112,7 @@ description: Welcome to WDI29 GitBook
 
 ## Dictionary
 
-* [Definitions​ you might find useful](dictionary/definitions.md)
-* [Heroku](modules/heroku.md)
-* [Cloudinary](modules/cloudinary.md)
+* [Definitions​ you might find usefu](dictionary/definitions.md)l
 
 
 
