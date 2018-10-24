@@ -2,7 +2,7 @@
 
 What we covered today:
 
-* Underscore
+* Underscore.js
 * Flickr
 
 ### Codealongs <a id="codealongs"></a>
