@@ -20,7 +20,9 @@
 
 ### ​[Day 04​](day-04.md)
 
-* Transpilation Intro
+* Flickr Solution
+* Transpiling Intro
+* Ajax-on-rails with frontend
 * Frontend Frameworks:
   * Vue.js intro
 
