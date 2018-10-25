@@ -4,6 +4,7 @@ What we covered today:
 
 * Flickr Solution
 * Transpiling Intro
+* Ajax-on-rails with frontend
 * Frontend Frameworks:
   * Vue.js - intro
 
