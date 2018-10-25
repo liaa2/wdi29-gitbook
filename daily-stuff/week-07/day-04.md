@@ -7,7 +7,7 @@ What we covered today:
 * Ajax-on-rails with frontend
 * Frontend Frameworks:
   * Vue.js - intro
-* Guest Speaker: Charlie Gerard - [Programming for Hardware in JavaScript & IoT](https://docs.google.com/presentation/d/1VdH-Ry2tp0dEWCBLFis9djfMRmi-nmUfE22fof7W3P0/edit?usp=sharing)  
+* Guest Speaker: Charlie Gerard - [Programming for Hardware in JavaScript & IoT](https://docs.google.com/presentation/d/1VdH-Ry2tp0dEWCBLFis9djfMRmi-nmUfE22fof7W3P0/edit?usp=sharing)
 
 ### Warmup <a id="warmup"></a>
 
