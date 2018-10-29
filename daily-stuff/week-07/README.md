@@ -26,7 +26,7 @@
 * Frontend Frameworks:
   * Vue.js intro
 
-### [Day 05](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-07/day-05)​
+### [Day 05​](day-05.md)
 
 * ReactJS
   * Components
