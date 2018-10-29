@@ -281,13 +281,15 @@ Axios is a package that allows us to send requests to our server. We could also 
 npm install --save axios
 ```
 
+You will need to restart the server with `npm start` now that we have installed `axios`.
+
 Add the import line to the top of the page.
 
 ```javascript
 import axios from 'axios';
 ```
 
-Add the jsonp request to the bottom of the function.
+Add the axios request to the bottom of the function.
 
 ```javascript
 fetchImages(q){
@@ -308,8 +310,6 @@ fetchImages(q){
   })
 }
 ```
-
-You will need to restart the server with `npm start` now that we have installed `axios`.
 
 Now we need to generate the `url`.
 
