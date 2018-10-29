@@ -102,6 +102,8 @@ description: Welcome to WDI29 GitBook
         </p>
         <p><a href="daily-stuff/week-07/day-04.md">Day 04</a>
         </p>
+        <p><a href="daily-stuff/week-07/day-05.md">Day 05</a>
+        </p>
       </th>
     </tr>
   </thead>
