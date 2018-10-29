@@ -637,13 +637,20 @@ Go back onto your browser and navigate through the links. You will see that you'
 
 ## Homework <a id="homework"></a>
 
-Combine the react router into the flickr-react-app.
+Getting comfy with React:
 
-* ​[Flickr Search Router​](https://github.com/textchimp/wdi-29/tree/master/week8/react-flickr-search-router)
+* Finish the refactor of the Flickr Search React app to use the React Router:
+  * save the input from the search form into the component's state
+  * when the form is submitted, send the search query to the search results route
+  * in the search results component, use the query passed in via the URL to perform an AJAX request to Flickr, and save the results into the component's state
+  * Show a thumbnail image for each result, ideally by writing a `<Gallery />` functional component
+  * BONUS: make the `/image/:id` route work for the FullscreenImage component, i.e. make each result thumbnail clickable, and show a fullscreen version of the image when clicked, by navigating to that route
+* try rewriting any of your API homework from last week to use React instead of jQuery
 
 Some topics below for you to brush up on:
 
 * ​[React Router Documentation](https://reacttraining.com/react-router/)​
+* [React.js Introduction For People Who Know Just Enough jQuery To Get By](https://chibicode.com/react-js-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
 * ​[Thinking In React](https://reactjs.org/docs/thinking-in-react.html)​
 * ​[Learning ES6](http://learnharmony.org/)​
 * ​[AXIOS - npm](https://www.npmjs.com/package/axios)​
