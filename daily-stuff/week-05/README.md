@@ -1,6 +1,6 @@
 # Week 05
 
-### ​[Day 01](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-05/day-01)​
+### [​Day 01](day-01.md)
 
 * Ruby on Rails - Introduction
 * Ruby on Rails - Basic Project Setup \(no database\)

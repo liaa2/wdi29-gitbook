@@ -1,6 +1,6 @@
 # Week 04
 
-### ​[Day 01](https://granthanrahan.gitbook.io/wdi27/daily-stuff/week-04/day-01)​
+### ​[Day 01​](day-01.md)
 
 * RVM and Ruby Installation
 * Ruby - A Brief History of Ruby
