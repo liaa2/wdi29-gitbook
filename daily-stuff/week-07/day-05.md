@@ -222,6 +222,94 @@ class MyComponent extends PureComponent {
 }
 ```
 
+### Lifecycle <a id="lifecycle"></a>
+
+A stateful React component has three main parts to its lifecycle:
+
+* **Mounting** - The component is being inserted into the DOM
+* **Updating** - The component is being re-rendered in the virtual DOM to determine whether the DOM needs updating
+* **Unmounting** - The component is being removed from the DOM
+
+React gives us a number of **lifecycle methods** that allow us to hook into the various parts of the lifecycle.
+
+#### _Mounting_ <a id="mounting"></a>
+
+* `getInitialState()`: object is invoked before a component is mounted. Stateful components should implement this and return the initial state data.
+* `componentWillMount()` is invoked immediately before mounting occurs. This is a good point to do things that might take a bit of time, such as AJAX requests.
+* `componentDidMount()` is invoked immediately after mounting occurs - ie, the element is on the page. Initialization that requires DOM nodes should go here.
+
+#### _Updating_ <a id="updating"></a>
+
+* `componentWillReceiveProps(object nextProps)` is invoked when a mounted component receives new props - the properties have been updated, and the component is about to receive them. This method should be used to compare `this.props` and `nextProps` to perform state transitions using this.setState\(\).
+* `shouldComponentUpdate(object nextProps, object nextState): boolean` is invoked when a component decides whether any changes warrant an update to the DOM. Implement this as an optimization to compare `this.props` with `nextProps` and `this.state` with `nextState` and `return false` if React should skip updating.
+* `componentWillUpdate(object nextProps, object nextState)` is invoked immediately before updating occurs - React is about to start updating the page with new component markup. You cannot call `this.setState()` here.
+* `componentDidUpdate(object prevProps, object prevState)` is invoked immediately after updating occurs - React has made changes to the DOM.
+
+#### _Unmounting_ <a id="unmounting"></a>
+
+* `componentWillUnmount()` is invoked immediately before a component is unmounted and destroyed. This is where you should do your cleanup - turn off timers, stop animations, etc.
+
+### Exemplar component <a id="exemplar-component"></a>
+
+Without filling out the methods themselves, this is what a stateful component with propType validation, prop defaults and lifecycle hooks might look like:
+
+```javascript
+class HelloUser extends PureComponent {
+​
+// CONSTRUCTOR METHOD
+  constructor() {
+    super();
+    this.state = {
+      text: ""
+    }
+  }
+​
+// LIFECYCLE HOOKS
+  // - Mounting
+  getInitialState() { }
+  componentWillMount() { }
+  componentDidMount() { }
+  // - Updating
+  componentWillReceiveProps(object nextProps) { }
+  shouldComponentUpdate(object nextProps, object nextState): boolean { }
+  componentWillUpdate(object nextProps, object nextState) { }
+  componentDidUpdate(object prevProps, object prevState) { }
+  // - Unmounting
+  componentWillUnmount() { }
+​
+// RENDER METHOD
+  render() {
+    return (
+      <p> Hello, {this.props.name} </p>
+      <p> You are visitor number {this.props.visitor} to this site </p>
+    );
+  }
+}
+​
+// PROPTYPE VALIDATION
+HelloUser.propTypes = {
+  name: React.PropTypes.string.isRequired,
+  visitor: React.PropTypes.number
+};
+​
+// PROP DEFAULTS
+HelloUser.defaultProps = {
+  name: "User",
+  number: 1
+}
+​
+// INVOCATION
+ReactDOM.render(
+  <HelloUser name="Badger" visitor=1138 />,
+  document.getElementById("app")
+);
+```
+
+### _ReactJS - Components - Further Reading_ <a id="reactjs-components-further-reading"></a>
+
+* ​[ReactJS - Documentation - Reusable Components](https://facebook.github.io/react/docs/reusable-components.html#prop-validation)​
+* ​[Ricosta Cruz - ReactJS Cheatsheet](http://ricostacruz.com/cheatsheets/react.html)​
+
 ## Class Demos <a id="class-demos"></a>
 
 * ​[React Intro​](https://github.com/textchimp/wdi-29/tree/master/week7/react-intro)
