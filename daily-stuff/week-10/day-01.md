@@ -10,7 +10,7 @@ What we covered today:
 
 ## Burning Airlines - Vue <a id="burning-airlines-vue"></a>
 
-* ​Codealong​
+* [​Codealong​](https://github.com/textchimp/wdi-29/tree/master/week10/burning-airlines-rails-vue)
 
 Create a directory where you want to store your application.
 
