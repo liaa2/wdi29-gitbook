@@ -193,7 +193,7 @@ Authorization: Bearer <token>
 // This header-setting line also appears in App.vue, but that's too late for
 // us here; it will already have run by the time we perform this login -
 // so we have to set the header again here
-axios.defaults.headers.common['Authorization'] = "Bearer "  + response.data.jwt;
+axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.jwt}`;
 ```
 
 This can be, in certain cases, a stateless authorization mechanism. The server's protected routes will check for a valid JWT in the `Authorization` header, and if it's present, the user will be allowed to access protected resources. If the JWT contains the necessary data, the need to query the database for certain operations may be reduced, though this may not always be the case.
