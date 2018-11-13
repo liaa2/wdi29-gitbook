@@ -4,5 +4,9 @@
 
 * Burning Airlines in Vue.js
 
+### Day 02
+
+* Frontend Auth with JWT
+
 
 
