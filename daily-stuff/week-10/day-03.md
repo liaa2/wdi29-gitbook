@@ -12,13 +12,12 @@ What we covered today:
 
 ### Codealong <a id="codealong"></a>
 
-* ​[Codealong​](https://github.com/textchimp/wdi-29/tree/master/week10/burning-airlines-rails-vue)
-* ​Fruit Store​
+* [Burning Airline ](https://github.com/textchimp/wdi-29/tree/master/week10/burning-airlines-rails-vue)
+* ​[Fruit Store​](https://github.com/textchimp/wdi-29/tree/master/week10/fruitstore-tdd)
 
 ## Ruby on Rails - Testing - Rspec <a id="ruby-on-rails-testing-rspec"></a>
 
 * ​[Rspec-rails documentation](https://github.com/rspec/rspec-rails)​
-* ​[Class Demo](https://github.com/textchimp/)​
 
 We have done a little bit of Rspec now, but it has all been with pure Ruby, no Rails. We want to get it working with Rails, and luckily, that isn't difficult.
 
