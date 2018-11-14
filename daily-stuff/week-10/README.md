@@ -10,6 +10,7 @@
 
 ### [Day 03](day-03.md)
 
+* Booking system and refactoring
 * Rspec
 * Ruby on Rails - Testing
 
