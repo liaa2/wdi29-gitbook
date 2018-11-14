@@ -351,13 +351,9 @@ rspec -e "The description of the test you want to run"  # Tell Rspec to run a pa
 
 * prepare interview questions
 * Continue with `learnyounode` and bring in questions tomorrow, to go through together
-* Keep working on Vue
+* Keep working on Vue - navbar etc
 
 
 
-#### Further Reading: <a id="further-reading"></a>
 
-* ​[RSpec](http://rspec.info/)​
-* ​[An Introduction to RSpec](http://blog.teamtreehouse.com/an-introduction-to-rspec)​
-* ​[RSpec Best Practices](http://www.betterspecs.org/)​
 
