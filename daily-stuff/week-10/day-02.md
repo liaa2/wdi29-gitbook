@@ -212,9 +212,13 @@ If the token is sent in the `Authorization` header, Cross-Origin Resource Sharin
 
 **Further Reading:**
 
-* ​[Ruby on Rails and JWT+Knock](https://engineering.musefind.com/building-a-simple-token-based-authorization-api-with-rails-a5c181b83e02)​
+* ​[Vue API](https://vuejs.org/v2/api/)
+* [Ruby on Rails and JWT+Knock](https://engineering.musefind.com/building-a-simple-token-based-authorization-api-with-rails-a5c181b83e02)​
 * ​[5 Easy Steps to Understanding JWT](https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec)​
+* [Introduction to JSON Web Tokens](https://jwt.io/introduction/)
 * ​[JWT: The Complete Guide to JSON Web Tokens](https://blog.angular-university.io/angular-jwt/)​
 * ​[Understanding JWT](http://polyglot.ninja/understanding-jwt-json-web-tokens/)​
 * ​[Rails API + JWT auth + VueJS SPA](https://blog.usejournal.com/rails-api-jwt-auth-vuejs-spa-eb4cf740a3ae)​
+
+
 

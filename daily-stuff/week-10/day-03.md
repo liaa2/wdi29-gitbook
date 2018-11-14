@@ -345,6 +345,8 @@ rspec -e "The description of the test you want to run"  # Tell Rspec to run a pa
 * ​[Better Specs](http://betterspecs.org/)​
 * ​[Team Treehouse - An Introduction to Rspec](http://blog.teamtreehouse.com/an-introduction-to-rspec)​
 * [How to Test Rails Models with RSpec](https://semaphoreci.com/community/tutorials/how-to-test-rails-models-with-rspec)
+* [9 Benefits of Test Driven Development](https://www.madetech.com/blog/9-benefits-of-test-driven-development)
+* [Why TDD](https://builttoadapt.io/why-tdd-489fdcdda05e)
 
 
 
