@@ -8,5 +8,8 @@
 
 * Frontend Auth with JWT
 
+### [Day 03](day-03.md)
 
+* Rspec
+* Ruby on Rails - Testing
 
