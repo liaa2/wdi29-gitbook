@@ -14,3 +14,10 @@
 * Rspec
 * Ruby on Rails - Testing
 
+### [Day 04](day-04.md)
+
+* p5
+* Rails TDD
+
+
+
