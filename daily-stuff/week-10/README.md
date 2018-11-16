@@ -21,6 +21,7 @@
 
 ### [Day 05](day-05.md)
 
+* Rails TDD continued
 * Singly Linked Lists
 * NodeJS
 

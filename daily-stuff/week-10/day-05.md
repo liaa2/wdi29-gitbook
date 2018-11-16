@@ -2,6 +2,7 @@
 
 What we covered today:
 
+* Rails TDD continued
 * Singly Linked Lists
 * NodeJS
 
@@ -11,8 +12,73 @@ What we covered today:
 
 ### Codealongs <a id="codealongs"></a>
 
+* [Fruitstore TDD](https://github.com/textchimp/wdi-27/tree/master/week10/fruitstore-tdd)​
 * ​Singly Linked Lists​
 * Node Servers
+
+## simpleCov <a id="simplecov"></a>
+
+#### What is it? <a id="what-is-it"></a>
+
+SimpleCov is a gem which gives you detailed feedback on test coverage. It's a good way of understanding where and why you are lacking test coverage on your project.
+
+#### Lets get started: <a id="lets-get-started"></a>
+
+In our gemfile, in the test environment:
+
+```ruby
+gem 'simplecov', :require => 'false'
+```
+
+We add the `:require => false` because we want to invoke simpleCov manually.
+
+If it runs immediately when the program starts, it will not give us valid feedback on our program's test coverage.
+
+Next, run `bundle install` to actually get our gem installed in our project.
+
+From here, navigate to your `spec_helper.rb` and near the top, add these lines:
+
+```ruby
+require 'simplecov'  
+SimpleCov.start
+```
+
+All this says, is when we run our spec helper, we're going to need simpleCov so we can interact with it, and we immediately want to make simpleCov to begin monitoring our project.
+
+That's it! From here all we need to do is call `rspec` \(or whatever test unit you are using\) in the terminal.
+
+When we run our tests, simpleCov will create a report for us. The report is stored in a new folder within our rails project called coverage.
+
+Running `open open coverage/index.html` should open the report for us, giving us our feedback.
+
+If you need to know more about what has been analysed, clicking the magnifying glass icons will give you feedback on exactly what lines are not tested.
+
+Want more? [read the docs](https://github.com/colszowka/simplecov).
+
+### Tracking test coverage <a id="tracking-test-coverage"></a>
+
+Now obviously we have started to get lots and lots of tests. We need to start keeping track of our test coverage! Let's add a gem called [Simplecov](https://github.com/colszowka/simplecov). Add this into your Gemfile \(again, in the test environment\) - `gem 'simplecov', :require => false, :group => :test`.
+
+Then add, at the very top of your `rails_helper.rb` file, the following lines:
+
+```ruby
+require 'simplecov'
+SimpleCov.start
+```
+
+```bash
+bundle install
+```
+
+This will generate everything we need! Open up the **coverage/index.html** file in the browser and you will see everything that it tests.
+
+```bash
+open coverage/index.html
+```
+
+```bash
+rails stats
+```
 
 ## Singly Linked List <a id="singly-linked-list"></a>
 
