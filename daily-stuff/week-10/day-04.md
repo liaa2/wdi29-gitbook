@@ -9,7 +9,7 @@ What we covered today:
 
 ### Codealongs <a id="codealongs"></a>
 
-* ​2d graphics p5
+* ​[2d graphics p5](https://github.com/textchimp/wdi-29/tree/master/week10/2d-graphics-p5)
 * [Fruitstore TDD](https://github.com/textchimp/wdi-27/tree/master/week10/fruitstore-tdd)​
 
 ## P5
