@@ -566,7 +566,7 @@ Add the following code in your `script:`
 
 ```
 
-Run `npm run seed` will import our seed data:
+Run `npm run seed` to create our seed data:
 
 ```javascript
 burning-airlines-server-express-mongodb (master)$ npm run seed
