@@ -11,6 +11,7 @@ What we covered today:
 
 ### Codealongs  <a id="codealongs"></a>
 
+* [Singly Linked Lists](https://github.com/textchimp/wdi-29/tree/master/week10/singly-linked-lists)
 * [Burning Airlines - Express & noDB](https://github.com/textchimp/wdi-29/tree/master/week10/node-servers/ba-express-server-no-db)
 * [​Burning Airlines - Express & mongoDB](https://github.com/textchimp/wdi-29/tree/master/week10/node-servers/ba-express-server-mongodb)
 

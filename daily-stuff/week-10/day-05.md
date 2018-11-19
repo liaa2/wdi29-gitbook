@@ -13,8 +13,8 @@ What we covered today:
 ### Codealongs <a id="codealongs"></a>
 
 * [Fruitstore TDD](https://github.com/textchimp/wdi-27/tree/master/week10/fruitstore-tdd)​
-* ​Singly Linked Lists​
-* Node Servers
+* [​Singly Linked Lists​](https://github.com/textchimp/wdi-29/tree/master/week10/singly-linked-lists)
+* [Node Servers](https://github.com/textchimp/wdi-29/tree/master/week10/node-servers/ba-express-server-no-db)
 
 ## simpleCov <a id="simplecov"></a>
 
