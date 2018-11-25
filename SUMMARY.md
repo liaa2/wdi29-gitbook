@@ -46,6 +46,8 @@
   * [Day 01](daily-stuff/week-11/day-01.md)
   * [Day 02](daily-stuff/week-11/day-02.md)
   * [Day 03](daily-stuff/week-11/day-03.md)
+  * [Day 04](daily-stuff/week-11/day-04.md)
+  * [Day 05](daily-stuff/week-11/day-05.md)
 
 ## MODULES
 
