@@ -12,7 +12,7 @@ What we covered today:
 ### Codealongs <a id="codealongs"></a>
 
 * ​regular-expressions​
-* ​node-testing-jasmine​
+* [​node-testing-jasmine​](https://github.com/textchimp/wdi-29/tree/master/week10/node-servers/ba-express-server-mongodb)
 
 ## Regular Expressions I <a id="regular-expressions-i"></a>
 

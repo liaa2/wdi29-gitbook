@@ -5,7 +5,9 @@ What we covered today:
 * Three.js
 * Recursion
 
+### Codealongs <a id="codealongs"></a>
 
+* ​[Three.js ](https://github.com/textchimp/wdi-29/tree/master/week11/3d-graphics-threejs)
 
 ## Three.js <a id="three-js"></a>
 
