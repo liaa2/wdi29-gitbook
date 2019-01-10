@@ -92,7 +92,7 @@ SELECT * FROM people; -- this will select all attributes of all records from the
 
 SELECT name FROM people; -- only select the name attributes of all the records in the person table
 
-​SELECT * FROM people WHERE first_name == "Bob"; -- select all attributes from all records in the person database where the first_name in the record  is "Bob"
+​SELECT * FROM people WHERE first_name = "Bob"; -- select all attributes from all records in the person database where the first_name in the record  is "Bob"
 ```
 
 ### Update <a id="update"></a>
